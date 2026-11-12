@@ -13,55 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR?
-U 1 1 68F9D845
-P 6640 3615
-AR Path="/68821B60/68F9D845" Ref="#PWR?"  Part="1" 
-AR Path="/68F956C0/68F9D845" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 6640 3365 50  0001 C CNN
-F 1 "GND" H 6645 3442 50  0000 C CNN
-F 2 "" H 6640 3615 50  0001 C CNN
-F 3 "" H 6640 3615 50  0001 C CNN
-	1    6640 3615
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7015 2240 6640 2240
-Wire Wire Line
-	6640 2240 6640 2440
-Wire Wire Line
-	7015 2440 6640 2440
-Connection ~ 6640 2440
-Wire Wire Line
-	6640 2440 6640 2640
-Wire Wire Line
-	7015 2640 6640 2640
-Connection ~ 6640 2640
-Wire Wire Line
-	6640 2640 6640 3040
-Wire Wire Line
-	7015 3040 6640 3040
-Connection ~ 6640 3040
-Wire Wire Line
-	6640 3040 6640 3140
-Wire Wire Line
-	7015 3140 6640 3140
-Connection ~ 6640 3140
-NoConn ~ 7015 2940
-Wire Wire Line
-	7015 2740 6540 2740
-Wire Wire Line
-	7015 2340 6540 2340
-Wire Wire Line
-	7015 2540 6540 2540
-NoConn ~ 7615 2340
-NoConn ~ 7615 2540
-NoConn ~ 7615 3140
-Wire Wire Line
-	7615 2740 7715 2740
-Wire Wire Line
-	7615 2940 7715 2940
 Wire Wire Line
 	2390 1890 2490 1890
 Wire Wire Line
@@ -549,72 +500,6 @@ F 4 "C17667" H 5345 1890 50  0001 C CNN "LCSC"
 	1    5345 1890
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6640 3140 6640 3615
-$Comp
-L CCAP0805:100nF C?
-U 1 1 68F9D967
-P 7525 1890
-AR Path="/68821B60/68F9D967" Ref="C?"  Part="1" 
-AR Path="/68F956C0/68F9D967" Ref="C53"  Part="1" 
-F 0 "C53" V 7296 1890 50  0000 C CNN
-F 1 "100nF" V 7387 1890 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7525 1890 50  0001 C CNN
-F 3 "https://www.lcsc.com/datasheet/C840116.pdf" H 7525 1890 50  0001 C CNN
-F 4 "C840116" H 7525 1890 50  0001 C CNN "LCSC"
-	1    7525 1890
-	0    1    1    0   
-$EndComp
-$Comp
-L CCAP0805:100nF C?
-U 1 1 68F9D96E
-P 7515 3700
-AR Path="/68821B60/68F9D96E" Ref="C?"  Part="1" 
-AR Path="/68F956C0/68F9D96E" Ref="C54"  Part="1" 
-F 0 "C54" V 7286 3700 50  0000 C CNN
-F 1 "100nF" V 7377 3700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7515 3700 50  0001 C CNN
-F 3 "https://www.lcsc.com/datasheet/C840116.pdf" H 7515 3700 50  0001 C CNN
-F 4 "C840116" H 7515 3700 50  0001 C CNN "LCSC"
-	1    7515 3700
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 68F9D974
-P 7735 3700
-AR Path="/68821B60/68F9D974" Ref="#PWR?"  Part="1" 
-AR Path="/68F956C0/68F9D974" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 7735 3450 50  0001 C CNN
-F 1 "GND" H 7740 3527 50  0000 C CNN
-F 2 "" H 7735 3700 50  0001 C CNN
-F 3 "" H 7735 3700 50  0001 C CNN
-	1    7735 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 68F9D97A
-P 7715 1890
-AR Path="/68821B60/68F9D97A" Ref="#PWR?"  Part="1" 
-AR Path="/68F956C0/68F9D97A" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 7715 1640 50  0001 C CNN
-F 1 "GND" H 7720 1717 50  0000 C CNN
-F 2 "" H 7715 1890 50  0001 C CNN
-F 3 "" H 7715 1890 50  0001 C CNN
-	1    7715 1890
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7625 1890 7715 1890
-Wire Wire Line
-	7315 1890 7425 1890
-Wire Wire Line
-	7735 3700 7615 3700
-Wire Wire Line
-	7315 3490 7315 3700
-Wire Wire Line
-	7315 3700 7415 3700
 Wire Notes Line
 	1850 815  1850 4470
 Wire Notes Line
@@ -653,22 +538,6 @@ Wire Wire Line
 	4950 5915 4890 5915
 Text GLabel 4890 5915 0    50   BiDi ~ 0
 5V
-Text GLabel 7015 2840 0    50   BiDi ~ 0
-5V
-$Comp
-L RetroBitLab:DS1038-15FBNSiA74-0CC J?
-U 1 1 68F9D99D
-P 7315 2690
-AR Path="/68821B60/68F9D99D" Ref="J?"  Part="1" 
-AR Path="/68F956C0/68F9D99D" Ref="J2"  Part="1" 
-F 0 "J2" H 7105 3415 50  0000 C CNN
-F 1 "DS1038-15FBNSiA74-0CC" H 8255 2220 50  0000 C CNN
-F 2 "RetroBitLab:CONNFLY_DS1038-15FBNSIA74-0CC" H 7315 2690 50  0001 L BNN
-F 3 "https://www.lcsc.com/datasheet/C7498158.pdf" H 7315 2690 50  0001 L BNN
-F 4 "C75754" H 7315 2690 50  0001 C CNN "LCSC"
-	1    7315 2690
-	1    0    0    -1  
-$EndComp
 Text GLabel 5700 5215 2    39   Input ~ 0
 VGAGREEN
 Text GLabel 4625 5215 0    39   Input ~ 0
@@ -687,18 +556,8 @@ Text GLabel 5390 3285 0    39   Input ~ 0
 VGA_HSYNC
 Text GLabel 5790 3285 2    39   Input ~ 0
 VGAHSYNC
-Text GLabel 7715 2940 2    39   Input ~ 0
-VGAVSYNC
-Text GLabel 7715 2740 2    39   Input ~ 0
-VGAHSYNC
 Text GLabel 5915 2240 2    39   Input ~ 0
 VGARED
-Text GLabel 6540 2340 0    39   Input ~ 0
-VGARED
-Text GLabel 6540 2540 0    39   Input ~ 0
-VGAGREEN
-Text GLabel 6540 2740 0    39   Input ~ 0
-VGABLUE
 Text GLabel 5140 1890 0    39   Input ~ 0
 VGA_R0
 Text GLabel 5140 2115 0    39   Input ~ 0
@@ -754,5 +613,96 @@ F 3 "https://www.lcsc.com/datasheet/C41376031.pdf" H 5150 5515 50  0001 C CNN
 F 4 "C41376031" H 5150 5515 50  0001 C CNN "LCSC"
 	1    5150 5515
 	1    0    0    -1  
+$EndComp
+$Comp
+L RetroBitLab:CONN_SMD_HEADER_BOX_02x08_HX-JN2.54 J2
+U 1 1 6AF680F8
+P 7600 2525
+F 0 "J2" H 7650 2950 50  0000 C CNN
+F 1 "CONN_SMD_HEADER_BOX_02x08_HX-JN2.54" H 7650 2025 50  0001 C CNN
+F 2 "RetroBitLab:IDC-Header_2x08_P2.54mm_Vertical_SMD" H 7600 2525 50  0001 C CNN
+F 3 "https://www.lcsc.com/datasheet/C41376031.pdf" H 7600 2525 50  0001 C CNN
+F 4 "C41376031" H 7600 2525 50  0001 C CNN "LCSC"
+	1    7600 2525
+	1    0    0    -1  
+$EndComp
+Text GLabel 7125 2825 0    39   Input ~ 0
+VGAHSYNC
+Wire Wire Line
+	7400 2825 7125 2825
+Text GLabel 8100 2825 2    39   Input ~ 0
+VGAVSYNC
+Wire Wire Line
+	7900 2825 8100 2825
+Text GLabel 7125 2625 0    50   BiDi ~ 0
+5V
+Wire Wire Line
+	7125 2625 7400 2625
+Text GLabel 7100 2325 0    39   Input ~ 0
+VGABLUE
+Wire Wire Line
+	7100 2325 7400 2325
+Text GLabel 7100 2225 0    39   Input ~ 0
+VGARED
+Wire Wire Line
+	7400 2225 7100 2225
+Text GLabel 8100 2225 2    39   Input ~ 0
+VGAGREEN
+Wire Wire Line
+	8100 2225 7900 2225
+NoConn ~ 7900 2325
+NoConn ~ 7400 2925
+NoConn ~ 7900 2925
+NoConn ~ 7400 2725
+NoConn ~ 7900 2725
+Wire Wire Line
+	7900 2625 8150 2625
+Wire Wire Line
+	8150 2625 8150 2525
+Wire Wire Line
+	8150 2425 7900 2425
+Wire Wire Line
+	7900 2525 8150 2525
+Connection ~ 8150 2525
+Wire Wire Line
+	8150 2525 8150 2425
+Wire Wire Line
+	8150 2525 8350 2525
+Wire Wire Line
+	7400 2425 7250 2425
+Wire Wire Line
+	7250 2425 7250 2475
+Wire Wire Line
+	7250 2525 7400 2525
+Wire Wire Line
+	7250 2475 7125 2475
+Connection ~ 7250 2475
+Wire Wire Line
+	7250 2475 7250 2525
+$Comp
+L power:GND #PWR?
+U 1 1 6AFB7F41
+P 8350 2525
+AR Path="/68821B60/6AFB7F41" Ref="#PWR?"  Part="1" 
+AR Path="/68F956C0/6AFB7F41" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 8350 2275 50  0001 C CNN
+F 1 "GND" V 8355 2397 50  0000 R CNN
+F 2 "" H 8350 2525 50  0001 C CNN
+F 3 "" H 8350 2525 50  0001 C CNN
+	1    8350 2525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6AFB90B0
+P 7125 2475
+AR Path="/68821B60/6AFB90B0" Ref="#PWR?"  Part="1" 
+AR Path="/68F956C0/6AFB90B0" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 7125 2225 50  0001 C CNN
+F 1 "GND" V 7130 2347 50  0000 R CNN
+F 2 "" H 7125 2475 50  0001 C CNN
+F 3 "" H 7125 2475 50  0001 C CNN
+	1    7125 2475
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

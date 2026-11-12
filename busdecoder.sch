@@ -1188,8 +1188,6 @@ F 4 "C139271" H 6105 3350 39  0001 C CNN "LCSC"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6105 3375 6105 2925
-Wire Wire Line
 	6105 2310 6105 2375
 $Comp
 L power:GND #PWR0105
@@ -1223,12 +1221,7 @@ Connection ~ 6365 2525
 Wire Wire Line
 	6365 2525 6365 2640
 Wire Wire Line
-	6105 2925 6365 2925
-Wire Wire Line
 	6365 2925 6365 2840
-Connection ~ 6105 2925
-Wire Wire Line
-	6105 2925 6105 2675
 Wire Wire Line
 	5865 2525 5805 2525
 Connection ~ 5865 2525
@@ -1732,4 +1725,11 @@ Wire Wire Line
 	7085 5420 6935 5420
 Text GLabel 6935 5420 0    33   BiDi ~ 0
 ~mIOSEL
+Wire Wire Line
+	6105 2925 6105 2675
+Wire Wire Line
+	6105 3375 6105 2925
+Connection ~ 6105 2925
+Wire Wire Line
+	6105 2925 6365 2925
 $EndSCHEMATC
