@@ -35,8 +35,8 @@ U 68821C2E
 F0 "A2SlotInterface" 79
 F1 "a2slotInterface.sch" 79
 $EndSheet
-Text Notes 980  4255 0    177  ~ 35
-APPLE II SLOT\nINTERFACE
+Text Notes 980  4355 0    177  ~ 35
+APPLE II\nSLOT\nINTERFACE
 $Sheet
 S 8005 830  2900 1600
 U 68CF41D8
