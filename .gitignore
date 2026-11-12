@@ -39,3 +39,7 @@ _autosave-*
 /VERA-MODULE-RBL.ses
 /report.drc.rpt
 /bom/
+/firmware/MCU/6502/slinky_rom.bin
+/firmware/MCU/6502/slinky_rom.h
+/firmware/MCU/6502/slinky_rom.l
+/firmware/MCU/6502/slinky_rom.o
