@@ -174,7 +174,7 @@ memoria, senza modificare il file: è un ripiego, non sostituisce il punto 8.)
    e `images/VERA-MODULE-RBL.wrl`;
 9. zip del contenuto di `production/` → `<NOME>-v<versione>.zip`.
 
-Si ferma al primo errore. `<NOME>` è `VERA-MODULE-RBL-XE` per questo progetto.
+Si ferma al primo errore. `<NOME>` è `VERA-MODULE-RBL-A2` per questo progetto.
 
 ## 11. Consegna
 

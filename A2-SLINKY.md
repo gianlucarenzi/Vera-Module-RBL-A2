@@ -1,7 +1,7 @@
 # Memoria espansa Slinky — VERA Module RBL-A2
 
 La scheda Apple II ha 256 KB di memoria espansa compatibile con la **Apple II Memory Expansion
-Card ("Slinky")**. La serve l'ESP32 dalla sua DRAM, come il RAMbo della versione Atari. Una ROM di
+Card ("Slinky")**. La serve l'ESP32 dalla sua DRAM, senza componenti aggiuntivi. Una ROM di
 slot la rende un **dispositivo a blocchi ProDOS che funziona senza driver**: al boot ProDOS la trova
 in `Sn,D1` come volume `/SLINKY`, già formattato.
 
@@ -90,28 +90,28 @@ Il dato in lettura serve entro circa 100 ns prima della discesa di PHI0, cioè c
 salita. Il firmware lo mette sul bus poco dopo `BUS_SEL_SAMPLE_NS`. **Questi tempi non sono stati
 verificati su hardware.**
 
-## Modifiche hardware richieste (schema non ancora modificato)
+## Requisiti hardware (schema ancora da disegnare)
 
-Lo schema è ancora quello Atari (PBI/ECI). Per la versione Apple servono:
+Il firmware si aspetta questi collegamenti tra lo slot Apple (connettore a 50 pin) e l'ESP32-S3.
+Tutti passano da traslatori di livello 5 V ↔ 3,3 V (pinout completo in `PIN-MAPPING.md`):
 
 | Segnale Apple (slot) | Verso | ESP32 | Note |
 |---|---|---|---|
-| PHI0 (pin 40) | → | GPIO 1 | era PHI2, via `U6` |
-| R/W (pin 18) | → | GPIO 2 | via `U6` |
-| A0-A15, D0-D7 | ↔ | come ora | `U3`/`U4`/`U19` invariati |
-| /DEVSEL (pin 41) | → | **GPIO 42** | canale libero di `U6`; GPIO 42 era MPD su `U16` |
-| /IOSEL (pin 1) | → | **GPIO 48** | canale libero di `U6`; GPIO 48 era libero |
-| /RESET (pin 31) | ← | GPIO 37 | **open drain** (come `U26` per l'IRQ): il tasto RESET dell'Apple porta la linea a massa e un'uscita push-pull di `U16` lotterebbe contro |
-| — | — | GPIO 41 | era EXTSEL_N, ora `CARD_RD_N`: la scheda pilota il bus (gating di `U19`) |
-| — | — | GPIO 40 | `DEV_SEL_N` = chip select della VERA, come prima |
+| PHI0 (pin 40) | → | GPIO 1 | |
+| R/W (pin 18) | → | GPIO 2 | |
+| A0-A15 | → | GPIO 12-21, 33-36, 45, 46 | traslatori con `~OE` su GPIO 47 (strapping, vedi `PIN-MAPPING.md`) |
+| D0-D7 | ↔ | GPIO 4-11 | transceiver bidirezionale, DIR da R/W |
+| /DEVSEL (pin 41) | → | GPIO 42 | |
+| /IOSEL (pin 1) | → | GPIO 48 | |
+| /RESET (pin 31) | ← | GPIO 37 | **open drain**: il tasto RESET dell'Apple porta la linea a massa e un'uscita push-pull lotterebbe contro |
+| — | — | GPIO 41 | `CARD_RD_N`: la scheda pilota il bus dati |
+| — | — | GPIO 40 | `DEV_SEL_N` = chip select della VERA |
 
-- **`~OE` di `U19`** = `NAND(PHI0, NAND4(R/W, DEV_SEL_N, CARD_RD_N, MPD))`. Con MPD non più usato,
-  il suo ingresso della NAND va tenuto alto. Si ottiene così: `U19` acceso nelle scritture e nelle
-  letture a cui la scheda risponde, spento in PHI1.
+- **`~OE` del transceiver dati** = `NAND(PHI0, NAND3(R/W, DEV_SEL_N, CARD_RD_N))`: acceso nelle
+  scritture e nelle letture a cui la scheda risponde (VERA o ESP32), spento in PHI1. Lato 3,3 V il
+  bus dati è condiviso da ESP32 e VERA.
 - **IRQ della VERA** → slot pin 30 (open drain).
-- Alimentazione dallo slot (+5 V, pin 25), connettore a 50 pin.
-- L'FPGA d'interfaccia `firmware/FPGA/C6502_Interface.vhd` (RAMbo su SRAM esterna) **non serve** in
-  questa architettura, ed è rimasta quella Atari.
+- Alimentazione dallo slot (+5 V, pin 25).
 
 ## Software VERA (aggiornato il 2026-11-12: VERA_COMMON 549539f, a2emu-vera a749511, branch `rbl-a2`)
 
@@ -154,8 +154,5 @@ mai scritte.
 
 ## Punti aperti
 
-- Aggiornare lo schema (tabella sopra) e `PIN-MAPPING.md`.
+- Disegnare schema e PCB della scheda Apple (requisiti sopra).
 - Misurare sul bus reale i ritardi di /DEVSEL e /IOSEL rispetto a PHI0, poi regolare i tempi.
-- Nel repository restano i file Atari non più compilati: `include/bus_decode.h`,
-  `include/vera_pbi_handler.h`, `include/pbi-driver.h`, `6502/src/vera_pbi_handler.s`,
-  `test/host/test_bus_decode.c`, `firmware/FPGA`.

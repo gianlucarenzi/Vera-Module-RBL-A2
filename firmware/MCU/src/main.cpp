@@ -19,13 +19,12 @@
  * an Apple reset clears the Slinky registers (and unmaps the VERA), never the
  * memory.
  *
- * Hardware differences from the Atari board (VERA-MODULE-RBL-XE), see
- * A2-SLINKY.md:
- *   GPIO 1   PHI2       -> PHI0 (slot pin 40)
- *   GPIO 41  EXTSEL_N   -> CARD_RD_N: the card drives the data bus (U19 ~OE)
- *   GPIO 42  MPD        -> /DEVSEL input (slot pin 41), via a U6 channel
- *   GPIO 48  (free)     -> /IOSEL  input (slot pin 1),  via a U6 channel
- *   GPIO 37  ARESET     -> Apple /RESET (slot pin 31): must be open drain
+ * Slot signals (PIN-MAPPING.md, A2-SLINKY.md):
+ *   GPIO 1   PHI0       (slot pin 40)
+ *   GPIO 41  CARD_RD_N: the card drives the data bus (data transceiver ~OE)
+ *   GPIO 42  /DEVSEL input (slot pin 41)
+ *   GPIO 48  /IOSEL  input (slot pin 1)
+ *   GPIO 37  Apple /RESET (slot pin 31): must be open drain
  *
  * Style: Allman
  * Language: English
@@ -70,11 +69,11 @@
 #define PIN_CRESET      38   /* Vera Chip Reset Output (Pin 43) */
 #define PIN_CDONE       39   /* Vera Programmed Status Input (Pin 44) */
 #define PIN_DEV_SEL_N   40   /* VERA chip select output (Pin 45, active LOW) */
-#define PIN_CARD_RD_N   41   /* Card drives the data bus, U19 ~OE gating (Pin 47, active LOW) */
+#define PIN_CARD_RD_N   41   /* Card drives the data bus: data transceiver ~OE gating (Pin 47, active LOW) */
 #define PIN_DEVSEL_N    42   /* Apple /DEVSEL input (Pin 48, active LOW) */
 #define PIN_A14         45   /* Address Bit 14 (Pin 51) */
 #define PIN_A15         46   /* Address Bit 15 (Pin 52) */
-#define PIN_ABUS_OE_N   47   /* ~OE of U3 (A8-A15) and U4 (A0-A7), 10 kΩ pull-ups R7/R34 (Pin 37, active LOW) */
+#define PIN_ABUS_OE_N   47   /* ~OE of the address translators (A0-A15), 10 kΩ pull-up (Pin 37, active LOW) */
 #define PIN_IOSEL_N     48   /* Apple /IOSEL input (Pin 36, active LOW) */
 
 /* Serial Debug (UART0 default pins on ESP32-S3 QFN56) */
@@ -82,7 +81,7 @@
 #define PIN_UART_RX     44   /* UART0 RX (Pin 50) */
 
 /*
- * Strapping pins: unchanged from the Atari board (see PIN-MAPPING.md).
+ * Strapping pins: see PIN-MAPPING.md.
  * GPIO45/46 (A14/A15) are LOW at chip reset because PIN_ABUS_OE_N keeps the
  * address translators off until setup() enables them.
  */
@@ -110,7 +109,7 @@
  * cycle every 65 adds 140 ns)
  *
  * BUS_ADDR_SETTLE_NS  after PHI0 falls: address and R/W valid (6502 1 MHz
- *                     t_ADS = 300 ns, plus the motherboard and U3/U4 buffers)
+ *                     t_ADS = 300 ns, plus the motherboard and address buffers)
  * BUS_SEL_SAMPLE_NS   after PHI0 rises: /DEVSEL and /IOSEL valid (decoded on
  *                     the motherboard from the address and PHI0)
  * BUS_WR_SAMPLE_NS    after PHI0 rises: 6502 write data valid (t_MDS 200 ns),
@@ -232,8 +231,9 @@ static inline __attribute__((always_inline)) void bus_release(void)
 
 /*
  * Drive a byte: GPIO.out covers Bank 0, whose other pins are all inputs, so
- * writing the shifted byte is enough; then enable the outputs, then open U19
- * towards the Apple (CARD_RD_N).  Xtensa keeps stores in program order.
+ * writing the shifted byte is enough; then enable the outputs, then open the
+ * data transceiver towards the Apple (CARD_RD_N).  Xtensa keeps stores in
+ * program order.
  */
 static inline __attribute__((always_inline)) void bus_drive(uint8_t v)
 {
@@ -483,7 +483,7 @@ void setup(void)
                        (1ULL << PIN_IOSEL_N);
     gpio_config(&cfg);
 
-    /* Strapping pins latched: enable the address translators U3/U4. */
+    /* Strapping pins latched: enable the address translators. */
     pinMode(PIN_ABUS_OE_N, OUTPUT);
     digitalWrite(PIN_ABUS_OE_N, LOW);
 

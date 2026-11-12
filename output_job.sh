@@ -158,7 +158,9 @@ export PATH="${LOCAL_UTILS_DIR}/bin:${PATH}"
 
 
 PCBNAME=VERA-MODULE-RBL
-PCBNAMEOUT=${PCBNAME}-XE
+PCBNAMEOUT=${PCBNAME}-A2
+# output folders (not in a fresh checkout)
+mkdir -p production images ibom
 PDFOUTPUT=${PCBNAME}.pdf
 PYTHON3=$(which python3)
 
