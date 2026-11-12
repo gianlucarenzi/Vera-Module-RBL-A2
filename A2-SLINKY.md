@@ -113,7 +113,7 @@ Tutti passano da traslatori di livello 5 V ↔ 3,3 V (pinout completo in `PIN-MA
 - **IRQ della VERA** → slot pin 30 (open drain).
 - Alimentazione dallo slot (+5 V, pin 25).
 
-## Software VERA (aggiornato il 2026-11-12: VERA_COMMON 549539f, a2emu-vera a749511, branch `rbl-a2`)
+## Software VERA (aggiornato il 2026-11-12: VERA_COMMON 549539f, a2emu-vera a749511)
 
 Con la VERA nascosta dopo il reset, il software la attiva quando trova la firma `"VERAS"` in
 `$CnF0-$CnF4`. Prima legge soltanto, quindi le altre schede (per esempio il Disk II) non vengono
