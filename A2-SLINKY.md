@@ -90,28 +90,39 @@ Il dato in lettura serve entro circa 100 ns prima della discesa di PHI0, cioè c
 salita. Il firmware lo mette sul bus poco dopo `BUS_SEL_SAMPLE_NS`. **Questi tempi non sono stati
 verificati su hardware.**
 
-## Requisiti hardware (schema ancora da disegnare)
+## Hardware (schema: foglio `a2slotInterface.sch`)
 
-Il firmware si aspetta questi collegamenti tra lo slot Apple (connettore a 50 pin) e l'ESP32-S3.
-Tutti passano da traslatori di livello 5 V ↔ 3,3 V (pinout completo in `PIN-MAPPING.md`):
+Lo schema è quello della scheda VERA Module RBL-XE con l'interfaccia Atari sostituita dallo slot
+Apple (connettore a pettine 2×25, **J8**, `RetroBitLab:Bus_Apple_II_Card_Side`, footprint
+`RetroBitLab:APPLE2-PERIPHERAL-BUS-EDGE`). Pinout ESP32 completo in `PIN-MAPPING.md`.
 
-| Segnale Apple (slot) | Verso | ESP32 | Note |
+| Segnale Apple (J8) | Verso | Percorso | ESP32 |
 |---|---|---|---|
-| PHI0 (pin 40) | → | GPIO 1 | |
-| R/W (pin 18) | → | GPIO 2 | |
-| A0-A15 | → | GPIO 12-21, 33-36, 45, 46 | traslatori con `~OE` su GPIO 47 (strapping, vedi `PIN-MAPPING.md`) |
-| D0-D7 | ↔ | GPIO 4-11 | transceiver bidirezionale, DIR da R/W |
-| /DEVSEL (pin 41) | → | GPIO 42 | |
-| /IOSEL (pin 1) | → | GPIO 48 | |
-| /RESET (pin 31) | ← | GPIO 37 | **open drain**: il tasto RESET dell'Apple porta la linea a massa e un'uscita push-pull lotterebbe contro |
-| — | — | GPIO 41 | `CARD_RD_N`: la scheda pilota il bus dati |
-| — | — | GPIO 40 | `DEV_SEL_N` = chip select della VERA |
+| A0-A15 (pin 2-17) | → | `U4` (A0-A7), `U3` (A8-A15), `~OE` = GPIO 47 | GPIO 12-21, 33-36, 45, 46 |
+| D0-D7 (pin 49-42) | ↔ | `U19`, DIR da R/W (`U23`) | GPIO 4-11 |
+| R/W (pin 18) | → | `U6` A3→B3 | GPIO 2 |
+| PHI0 (pin 40) | → | `U6` A4→B4 | GPIO 1 |
+| /DEVSEL (pin 41) | → | `U6` A5→B5, LED `LD1` | GPIO 42 |
+| /IOSEL (pin 1) | → | `U6` A0→B0, LED `LD5`, test point `mIOSEL1` | GPIO 48 |
+| /RES (pin 31) | ← | `U27` SN74LVC1G07, **open drain**; `R70` 10 kΩ verso GND sull'ingresso | GPIO 37 |
+| /IRQ (pin 30) | ← | `U26` SN74LVC1G07, open drain | (VERA `~mVIRQ`) |
+| +5V (pin 25), GND (pin 26) | | rete `5V`, `GND` | |
+| INT IN→OUT (28→23), DMA IN→OUT (27→24) | | collegati in passante sulla scheda | |
 
-- **`~OE` del transceiver dati** = `NAND(PHI0, NAND3(R/W, DEV_SEL_N, CARD_RD_N))`: acceso nelle
-  scritture e nelle letture a cui la scheda risponde (VERA o ESP32), spento in PHI1. Lato 3,3 V il
-  bus dati è condiviso da ESP32 e VERA.
-- **IRQ della VERA** → slot pin 30 (open drain).
+- **Reset:** con l'ESP32 in reset o nel bootloader GPIO37 è flottante, `R70` tiene basso l'ingresso
+  di `U27`, quindi l'Apple resta in reset. Il firmware lo tiene basso in `setup()` e lo rilascia
+  quando il loop di bus parte; l'alto lo dà il pull-up dell'Apple. `U27` è open drain perché il tasto
+  RESET dell'Apple porta la linea a massa.
+- **`~OE` di `U19`** = `NAND(PHI0, NAND4(R/W, DEV_SEL_N, CARD_RD_N, 3V3))` (`U24`, `U25`): acceso nelle
+  scritture e nelle letture a cui la scheda risponde (VERA o ESP32), spento in PHI1. Il quarto
+  ingresso (prima MPD) è a 3V3.
+- `U6`: gli ingressi non usati (A1, A2, A6) sono a GND, le uscite B1, B2, B6 non connesse.
+- Tolti rispetto alla scheda Atari: CART1, ECI1, `U16` (traslatore MCU → 6502 per EXTSEL, MPD,
+  RESET, non più necessario), il mixer audio verso il connettore (R2, R6, C66: l'Apple non ha
+  audio sullo slot, si usa il jack 3,5 mm `J7`), i test point dei segnali Atari.
 - Alimentazione dallo slot (+5 V, pin 25).
+- **PCB:** `VERA-MODULE-RBL.kicad_pcb` è ancora quello Atari: va aggiornato dallo schema (J8, U27, C70
+  da aggiungere; CART1, ECI1, U16 e le parti tolte da eliminare) e va ridisegnato il bordo (Edge.Cuts).
 
 ## Software VERA (aggiornato il 2026-11-12: VERA_COMMON 549539f, a2emu-vera a749511)
 
@@ -154,5 +165,5 @@ mai scritte.
 
 ## Punti aperti
 
-- Disegnare schema e PCB della scheda Apple (requisiti sopra).
+- Aggiornare il PCB dallo schema e ridisegnare il bordo per lo slot Apple.
 - Misurare sul bus reale i ritardi di /DEVSEL e /IOSEL rispetto a PHI0, poi regolare i tempi.

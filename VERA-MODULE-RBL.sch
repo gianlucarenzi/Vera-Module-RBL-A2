@@ -32,11 +32,11 @@ BUS DECODER
 $Sheet
 S 790  3185 1960 1740
 U 68821C2E
-F0 "CartridgeInterface" 79
-F1 "cartridgeInterface.sch" 79
+F0 "A2SlotInterface" 79
+F1 "a2slotInterface.sch" 79
 $EndSheet
 Text Notes 980  4255 0    177  ~ 35
-CARTRIDGE\nINTERFACE
+APPLE II SLOT\nINTERFACE
 $Sheet
 S 8005 830  2900 1600
 U 68CF41D8
@@ -131,17 +131,6 @@ F 3 "" H 3930 6030 59  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RetroBitLab:LOGO LOGO2
-U 1 1 68C444DF
-P 3930 6300
-F 0 "LOGO2" H 3955 6353 59  0000 L CNN
-F 1 "ATARI READY" H 3955 6248 59  0000 L CNN
-F 2 "RetroBitLab:atari_ready_8mm_rev" H 3930 6300 59  0001 C CNN
-F 3 "" H 3930 6300 59  0001 C CNN
-	1    3930 6300
-	1    0    0    -1  
-$EndComp
-$Comp
 L RetroBitLab:LOGO LOGO3
 U 1 1 68C44B75
 P 4790 6025
@@ -150,17 +139,6 @@ F 1 "KiCAD DESIGN" H 4815 5973 59  0000 L CNN
 F 2 "Symbol:KiCad-Logo2_6mm_SilkScreen" H 4790 6025 59  0001 C CNN
 F 3 "" H 4790 6025 59  0001 C CNN
 	1    4790 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L RetroBitLab:LOGO LOGO4
-U 1 1 68C454BC
-P 4795 6300
-F 0 "LOGO4" H 4820 6353 59  0000 L CNN
-F 1 "ATARI DUO BUS" H 4820 6248 59  0000 L CNN
-F 2 "RetroBitLab:DUOCart_20x11_Rev" H 4795 6300 59  0001 C CNN
-F 3 "" H 4795 6300 59  0001 C CNN
-	1    4795 6300
 	1    0    0    -1  
 $EndComp
 $Comp

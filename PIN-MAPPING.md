@@ -4,8 +4,9 @@ Target MCU: **ESP32-S3FN8** — QFN56, 45 GPIO, 8 MB di flash Quad SPI in-packag
 dual-core Xtensa LX7 a 240 MHz.
 
 La scheda va in uno slot di espansione dell'Apple II (connettore a 50 pin). Il firmware
-(`firmware/MCU/src/main.cpp`) usa i GPIO elencati qui; lo schema della scheda Apple è ancora da
-disegnare, quindi i collegamenti sono **requisiti**, non la descrizione di un circuito esistente.
+(`firmware/MCU/src/main.cpp`) usa i GPIO elencati qui. Lo schema (foglio `a2slotInterface.sch`)
+li realizza con i traslatori `U3`, `U4` (indirizzi), `U6` (controlli), `U19` (dati) e i buffer open
+drain `U26` (IRQ) e `U27` (/RES): tabella in `A2-SLINKY.md`.
 Interfaccia di bus e memoria Slinky: [`A2-SLINKY.md`](A2-SLINKY.md).
 
 ---

@@ -16,7 +16,7 @@ $EndDescr
 Wire Wire Line
 	11580 7025 10630 7025
 Text GLabel 10630 7025 0    39   Input ~ 0
-mPHI2
+mPHI0
 Wire Wire Line
 	10580 7225 10805 7225
 Wire Wire Line
@@ -130,7 +130,7 @@ mD6
 Text GLabel 9615 4620 2    39   BiDi ~ 0
 mD7
 Text GLabel 9610 3620 2    39   BiDi ~ 0
-mPHI2
+mPHI0
 Text GLabel 9615 3720 2    33   BiDi ~ 0
 mR~W
 Text GLabel 7015 5020 0    39   Input ~ 0
@@ -272,15 +272,15 @@ Wire Wire Line
 	11340 3020 11715 3020
 Connection ~ 11715 3020
 Text Notes 9555 9685 0    69   ~ 0
-When VERA Chip Select (mVCS0) latch is active & A15..A0 $D800-$DFFF -> MPD active (External 2K ROM)\n\nWhen VERA Chip Select (mVCS0) latch is active & A15..A0 $D600-$D7FF -> EXSEL active (External 512 bytes RAM)\n\nWhen access @ $D1xx and VERA Chip Select (mVCS0) latch is active -> EXSEL active 
+/DEVSEL ($C0n0-$C0nF) -> Slinky registers in the ESP32; $C0nF bit 0 = 1 maps the VERA\n\n/IOSEL ($Cn00-$CnFF) -> slot ROM from the ESP32, or VERA registers $Cn00-$Cn1F (mVCS0) when mapped\n\nCARD_RD (GPIO41) opens U19 towards the Apple for the bytes the ESP32 drives 
 Text Notes 6025 1800 0    157  Italic 31
-PBI DEVICE ID: software selectable only
+SLOT NUMBER: decoded by the Apple (/DEVSEL, /IOSEL)
 Wire Wire Line
 	2345 6840 2345 6915
 Text GLabel 1870 7365 0    39   BiDi ~ 0
-~mCCTL
+~mDEVSEL
 Text Notes 1670 6300 0    79   ~ 0
-Accessing $D5XX area space
+Accessing $C0n0-$C0nF (/DEVSEL)
 $Comp
 L power:GND #PWR067
 U 1 1 68D8DA53
@@ -326,7 +326,7 @@ Wire Notes Line
 Wire Wire Line
 	3025 4270 3025 4395
 Text Notes 6140 7480 0    79   ~ 16
-PBI Bus Interface Decoder:\n\nI/O Space, Math Pack Disable, ROM ADDRESS ($D800-$DFFF),\n\nRAM PBI SPACE ($D600-$D7FF)
+Apple II Slot Decoder:\n\nSlinky registers ($C0n0-$C0nF), slot ROM ($Cn00-$CnFF),\n\nVERA registers ($Cn00-$Cn1F when $C0nF bit 0 = 1)
 $Comp
 L CRES0805:4K7 R59
 U 1 1 688AA68E
@@ -619,9 +619,9 @@ $EndComp
 Wire Wire Line
 	3585 6850 3585 6925
 Text GLabel 3110 7375 0    39   BiDi ~ 0
-~mD1XX
+~mIOSEL
 Text Notes 2605 7625 0    79   ~ 0
-Accessing $D1XX area space
+Accessing $Cn00-$CnFF (/IOSEL)
 $Comp
 L CLED1206:RED LD5
 U 1 1 68BB4E99
@@ -731,11 +731,11 @@ Wire Notes Line
 Text GLabel 9765 6020 2    33   BiDi ~ 0
 ~FPGA_RESET
 Text GLabel 10610 5920 2    33   BiDi ~ 0
-~ATARI_RESET
+~mRESET
 Text GLabel 5875 4820 0    33   BiDi ~ 0
-~mMPD
+~mDEVSEL
 Text GLabel 5850 4720 0    33   BiDi ~ 0
-~mEXSEL
+~mCARD_RD
 Text GLabel 6280 4520 0    33   BiDi ~ 0
 VFPGA_DONE
 Text Notes 2245 6120 0    79   ~ 16
@@ -846,9 +846,9 @@ Wire Wire Line
 Text Label 7015 4520 2    39   ~ 0
 CDONE
 Text Label 7030 4720 2    39   ~ 0
-EXTSEL_N
+CARD_RD_N
 Text Label 7035 4820 2    39   ~ 0
-MPD
+DEVSEL
 Text Label 9195 5920 0    39   ~ 0
 ARESET
 Text Label 9190 6020 0    39   ~ 0
@@ -994,7 +994,6 @@ F 3 "" H 9415 6420 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9085 6420 9415 6420
-NoConn ~ 7085 5420
 NoConn ~ 7085 5620
 NoConn ~ 7085 5720
 NoConn ~ 7085 5820
@@ -1041,7 +1040,7 @@ F 4 "C5586" H 13650 7775 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Text GLabel 10655 7925 0    39   Input ~ 0
-mPHI2
+mPHI0
 Text GLabel 10580 7225 0    39   Input ~ 0
 mR~W
 Text GLabel 12555 7825 2    39   Output ~ 0
@@ -1372,9 +1371,9 @@ Connection ~ 6180 4820
 Wire Wire Line
 	6180 4820 7085 4820
 Text Notes 11075 6015 0    50   ~ 0
-ATARI RESET IS ALWAYS ASSERTED\nWHEN POWERING UP THE MEMORY\nCONTROLLER
+APPLE RESET IS ALWAYS ASSERTED\nWHEN POWERING UP THE MEMORY\nCONTROLLER
 Text Notes 5100 5875 0    50   ~ 0
-ATARI SIGNALS ARE ALWAYS NOT VALIDATED\nWHEN POWERING UP THE MEMORY \nCONTROLLER AND THE SYSTEM CORE
+APPLE SIGNALS ARE ALWAYS NOT VALIDATED\nWHEN POWERING UP THE MEMORY \nCONTROLLER AND THE SYSTEM CORE
 $Comp
 L RetroBitLab:SN74LVC00 U24
 U 2 1 6AE1C83E
@@ -1422,9 +1421,9 @@ Text GLabel 2395 8785 0    33   BiDi ~ 0
 Text GLabel 2400 8585 0    39   Input ~ 0
 mR~W
 Text GLabel 2420 9135 0    33   BiDi ~ 0
-~mEXSEL
+~mCARD_RD
 Text GLabel 2415 9335 0    33   BiDi ~ 0
-~mMPD
+3V3
 Wire Wire Line
 	2400 8585 2555 8585
 Wire Wire Line
@@ -1561,7 +1560,7 @@ Wire Wire Line
 Wire Wire Line
 	4215 8765 4130 8765
 Text GLabel 4105 9140 0    39   Input ~ 0
-mPHI2
+mPHI0
 Wire Wire Line
 	4105 9140 4205 9140
 Text Label 4875 8665 0    50   ~ 0
@@ -1729,4 +1728,8 @@ Wire Wire Line
 	7015 5320 7085 5320
 Text GLabel 7015 5320 0    39   Output ~ 0
 ~ABUS_OE
+Wire Wire Line
+	7085 5420 6935 5420
+Text GLabel 6935 5420 0    33   BiDi ~ 0
+~mIOSEL
 $EndSCHEMATC

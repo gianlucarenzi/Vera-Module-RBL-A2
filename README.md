@@ -13,8 +13,8 @@
 
 > [!WARNING]
 > **WORK IN PROGRESS — NOT WORKING.**
-> The firmware has been checked on the host and in an emulator only. The Apple II board
-> (schematic and PCB) has not been drawn yet. Do not build anything from this repository yet.
+> The firmware has been checked on the host and in an emulator only. The schematic has the Apple II
+> slot interface; the PCB has not been updated to it yet. Do not build anything from this repository yet.
 
 ## Overview
 
@@ -72,7 +72,8 @@ Vera-Module-RBL-A2/
 ├── PIN-MAPPING.md       # ESP32-S3 pins
 ├── WORKFLOW.md / .pdf   # KiCad design workflow, schematic to JLCPCB order (Italian)
 ├── firmware/MCU/        # ESP32-S3 firmware and 6502 slot ROM
-├── tools/, *.py, *.sh   # KiCad / JLCPCB production scripts (for the board to come)
+├── VERA-MODULE-RBL.*    # KiCad 5 project: schematic (Apple II slot: a2slotInterface.sch), PCB
+├── tools/, *.py, *.sh   # KiCad / JLCPCB production scripts
 ├── patches/, utilities/ # eeplot patches, STEP → WRL
 └── ESP32-S3_Datasheet.pdf, WeACT-Studio-ESP32_S3_*_Sch.pdf
 ```
@@ -87,8 +88,8 @@ GNU General Public License v3.0, see [LICENSE](LICENSE).
 
 > [!WARNING]
 > **LAVORO IN CORSO — NON FUNZIONANTE.**
-> Il firmware è stato verificato solo sull'host e in emulatore. La scheda Apple II (schema e PCB)
-> non è ancora stata disegnata. Non costruire nulla da questo repository.
+> Il firmware è stato verificato solo sull'host e in emulatore. Lo schema ha l'interfaccia dello slot
+> Apple II; il PCB non è ancora stato aggiornato. Non costruire nulla da questo repository.
 
 ## Panoramica
 
