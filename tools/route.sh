@@ -46,5 +46,7 @@ python3 "$TOOLS/strip_protect_ses.py" bus.ses bus_np.ses
     --max-time=7200 $COMMON > run.log 2>&1
 
 python3 "$TOOLS/dedupe_ses.py" board.ses final.ses
+# no 90 degree bends on the same layer (bends on vias and pads stay)
+python3 "$TOOLS/chamfer_ses.py" board_pv.dsn final.ses final.ses
 python3 "$TOOLS/ses_narrow.py" final.ses
 echo "unrouted connections: see $WORK/report.json"

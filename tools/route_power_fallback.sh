@@ -76,6 +76,8 @@ if [ "$LEFT2" -ge "$LEFT" ]; then
 	exit 0
 fi
 python3 "$TOOLS/dedupe_ses.py" power.ses final_power.ses
+# no 90 degree bends on the same layer (bends on vias and pads stay)
+python3 "$TOOLS/chamfer_ses.py" board_power.dsn final_power.ses final_power.ses
 python3 "$TOOLS/ses_narrow.py" final_power.ses
 python3 - final_power.ses <<'EOF'
 import re, sys
