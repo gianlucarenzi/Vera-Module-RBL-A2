@@ -9,8 +9,8 @@
 #   the live view (http://127.0.0.1:7878).
 #
 # Each round:
-#   1. load the session in fastroute without routing (every net class
-#      ignored) and write the report: unrouted connections and clearance
+#   1. load the session in fastroute without routing (autorouter off) and
+#      write the report: unrouted connections and clearance
 #      violations, measured by fastroute;
 #   2. tools/ses_violations.py sorts them: same net and rounding (within
 #      0.002 mm) are ignored, the real ones with a movable trace or via get
@@ -40,14 +40,15 @@ L=--live
 [ "${LIVE:-1}" = 0 ] && L=
 cd "$(dirname "$OUT")"
 P=repair
-# every net class of the design, to load a session without routing anything
-ALL=$(python3 -c 'import re, sys; print(",".join(sorted(set(re.findall(r"\(class (\S+)", open(sys.argv[1]).read())))))' "$DSN")
 COMMON="--router.min_trace_width_um=200 --router.plane_nets=GND,3V3 --no-neckdown-classes=90R --router.fanout.enabled=false"
 
 check() {   # check SES JSON: report of the session as it is
+	# autorouter, optimizer and fanout off: fastroute only loads the session
+	# and measures it (ignoring every net class is not enough: it still
+	# routed some connections, and ripped others up to make room)
 	python3 "$TOOLS/strip_protect_ses.py" "$1" "$1.np" > /dev/null
 	"$FR" -de "$DSN" -do "$1.chk" --initial-session="$1.np" --report="$2" --max-time=600 \
-		--router.autorouter.ignore_net_classes="$ALL" --router.optimizer.enabled=false \
+		--router.autorouter.enabled=false --router.optimizer.enabled=false \
 		--multi-start=1 $COMMON > "$2.log" 2>&1
 }
 unrouted() {
