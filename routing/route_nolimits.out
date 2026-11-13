@@ -1,0 +1,47 @@
+Using /home/debian/Progetti/APPLE/Vera-Module-RBL-A2/tools/fastroute_nolimits.sh (fastroute 0.1.14)
+wiring cleared
+GND, POWER -> power planes, 2 outer pours removed
+SMD pads of GND,3V3: 231 with vias, 5 without room
+  no room: U2.49 (GND), U7.29 (3V3), U7.55 (3V3), U7.46 (3V3), U7.20 (3V3)
+removed 462 protected wires/vias
+removed 0 duplicate vias, 7 duplicate wires
+64 bends of 90 degrees chamfered (up to 0.50 mm per leg)
+30 bends of 90 degrees left (no room): fix them by hand
+  /BusDecoder/B        F.Cu   (223.382, 102.080) mm
+  /PowerSupply/D+      F.Cu   (129.750, 54.352) mm
+  /PowerSupply/D-      F.Cu   (129.250, 52.848) mm
+  /PowerSupply/D-      F.Cu   (130.750, 52.848) mm
+  /Vera FPGA flash/FLASH_SSEL_N F.Cu   (228.204, 54.574) mm
+  5V                   B.Cu   (161.639, 78.910) mm
+  5V                   F.Cu   (117.010, 90.728) mm
+  5V                   F.Cu   (152.859, 89.138) mm
+  5V                   F.Cu   (190.845, 89.037) mm
+  A12                  F.Cu   (194.096, 91.064) mm
+  A14                  F.Cu   (195.392, 89.087) mm
+  A2                   F.Cu   (180.634, 89.075) mm
+  A7                   F.Cu   (183.885, 89.075) mm
+  A9                   F.Cu   (192.140, 89.087) mm
+  AUD1L                F.Cu   (254.700, 82.557) mm
+  D7                   B.Cu   (167.506, 80.938) mm
+  FPGA_CDONE           F.Cu   (233.717, 49.990) mm
+  Net-(C39-Pad2)       F.Cu   (140.417, 72.190) mm
+  Net-(C41-Pad2)       F.Cu   (140.683, 74.390) mm
+  Net-(C52-Pad1)       F.Cu   (249.922, 63.855) mm
+  Net-(R43-Pad2)       F.Cu   (234.175, 61.139) mm
+  Net-(R64-Pad1)       F.Cu   (153.494, 85.338) mm
+  R~W                  F.Cu   (159.712, 93.526) mm
+  VGA_VSYNC            F.Cu   (209.972, 81.935) mm
+  mA11                 F.Cu   (194.096, 85.222) mm
+  mA5                  F.Cu   (183.225, 85.210) mm
+  mD0                  B.Cu   (163.594, 84.802) mm
+  mD2                  B.Cu   (164.890, 84.802) mm
+  mD7                  B.Cu   (168.141, 86.779) mm
+  ~ABUS_OE             F.Cu   (179.313, 85.225) mm
+0 wires narrower than 0.200 mm
+unrouted connections: see /tmp/claude-1000/-home-debian-Progetti-APPLE-Vera-Module-RBL-A2/5616c063-6621-4f60-b210-f22c91f3852a/scratchpad/route_clean/report.json
+after tools/route.sh: 6 connections unrouted
+removed 462 protected wires/vias
+with POWER at cost 25: 6 connections unrouted (were 6)
+POWER did not help: keep final.ses
+result: /tmp/claude-1000/-home-debian-Progetti-APPLE-Vera-Module-RBL-A2/5616c063-6621-4f60-b210-f22c91f3852a/scratchpad/route_clean/final.ses
+exit 0

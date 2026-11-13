@@ -138,14 +138,17 @@ anche su un altro PC:
    ostacolo i piani dei layer di segnale, quindi le piste lo attraversano e
    il 3V3 resta collegato tramite i via. **GND non si tocca mai**, perché è il
    riferimento di B.Cu. `POWER_FALLBACK=0` salta questo stadio.
+3. **`tools/repair_violations.sh`.** Corregge le violazioni di clearance
+   della sessione finale (vedi sotto). `REPAIR=0` salta questo passo.
 
 Il wrapper `tools/fastroute_nolimits.sh` (usato con `FASTROUTE=...`) toglie i
 limiti di tempo. Porta ogni `--max-time` a 10 anni e aggiunge
 `--no-time-limits`, che disattiva il job timeout: altrimenti è di 12 ore e
 fastroute lo limita comunque a 24 ore. Ctrl+C o SIGTERM fermano comunque
 fastroute e scrivono il miglior risultato trovato. Il risultato è
-`WORKDIR/final_power.ses` se lo stadio 3 è servito, altrimenti
-`WORKDIR/final.ses`. Avanzamento dal vivo su http://127.0.0.1:7878: ogni
+`WORKDIR/final_repaired.ses`: la sessione dello stadio 3 se è servito,
+altrimenti quella di `tools/route.sh`, dopo la correzione delle violazioni.
+Con `REPAIR=0` resta `WORKDIR/final_power.ses` o `WORKDIR/final.ses`. Avanzamento dal vivo su http://127.0.0.1:7878: ogni
 stadio riavvia il viewer, quindi va ricaricata la pagina.
 
 **Niente curve a 90° sullo stesso layer.** fastroute traccia a 45°, ma una

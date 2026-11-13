@@ -1,0 +1,8 @@
+start: 8 unrouted connections, 0 real clearance violations
+result: /tmp/claude-1000/-home-debian-Progetti-APPLE-Vera-Module-RBL-A2/5616c063-6621-4f60-b210-f22c91f3852a/scratchpad/route_clean/final_repaired.ses (8 unrouted, 0 real violations)
+real, movable (ripped up)    0
+real, fixed (by hand)        0
+rounding (ignored)           0
+same net (ignored)           0
+0 wires narrower than 0.200 mm
+exit 0

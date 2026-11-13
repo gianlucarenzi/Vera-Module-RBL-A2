@@ -40,6 +40,8 @@ if [ -z "$FR" ] || [ ! -x "$FR" ]; then
 	echo "fastroute is not installed, see tools/route.sh" >&2
 	exit 1
 fi
+# absolute: the script changes directory below
+case $FR in /*) ;; *) FR=$(pwd)/$FR ;; esac
 cd "$WORK"
 for f in board_pv.dsn board.ses report.json; do
 	[ -f "$f" ] || { echo "$WORK/$f is missing: run tools/route.sh first" >&2; exit 1; }

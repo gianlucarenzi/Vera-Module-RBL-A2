@@ -34,6 +34,8 @@ if [ -z "$FR" ] || [ ! -x "$FR" ]; then
 	echo "fastroute is not installed, see tools/route.sh" >&2
 	exit 1
 fi
+# absolute: the script changes directory below
+case $FR in /*) ;; *) FR=$(pwd)/$FR ;; esac
 L=--live
 [ "${LIVE:-1}" = 0 ] && L=
 cd "$(dirname "$OUT")"

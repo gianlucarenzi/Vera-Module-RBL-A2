@@ -1,0 +1,1080 @@
+    0.000 INFO  fastroute 0.1.14
+    0.000 INFO  live viewer: http://127.0.0.1:7878
+    0.025 INFO  parsed '/home/debian/Progetti/APPLE/Vera-Module-RBL-A2/VERA-MODULE-RBL.dsn' in 20.1 ms: 4 layers, 201 components, 239 nets, 231 wires
+    0.414 INFO  net class '90R': no neck-down
+    0.572 INFO  initial session 'bus_np.ses': 845 wires and 268 vias imported (0 errors)
+    0.801 INFO  52 trace ends inside a pad but off its center joined to the center
+    0.802 INFO  built board in 775.4 ms: 5175 items (847 pins, 499 vias, 1128 traces)
+    0.818 INFO  threads: autorouting passes run on router.autorouter.max_threads threads (1 = sequential); the optimizer uses router.optimizer.max_threads
+    0.818 INFO  optimizer mode: JavaCompat, board time limits: Count { factor: 10 }, stage wall clock limits: disabled
+   31.582 INFO  diff pair /PowerSupply/D+//PowerSupply/D- (pre-routed): coupled 0.00 -> 0.00 mm of 10.99 mm, skew +1.75 mm (no improvement)
+   31.582 INFO  diff pairs pre-routed in 30.76 s (11 items fixed during routing)
+   31.589 INFO  Pipeline thread limits: autorouter.max_threads=1, optimizer.max_threads=1.
+   38.328 INFO  Fanout pass #1 completed in 6.53 seconds with 32 SMD pins fanouted, 49 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+   43.360 INFO  Fanout pass #2 completed in 5.02 seconds with 7 SMD pins fanouted, 64 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+   47.333 INFO  Fanout pass #3 completed in 3.97 seconds with 3 SMD pins fanouted, 64 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+   47.333 INFO  Fanout stopped after 3 passes: the last pass only re-fanned 3 pins of the previous pass.
+   47.333 INFO  Fanout stage completed: 3 passes, completed in 15.63 seconds.
+   47.678 INFO  checkpoint: best board so far (48 unrouted, 0 violations) written to 'board.ses'
+   47.738 INFO  Auto-routing stage started with baseline score 894.04 for 48 unrouted items.
+  103.175 INFO  Auto-routing pass #1: 26 of 73 items after 55 s (routed 25, failed 1, ripped 32).
+  108.315 INFO  Auto-routing pass #1: 32 of 73 items after 61 s (routed 30, failed 1, ripped 41).
+  153.439 INFO  Auto-routing pass #1: 56 of 73 items after 106 s (routed 44, failed 4, ripped 64).
+  185.958 INFO  Auto-routing pass #1: 62 of 73 items after 138 s (routed 47, failed 4, ripped 69).
+  198.327 INFO  Auto-routing pass #1 was completed in 150.59 seconds with score 845.47 (70 unrouted and 0 violations) (routed 57, failed 4, ripped 76).
+  230.255 INFO  Auto-routing pass #2: 9 of 126 items after 32 s (routed 6, failed 1, ripped 6).
+  265.979 INFO  Auto-routing pass #2: 20 of 126 items after 68 s (routed 11, failed 4, ripped 12).
+  292.273 INFO  Auto-routing pass #2: 22 of 126 items after 94 s (routed 13, failed 4, ripped 13).
+  318.734 INFO  Auto-routing pass #2: 27 of 126 items after 120 s (routed 16, failed 4, ripped 16).
+  349.224 INFO  Auto-routing pass #2: 50 of 126 items after 151 s (routed 31, failed 5, ripped 34).
+  380.497 INFO  Auto-routing pass #2: 83 of 126 items after 182 s (routed 49, failed 7, ripped 46).
+  411.515 INFO  Auto-routing pass #2: 93 of 126 items after 213 s (routed 56, failed 7, ripped 52).
+  439.432 INFO  Auto-routing pass #2: 106 of 126 items after 241 s (routed 63, failed 8, ripped 61).
+  459.158 INFO  Auto-routing pass #2 was completed in 260.75 seconds with score 845.47 (70 unrouted and 0 violations) (routed 76, failed 9, ripped 71).
+  492.413 INFO  Auto-routing pass #3: 11 of 119 items after 33 s (routed 9, failed 1, ripped 4).
+  520.266 INFO  Auto-routing pass #3: 36 of 119 items after 61 s (routed 24, failed 3, ripped 21).
+  554.778 INFO  Auto-routing pass #3: 58 of 119 items after 95 s (routed 39, failed 5, ripped 50).
+  602.449 INFO  Auto-routing pass #3: 76 of 119 items after 143 s (routed 47, failed 10, ripped 61).
+  609.283 INFO  Auto-routing pass #3: 86 of 119 items after 150 s (routed 54, failed 10, ripped 65).
+  657.163 INFO  Auto-routing pass #3: 110 of 119 items after 198 s (routed 66, failed 12, ripped 74).
+  669.590 INFO  Auto-routing pass #3 was completed in 210.36 seconds with score 874.17 (57 unrouted and 0 violations) (routed 72, failed 13, ripped 84).
+  710.772 INFO  Auto-routing pass #4: 16 of 101 items after 41 s (routed 9, failed 1, ripped 10).
+  741.315 INFO  Auto-routing pass #4: 19 of 101 items after 72 s (routed 11, failed 2, ripped 12).
+  773.612 INFO  Auto-routing pass #4: 26 of 101 items after 104 s (routed 15, failed 3, ripped 15).
+  812.683 INFO  Auto-routing pass #4: 35 of 101 items after 143 s (routed 20, failed 6, ripped 26).
+  846.193 INFO  Auto-routing pass #4: 44 of 101 items after 176 s (routed 25, failed 7, ripped 34).
+  850.353 INFO  Auto-routing pass #4: 48 of 101 items after 181 s (routed 28, failed 7, ripped 35).
+  884.045 INFO  Auto-routing pass #4: 54 of 101 items after 214 s (routed 29, failed 10, ripped 38).
+  922.268 INFO  Auto-routing pass #4: 60 of 101 items after 253 s (routed 31, failed 12, ripped 42).
+  960.993 INFO  Auto-routing pass #4: 80 of 101 items after 291 s (routed 41, failed 14, ripped 51).
+  976.385 INFO  Auto-routing pass #4: 85 of 101 items after 307 s (routed 44, failed 14, ripped 53).
+ 1003.806 INFO  Auto-routing pass #4: 89 of 101 items after 334 s (routed 48, failed 14, ripped 58).
+ 1032.239 INFO  Auto-routing pass #4: 94 of 101 items after 363 s (routed 50, failed 15, ripped 58).
+ 1055.481 INFO  Auto-routing pass #4 was completed in 385.81 seconds with score 887.42 (51 unrouted and 0 violations) (routed 53, failed 17, ripped 63).
+ 1089.203 INFO  Auto-routing pass #5: 15 of 91 items after 34 s (routed 8, failed 1, ripped 11).
+ 1120.910 INFO  Auto-routing pass #5: 19 of 91 items after 65 s (routed 9, failed 3, ripped 13).
+ 1147.136 INFO  Auto-routing pass #5: 31 of 91 items after 92 s (routed 17, failed 3, ripped 22).
+ 1182.497 INFO  Auto-routing pass #5: 40 of 91 items after 127 s (routed 23, failed 3, ripped 31).
+ 1206.054 INFO  Auto-routing pass #5: 49 of 91 items after 151 s (routed 27, failed 7, ripped 40).
+ 1236.157 INFO  Auto-routing pass #5: 55 of 91 items after 181 s (routed 29, failed 8, ripped 41).
+ 1275.057 INFO  Auto-routing pass #5: 66 of 91 items after 220 s (routed 34, failed 10, ripped 45).
+ 1307.172 INFO  Auto-routing pass #5: 74 of 91 items after 252 s (routed 38, failed 12, ripped 49).
+ 1334.020 INFO  Auto-routing pass #5: 81 of 91 items after 279 s (routed 43, failed 12, ripped 56).
+ 1366.052 INFO  Auto-routing pass #5: 89 of 91 items after 311 s (routed 47, failed 13, ripped 57).
+ 2976.300 INFO  Auto-routing pass #5: 90 of 91 items after 1921 s (routed 48, failed 13, ripped 58).
+ 2978.076 INFO  Auto-routing pass #5 was completed in 1922.59 seconds with score 891.83 (49 unrouted and 0 violations) (routed 49, failed 13, ripped 58).
+ 3008.825 INFO  Auto-routing pass #6: 5 of 89 items after 30 s (routed 3, failed 1, ripped 1).
+ 3039.082 INFO  Auto-routing pass #6: 18 of 89 items after 60 s (routed 10, failed 2, ripped 8).
+ 3079.694 INFO  Auto-routing pass #6: 28 of 89 items after 101 s (routed 14, failed 3, ripped 11).
+ 3100.127 INFO  Auto-routing pass #6: 35 of 89 items after 121 s (routed 19, failed 3, ripped 19).
+ 3130.039 INFO  Auto-routing pass #6: 42 of 89 items after 151 s (routed 24, failed 3, ripped 27).
+ 3160.181 INFO  Auto-routing pass #6: 54 of 89 items after 182 s (routed 31, failed 4, ripped 30).
+ 3190.845 INFO  Auto-routing pass #6: 66 of 89 items after 212 s (routed 36, failed 6, ripped 34).
+ 3223.207 INFO  Auto-routing pass #6: 71 of 89 items after 245 s (routed 37, failed 8, ripped 34).
+ 3255.986 INFO  Auto-routing pass #6: 82 of 89 items after 277 s (routed 42, failed 9, ripped 36).
+ 3292.094 INFO  Auto-routing pass #6: 88 of 89 items after 313 s (routed 46, failed 10, ripped 40).
+ 3293.087 INFO  Auto-routing pass #6 was completed in 315.01 seconds with score 922.74 (35 unrouted and 0 violations) (routed 46, failed 10, ripped 40).
+ 3293.175 INFO  checkpoint: best board so far (35 unrouted, 0 violations) written to 'board.ses'
+ 3332.788 INFO  Auto-routing pass #7: 22 of 63 items after 40 s (routed 12, failed 2, ripped 16).
+ 3357.495 INFO  Auto-routing pass #7: 33 of 63 items after 64 s (routed 18, failed 3, ripped 23).
+ 3383.589 INFO  Auto-routing pass #7: 39 of 63 items after 90 s (routed 22, failed 3, ripped 33).
+ 3426.937 INFO  Auto-routing pass #7: 50 of 63 items after 134 s (routed 25, failed 9, ripped 35).
+ 3455.974 INFO  Auto-routing pass #7: 53 of 63 items after 163 s (routed 26, failed 10, ripped 36).
+ 3479.639 INFO  Auto-routing pass #7: 59 of 63 items after 186 s (routed 30, failed 10, ripped 37).
+ 3486.730 INFO  Auto-routing pass #7 was completed in 193.55 seconds with score 933.77 (30 unrouted and 0 violations) (routed 32, failed 10, ripped 39).
+ 3486.806 INFO  checkpoint: best board so far (30 unrouted, 0 violations) written to 'board.ses'
+ 3517.334 INFO  Auto-routing pass #8: 12 of 55 items after 30 s (routed 5, failed 4, ripped 10).
+ 3553.605 INFO  Auto-routing pass #8: 20 of 55 items after 67 s (routed 8, failed 6, ripped 14).
+ 3578.375 INFO  Auto-routing pass #8: 26 of 55 items after 92 s (routed 11, failed 7, ripped 18).
+ 3621.731 INFO  Auto-routing pass #8: 29 of 55 items after 135 s (routed 12, failed 8, ripped 20).
+ 3640.423 INFO  Auto-routing pass #8: 32 of 55 items after 154 s (routed 14, failed 9, ripped 25).
+ 3686.746 INFO  Auto-routing pass #8: 51 of 55 items after 200 s (routed 23, failed 16, ripped 34).
+ 3693.536 INFO  Auto-routing pass #8 was completed in 206.73 seconds with score 942.60 (26 unrouted and 0 violations) (routed 25, failed 16, ripped 35).
+ 3693.626 INFO  checkpoint: best board so far (26 unrouted, 0 violations) written to 'board.ses'
+ 3734.353 INFO  Auto-routing pass #9: 9 of 45 items after 41 s (routed 6, failed 1, ripped 9).
+ 3756.661 INFO  Auto-routing pass #9: 18 of 45 items after 63 s (routed 12, failed 1, ripped 15).
+ 3794.984 INFO  Auto-routing pass #9: 23 of 45 items after 101 s (routed 14, failed 2, ripped 17).
+ 3829.427 INFO  Auto-routing pass #9: 25 of 45 items after 136 s (routed 15, failed 3, ripped 17).
+ 3847.114 INFO  Auto-routing pass #9: 29 of 45 items after 153 s (routed 17, failed 4, ripped 21).
+ 3881.778 INFO  Auto-routing pass #9: 39 of 45 items after 188 s (routed 22, failed 8, ripped 28).
+ 3898.852 INFO  Auto-routing pass #9 was completed in 205.23 seconds with score 931.57 (31 unrouted and 0 violations) (routed 25, failed 9, ripped 31).
+ 3935.207 INFO  Auto-routing pass #10: 3 of 52 items after 36 s (routed 1, failed 1, ripped 0).
+ 3980.434 INFO  Auto-routing pass #10: 14 of 52 items after 81 s (routed 6, failed 4, ripped 4).
+ 3990.279 INFO  Auto-routing pass #10: 16 of 52 items after 91 s (routed 7, failed 5, ripped 6).
+ 4038.480 INFO  Auto-routing pass #10: 29 of 52 items after 139 s (routed 15, failed 6, ripped 9).
+ 4059.916 INFO  Auto-routing pass #10: 31 of 52 items after 161 s (routed 17, failed 6, ripped 12).
+ 4083.190 INFO  Auto-routing pass #10: 38 of 52 items after 184 s (routed 20, failed 8, ripped 13).
+ 4135.925 INFO  Auto-routing pass #10: 49 of 52 items after 237 s (routed 25, failed 9, ripped 15).
+ 4139.670 INFO  Auto-routing pass #10 was completed in 240.74 seconds with score 964.68 (16 unrouted and 0 violations) (routed 28, failed 9, ripped 15).
+ 4139.707 INFO  checkpoint: best board so far (16 unrouted, 0 violations) written to 'board.ses'
+ 4182.222 INFO  Auto-routing pass #11: 3 of 28 items after 42 s (routed 1, failed 1, ripped 4).
+ 4228.100 INFO  Auto-routing pass #11: 8 of 28 items after 88 s (routed 3, failed 3, ripped 8).
+ 4260.778 INFO  Auto-routing pass #11: 10 of 28 items after 121 s (routed 3, failed 5, ripped 8).
+ 4260.954 INFO  Auto-routing pass #11: 11 of 28 items after 121 s (routed 4, failed 5, ripped 8).
+ 4319.295 INFO  Auto-routing pass #11: 17 of 28 items after 180 s (routed 7, failed 6, ripped 10).
+ 4323.324 INFO  Auto-routing pass #11: 18 of 28 items after 184 s (routed 8, failed 6, ripped 13).
+ 4367.742 INFO  Auto-routing pass #11: 21 of 28 items after 228 s (routed 9, failed 7, ripped 15).
+ 4383.347 INFO  Auto-routing pass #11: 27 of 28 items after 244 s (routed 12, failed 8, ripped 18).
+ 4384.271 INFO  Auto-routing pass #11 was completed in 244.56 seconds with score 960.26 (18 unrouted and 0 violations) (routed 12, failed 8, ripped 18).
+ 4423.403 INFO  Auto-routing pass #12: 1 of 33 items after 39 s (routed 0, failed 1, ripped 0).
+ 4461.372 INFO  Auto-routing pass #12: 5 of 33 items after 77 s (routed 1, failed 3, ripped 0).
+ 4498.321 INFO  Auto-routing pass #12: 8 of 33 items after 114 s (routed 2, failed 5, ripped 1).
+ 4522.225 INFO  Auto-routing pass #12: 10 of 33 items after 138 s (routed 3, failed 6, ripped 3).
+ 4536.754 INFO  Auto-routing pass #12: 12 of 33 items after 152 s (routed 4, failed 6, ripped 5).
+ 4582.736 INFO  Auto-routing pass #12: 20 of 33 items after 198 s (routed 8, failed 7, ripped 12).
+ 4594.354 INFO  Auto-routing pass #12: 26 of 33 items after 210 s (routed 11, failed 7, ripped 19).
+ 4623.955 INFO  Auto-routing pass #12 was completed in 239.68 seconds with score 951.43 (22 unrouted and 0 violations) (routed 14, failed 7, ripped 21).
+ 4662.368 INFO  Auto-routing pass #13: 12 of 38 items after 38 s (routed 9, failed 3, ripped 6).
+ 4695.817 INFO  Auto-routing pass #13: 15 of 38 items after 72 s (routed 9, failed 5, ripped 6).
+ 4723.229 INFO  Auto-routing pass #13: 18 of 38 items after 99 s (routed 12, failed 5, ripped 7).
+ 4761.706 INFO  Auto-routing pass #13: 22 of 38 items after 138 s (routed 13, failed 7, ripped 11).
+ 4798.671 INFO  Auto-routing pass #13: 23 of 38 items after 175 s (routed 13, failed 8, ripped 11).
+ 4804.112 INFO  Auto-routing pass #13: 24 of 38 items after 180 s (routed 14, failed 8, ripped 14).
+ 4825.581 INFO  Auto-routing pass #13 was completed in 201.63 seconds with score 958.06 (19 unrouted and 0 violations) (routed 19, failed 10, ripped 17).
+ 4825.631 INFO  Stopping the auto-router: the last 3 passes (about 202 s each) reduced the unrouted items only from 16 to 18.
+ 4827.669 INFO  Auto-routing stage completed: started with 59 unrouted nets, completed in 4779.99 seconds, final score: 964.68 (16 unrouted and 0 violations).
+ 4827.673 INFO  1 item(s) cannot be routed even on the board as loaded (blocked by pins, keepouts or fixed wiring); they were skipped after their second failure.
+ 4828.044 INFO  Multi-start skipped: the first routing run took 4796 s (variants run only if they are expected to take less than 600 s).
+ 4828.415 INFO  Optimization stage started. Baseline router score: 964.68, optimizer score: 118.36, incomplete connections: 16, clearance violations: 0.
+ 4858.682 INFO  Optimizer pass #1: 38 of 625 candidates after 30 s (14 improving so far).
+ 4888.442 INFO  Optimizer pass #1: 71 of 625 candidates after 60 s (31 improving so far).
+ 4920.722 INFO  Optimizer pass #1: 91 of 625 candidates after 92 s (37 improving so far).
+ 4955.625 INFO  Optimizer pass #1: 100 of 625 candidates after 127 s (39 improving so far).
+ 5003.648 INFO  Optimizer pass #1: 109 of 625 candidates after 175 s (40 improving so far).
+ 5007.744 INFO  Stopping optimization pass #1 early after 12 consecutive items could not be improved.
+ 5024.504 INFO  Optimizer greedy phase stopped after 27 of 39 candidates (16.7 s, no further improvements).
+ 5024.506 INFO  Optimizer pass #1: applied 5 more improving candidate(s).
+ 5024.922 INFO  Optimizer pass #1 was completed in 196.50 seconds (116 of 625 candidates) with the score of 125.44 (16 unrouted and 0 violations).
+ 5025.044 INFO  checkpoint: best board so far (16 unrouted, 0 violations) written to 'board.ses'
+ 5025.045 INFO  Optimizer pass #1: optimizer score 118.36 -> 125.44 (IMPROVED, 5.9850%), router score: 964.68, incomplete connections: 16, clearance violations: 0.
+ 5055.883 INFO  Optimizer pass #2: 39 of 617 candidates after 31 s (22 improving so far).
+ 5118.062 INFO  Optimizer pass #2: 62 of 617 candidates after 93 s (34 improving so far).
+ 5118.462 INFO  Optimizer pass #2: 63 of 617 candidates after 93 s (34 improving so far).
+ 5156.819 INFO  Optimizer pass #2: 82 of 617 candidates after 132 s (42 improving so far).
+ 5185.419 INFO  Optimizer pass #2: 89 of 617 candidates after 160 s (42 improving so far).
+ 5205.867 INFO  Optimizer pass #2: 97 of 617 candidates after 181 s (46 improving so far).
+ 5236.826 INFO  Optimizer pass #2: 112 of 617 candidates after 212 s (51 improving so far).
+ 5265.859 INFO  Optimizer pass #2: 124 of 617 candidates after 241 s (57 improving so far).
+ 5295.232 INFO  Optimizer pass #2: 136 of 617 candidates after 270 s (63 improving so far).
+ 5333.160 INFO  Optimizer pass #2: 141 of 617 candidates after 308 s (66 improving so far).
+ 5378.386 INFO  Optimizer pass #2: 145 of 617 candidates after 353 s (67 improving so far).
+ 5386.150 INFO  Optimizer pass #2: 149 of 617 candidates after 361 s (68 improving so far).
+ 5422.290 INFO  Optimizer pass #2: 158 of 617 candidates after 397 s (71 improving so far).
+ 5467.489 INFO  Optimizer pass #2: 159 of 617 candidates after 442 s (71 improving so far).
+ 5478.484 INFO  Optimizer pass #2: 164 of 617 candidates after 453 s (72 improving so far).
+ 5702.002 INFO  Optimizer pass #2: 167 of 617 candidates after 677 s (73 improving so far).
+ 5704.942 INFO  Optimizer pass #2: 168 of 617 candidates after 680 s (73 improving so far).
+ 5705.412 INFO  Optimizer pass #2: 169 of 617 candidates after 680 s (73 improving so far).
+ 5706.425 INFO  Optimizer pass #2: 170 of 617 candidates after 681 s (73 improving so far).
+ 5708.102 INFO  Optimizer pass #2: 171 of 617 candidates after 683 s (74 improving so far).
+ 5710.550 INFO  Optimizer pass #2: 172 of 617 candidates after 686 s (74 improving so far).
+ 5711.538 INFO  Optimizer pass #2: 173 of 617 candidates after 686 s (75 improving so far).
+ 5745.246 INFO  Optimizer pass #2: 174 of 617 candidates after 720 s (76 improving so far).
+ 5760.022 INFO  Optimizer pass #2: 175 of 617 candidates after 735 s (76 improving so far).
+ 5778.408 INFO  Optimizer pass #2: 180 of 617 candidates after 753 s (78 improving so far).
+ 5837.252 INFO  Optimizer pass #2: 188 of 617 candidates after 812 s (81 improving so far).
+ 5847.421 INFO  Optimizer pass #2: 189 of 617 candidates after 822 s (81 improving so far).
+ 5867.030 INFO  Optimizer pass #2: 197 of 617 candidates after 842 s (85 improving so far).
+ 5929.643 INFO  Optimizer pass #2: 207 of 617 candidates after 905 s (90 improving so far).
+ 5931.058 INFO  Optimizer pass #2: 208 of 617 candidates after 906 s (90 improving so far).
+ 5967.771 INFO  Optimizer pass #2: 214 of 617 candidates after 943 s (94 improving so far).
+ 6021.084 INFO  Optimizer pass #2: 222 of 617 candidates after 996 s (99 improving so far).
+ 6021.673 INFO  Optimizer pass #2: 223 of 617 candidates after 997 s (99 improving so far).
+ 6048.985 INFO  Optimizer pass #2: 232 of 617 candidates after 1024 s (101 improving so far).
+ 6100.999 INFO  Optimizer pass #2: 235 of 617 candidates after 1076 s (102 improving so far).
+ 6116.788 INFO  Optimizer pass #2: 237 of 617 candidates after 1092 s (102 improving so far).
+ 6170.674 INFO  Optimizer pass #2: 247 of 617 candidates after 1146 s (103 improving so far).
+ 6170.994 INFO  Optimizer pass #2: 248 of 617 candidates after 1146 s (103 improving so far).
+ 6386.515 INFO  Optimizer pass #2: 250 of 617 candidates after 1361 s (103 improving so far).
+ 6389.159 INFO  Optimizer pass #2: 251 of 617 candidates after 1364 s (103 improving so far).
+ 6392.069 INFO  Optimizer pass #2: 252 of 617 candidates after 1367 s (104 improving so far).
+ 6392.728 INFO  Optimizer pass #2: 253 of 617 candidates after 1368 s (105 improving so far).
+ 6393.962 INFO  Optimizer pass #2: 254 of 617 candidates after 1369 s (106 improving so far).
+ 6394.518 INFO  Optimizer pass #2: 255 of 617 candidates after 1369 s (106 improving so far).
+ 6395.782 INFO  Optimizer pass #2: 256 of 617 candidates after 1371 s (107 improving so far).
+ 6410.198 INFO  Optimizer pass #2: 265 of 617 candidates after 1385 s (111 improving so far).
+ 6451.588 INFO  Optimizer pass #2: 273 of 617 candidates after 1427 s (112 improving so far).
+ 6466.581 INFO  Optimizer pass #2: 281 of 617 candidates after 1442 s (115 improving so far).
+ 6518.973 INFO  Optimizer pass #2: 299 of 617 candidates after 1494 s (124 improving so far).
+ 6527.376 INFO  Optimizer pass #2: 300 of 617 candidates after 1502 s (124 improving so far).
+ 6567.572 INFO  Optimizer pass #2: 306 of 617 candidates after 1543 s (128 improving so far).
+ 6585.833 INFO  Optimizer pass #2: 311 of 617 candidates after 1561 s (130 improving so far).
+ 6622.085 INFO  Optimizer pass #2: 318 of 617 candidates after 1597 s (134 improving so far).
+ 6869.534 INFO  Optimizer pass #2: 321 of 617 candidates after 1844 s (135 improving so far).
+ 6870.967 INFO  Optimizer pass #2: 322 of 617 candidates after 1846 s (135 improving so far).
+ 6874.956 INFO  Optimizer pass #2: 323 of 617 candidates after 1850 s (135 improving so far).
+ 6876.037 INFO  Optimizer pass #2: 324 of 617 candidates after 1851 s (136 improving so far).
+ 6876.905 INFO  Optimizer pass #2: 325 of 617 candidates after 1852 s (137 improving so far).
+ 6877.220 INFO  Optimizer pass #2: 326 of 617 candidates after 1852 s (137 improving so far).
+ 6879.059 INFO  Optimizer pass #2: 327 of 617 candidates after 1854 s (137 improving so far).
+ 6881.171 INFO  Optimizer pass #2: 328 of 617 candidates after 1856 s (137 improving so far).
+ 6886.466 INFO  Optimizer pass #2: 330 of 617 candidates after 1861 s (137 improving so far).
+ 6923.202 INFO  Optimizer pass #2: 334 of 617 candidates after 1898 s (138 improving so far).
+ 6958.851 INFO  Optimizer pass #2: 342 of 617 candidates after 1934 s (141 improving so far).
+ 6996.908 INFO  Optimizer pass #2: 345 of 617 candidates after 1972 s (141 improving so far).
+ 7033.277 INFO  Optimizer pass #2: 348 of 617 candidates after 2008 s (144 improving so far).
+ 7066.236 INFO  Optimizer pass #2: 350 of 617 candidates after 2041 s (146 improving so far).
+ 7077.060 INFO  Optimizer pass #2: 351 of 617 candidates after 2052 s (147 improving so far).
+ 7095.974 INFO  Optimizer pass #2: 360 of 617 candidates after 2071 s (150 improving so far).
+ 7134.149 INFO  Optimizer pass #2: 364 of 617 candidates after 2109 s (150 improving so far).
+ 7167.160 INFO  Optimizer pass #2: 365 of 617 candidates after 2142 s (151 improving so far).
+ 7203.820 INFO  Optimizer pass #2: 368 of 617 candidates after 2179 s (152 improving so far).
+ 7222.445 INFO  Optimizer pass #2: 373 of 617 candidates after 2197 s (156 improving so far).
+ 7255.994 INFO  Optimizer pass #2: 374 of 617 candidates after 2231 s (156 improving so far).
+ 7292.475 INFO  Optimizer pass #2: 379 of 617 candidates after 2267 s (158 improving so far).
+ 7323.952 INFO  Optimizer pass #2: 380 of 617 candidates after 2299 s (159 improving so far).
+ 7335.326 INFO  Optimizer pass #2: 385 of 617 candidates after 2310 s (161 improving so far).
+ 7366.398 INFO  Optimizer pass #2: 403 of 617 candidates after 2341 s (173 improving so far).
+ 7400.562 INFO  Optimizer pass #2: 405 of 617 candidates after 2376 s (174 improving so far).
+ 7438.705 INFO  Optimizer pass #2: 409 of 617 candidates after 2414 s (176 improving so far).
+ 7689.460 INFO  Optimizer pass #2: 412 of 617 candidates after 2664 s (179 improving so far).
+ 7692.104 INFO  Optimizer pass #2: 413 of 617 candidates after 2667 s (179 improving so far).
+ 7694.923 INFO  Optimizer pass #2: 414 of 617 candidates after 2670 s (180 improving so far).
+ 7697.440 INFO  Optimizer pass #2: 415 of 617 candidates after 2672 s (180 improving so far).
+ 7701.252 INFO  Optimizer pass #2: 416 of 617 candidates after 2676 s (181 improving so far).
+ 7702.767 INFO  Optimizer pass #2: 417 of 617 candidates after 2678 s (181 improving so far).
+ 7735.968 INFO  Optimizer pass #2: 418 of 617 candidates after 2711 s (181 improving so far).
+ 7768.537 INFO  Optimizer pass #2: 419 of 617 candidates after 2743 s (182 improving so far).
+ 7772.543 INFO  Optimizer pass #2: 420 of 617 candidates after 2747 s (182 improving so far).
+ 7804.871 INFO  Optimizer pass #2: 421 of 617 candidates after 2780 s (182 improving so far).
+ 7808.252 INFO  Optimizer pass #2: 422 of 617 candidates after 2783 s (183 improving so far).
+ 7811.640 INFO  Optimizer pass #2: 423 of 617 candidates after 2787 s (183 improving so far).
+ 7844.505 INFO  Optimizer pass #2: 424 of 617 candidates after 2819 s (184 improving so far).
+ 7877.746 INFO  Optimizer pass #2: 425 of 617 candidates after 2853 s (185 improving so far).
+ 7880.341 INFO  Optimizer pass #2: 426 of 617 candidates after 2855 s (186 improving so far).
+ 7920.814 INFO  Optimizer pass #2: 432 of 617 candidates after 2896 s (188 improving so far).
+ 7956.909 INFO  Optimizer pass #2: 436 of 617 candidates after 2932 s (189 improving so far).
+ 7991.188 INFO  Optimizer pass #2: 441 of 617 candidates after 2966 s (191 improving so far).
+ 7995.745 INFO  Optimizer pass #2: 445 of 617 candidates after 2971 s (192 improving so far).
+ 8044.440 INFO  Optimizer pass #2: 453 of 617 candidates after 3019 s (194 improving so far).
+ 8056.064 INFO  Optimizer pass #2: 466 of 617 candidates after 3031 s (201 improving so far).
+ 8085.248 INFO  Optimizer pass #2: 498 of 617 candidates after 3060 s (220 improving so far).
+ 8116.019 INFO  Optimizer pass #2: 509 of 617 candidates after 3091 s (225 improving so far).
+ 8145.100 INFO  Optimizer pass #2: 532 of 617 candidates after 3120 s (240 improving so far).
+ 8175.262 INFO  Optimizer pass #2: 548 of 617 candidates after 3150 s (250 improving so far).
+ 8206.611 INFO  Optimizer pass #2: 570 of 617 candidates after 3182 s (264 improving so far).
+ 8235.725 INFO  Optimizer pass #2: 593 of 617 candidates after 3211 s (282 improving so far).
+ 8312.584 INFO  Optimizer greedy phase stopped after 40 of 297 candidates (53.5 s, no further improvements).
+ 8312.586 INFO  Optimizer pass #2: applied 7 more improving candidate(s).
+ 8312.940 INFO  Optimizer pass #2 was completed in 3287.89 seconds (617 of 617 candidates) with the score of 144.63 (16 unrouted and 0 violations).
+ 8313.071 INFO  checkpoint: best board so far (16 unrouted, 0 violations) written to 'board.ses'
+ 8313.074 INFO  Optimizer pass #2: optimizer score 125.44 -> 144.63 (IMPROVED, 15.2941%), router score: 964.68, incomplete connections: 16, clearance violations: 0.
+ 8344.605 INFO  Optimizer pass #3: 39 of 608 candidates after 32 s (10 improving so far).
+ 8374.611 INFO  Optimizer pass #3: 62 of 608 candidates after 62 s (19 improving so far).
+ 8418.393 INFO  Optimizer pass #3: 82 of 608 candidates after 105 s (23 improving so far).
+ 8435.827 INFO  Optimizer pass #3: 89 of 608 candidates after 123 s (26 improving so far).
+ 8464.762 INFO  Optimizer pass #3: 108 of 608 candidates after 152 s (29 improving so far).
+ 8494.210 INFO  Optimizer pass #3: 113 of 608 candidates after 181 s (31 improving so far).
+ 8525.322 INFO  Optimizer pass #3: 125 of 608 candidates after 212 s (35 improving so far).
+ 8557.575 INFO  Optimizer pass #3: 139 of 608 candidates after 244 s (37 improving so far).
+ 8765.059 INFO  Optimizer pass #3: 145 of 608 candidates after 452 s (38 improving so far).
+ 8767.069 INFO  Optimizer pass #3: 146 of 608 candidates after 454 s (38 improving so far).
+ 8768.989 INFO  Optimizer pass #3: 147 of 608 candidates after 456 s (38 improving so far).
+ 8770.928 INFO  Optimizer pass #3: 148 of 608 candidates after 458 s (38 improving so far).
+ 8772.451 INFO  Optimizer pass #3: 149 of 608 candidates after 459 s (38 improving so far).
+ 8774.431 INFO  Optimizer pass #3: 150 of 608 candidates after 461 s (39 improving so far).
+ 8776.381 INFO  Optimizer pass #3: 151 of 608 candidates after 463 s (39 improving so far).
+ 8807.374 INFO  Optimizer pass #3: 157 of 608 candidates after 494 s (39 improving so far).
+ 8832.150 INFO  Optimizer pass #3: 164 of 608 candidates after 519 s (40 improving so far).
+ 9021.504 INFO  Optimizer pass #3: 165 of 608 candidates after 708 s (40 improving so far).
+ 9025.014 INFO  Optimizer pass #3: 166 of 608 candidates after 712 s (40 improving so far).
+ 9025.476 INFO  Optimizer pass #3: 167 of 608 candidates after 712 s (40 improving so far).
+ 9026.848 INFO  Optimizer pass #3: 168 of 608 candidates after 714 s (40 improving so far).
+ 9031.344 INFO  Optimizer pass #3: 169 of 608 candidates after 718 s (41 improving so far).
+ 9036.635 INFO  Optimizer pass #3: 170 of 608 candidates after 724 s (41 improving so far).
+ 9037.114 INFO  Optimizer pass #3: 171 of 608 candidates after 724 s (41 improving so far).
+ 9079.147 INFO  Optimizer pass #3: 174 of 608 candidates after 766 s (42 improving so far).
+ 9120.124 INFO  Optimizer pass #3: 181 of 608 candidates after 807 s (44 improving so far).
+ 9124.551 INFO  Optimizer pass #3: 185 of 608 candidates after 811 s (47 improving so far).
+ 9171.132 INFO  Optimizer pass #3: 187 of 608 candidates after 858 s (47 improving so far).
+ 9184.424 INFO  Optimizer pass #3: 189 of 608 candidates after 871 s (47 improving so far).
+ 9218.265 INFO  Optimizer pass #3: 198 of 608 candidates after 905 s (50 improving so far).
+ 9296.967 INFO  Optimizer pass #3: 204 of 608 candidates after 984 s (52 improving so far).
+ 9320.741 INFO  Optimizer pass #3: 205 of 608 candidates after 1008 s (52 improving so far).
+ 9484.138 INFO  Optimizer pass #3: 206 of 608 candidates after 1171 s (52 improving so far).
+ 9485.528 INFO  Optimizer pass #3: 207 of 608 candidates after 1172 s (52 improving so far).
+ 9486.884 INFO  Optimizer pass #3: 208 of 608 candidates after 1174 s (53 improving so far).
+ 9489.067 INFO  Optimizer pass #3: 209 of 608 candidates after 1176 s (53 improving so far).
+ 9514.478 INFO  Optimizer pass #3: 210 of 608 candidates after 1201 s (54 improving so far).
+ 9515.001 INFO  Optimizer pass #3: 211 of 608 candidates after 1202 s (54 improving so far).
+ 9516.701 INFO  Optimizer pass #3: 212 of 608 candidates after 1204 s (54 improving so far).
+ 9541.041 INFO  Optimizer pass #3: 213 of 608 candidates after 1228 s (54 improving so far).
+ 9546.797 INFO  Optimizer pass #3: 215 of 608 candidates after 1234 s (55 improving so far).
+ 9592.013 INFO  Optimizer pass #3: 220 of 608 candidates after 1279 s (57 improving so far).
+ 9754.948 INFO  Optimizer pass #3: 223 of 608 candidates after 1442 s (58 improving so far).
+ 9756.479 INFO  Optimizer pass #3: 224 of 608 candidates after 1443 s (58 improving so far).
+ 9759.433 INFO  Optimizer pass #3: 225 of 608 candidates after 1446 s (58 improving so far).
+ 9765.481 INFO  Optimizer pass #3: 226 of 608 candidates after 1452 s (59 improving so far).
+ 9766.329 INFO  Optimizer pass #3: 227 of 608 candidates after 1453 s (59 improving so far).
+ 9766.975 INFO  Optimizer pass #3: 228 of 608 candidates after 1454 s (60 improving so far).
+ 9841.966 INFO  Optimizer pass #3: 233 of 608 candidates after 1529 s (62 improving so far).
+10046.641 INFO  Optimizer pass #3: 234 of 608 candidates after 1734 s (62 improving so far).
+10064.488 INFO  Optimizer pass #3: 235 of 608 candidates after 1751 s (62 improving so far).
+10068.746 INFO  Optimizer pass #3: 236 of 608 candidates after 1756 s (62 improving so far).
+10071.402 INFO  Optimizer pass #3: 237 of 608 candidates after 1758 s (62 improving so far).
+10075.921 INFO  Optimizer pass #3: 238 of 608 candidates after 1763 s (62 improving so far).
+10077.999 INFO  Optimizer pass #3: 239 of 608 candidates after 1765 s (62 improving so far).
+10081.488 INFO  Optimizer pass #3: 240 of 608 candidates after 1768 s (63 improving so far).
+10082.649 INFO  Optimizer pass #3: 241 of 608 candidates after 1770 s (63 improving so far).
+10083.626 INFO  Optimizer pass #3: 242 of 608 candidates after 1771 s (63 improving so far).
+10085.043 INFO  Optimizer pass #3: 243 of 608 candidates after 1772 s (63 improving so far).
+10247.972 INFO  Optimizer pass #3: 245 of 608 candidates after 1935 s (64 improving so far).
+10248.313 INFO  Optimizer pass #3: 246 of 608 candidates after 1935 s (64 improving so far).
+10252.057 INFO  Optimizer pass #3: 247 of 608 candidates after 1939 s (64 improving so far).
+10444.786 INFO  Optimizer pass #3: 248 of 608 candidates after 2132 s (64 improving so far).
+10446.998 INFO  Optimizer pass #3: 249 of 608 candidates after 2134 s (64 improving so far).
+10449.352 INFO  Optimizer pass #3: 250 of 608 candidates after 2136 s (65 improving so far).
+10449.983 INFO  Optimizer pass #3: 251 of 608 candidates after 2137 s (66 improving so far).
+10450.886 INFO  Optimizer pass #3: 252 of 608 candidates after 2138 s (66 improving so far).
+10458.227 INFO  Optimizer pass #3: 253 of 608 candidates after 2145 s (66 improving so far).
+10461.115 INFO  Optimizer pass #3: 254 of 608 candidates after 2148 s (66 improving so far).
+10462.052 INFO  Optimizer pass #3: 255 of 608 candidates after 2149 s (67 improving so far).
+10462.791 INFO  Optimizer pass #3: 256 of 608 candidates after 2150 s (67 improving so far).
+10479.755 INFO  Optimizer pass #3: 262 of 608 candidates after 2167 s (69 improving so far).
+10503.484 INFO  Optimizer pass #3: 275 of 608 candidates after 2190 s (74 improving so far).
+10534.401 INFO  Optimizer pass #3: 286 of 608 candidates after 2221 s (77 improving so far).
+10566.826 INFO  Optimizer pass #3: 299 of 608 candidates after 2254 s (82 improving so far).
+10597.300 INFO  Optimizer pass #3: 305 of 608 candidates after 2284 s (85 improving so far).
+10628.849 INFO  Optimizer pass #3: 314 of 608 candidates after 2316 s (90 improving so far).
+10653.668 INFO  Optimizer pass #3: 324 of 608 candidates after 2341 s (92 improving so far).
+10693.392 INFO  Optimizer pass #3: 329 of 608 candidates after 2380 s (93 improving so far).
+10731.044 INFO  Optimizer pass #3: 332 of 608 candidates after 2418 s (94 improving so far).
+10753.201 INFO  Optimizer pass #3: 340 of 608 candidates after 2440 s (96 improving so far).
+10793.841 INFO  Optimizer pass #3: 343 of 608 candidates after 2481 s (96 improving so far).
+10832.732 INFO  Optimizer pass #3: 346 of 608 candidates after 2520 s (97 improving so far).
+10833.691 INFO  Optimizer pass #3: 347 of 608 candidates after 2521 s (98 improving so far).
+10864.491 INFO  Optimizer pass #3: 348 of 608 candidates after 2551 s (98 improving so far).
+10895.632 INFO  Optimizer pass #3: 355 of 608 candidates after 2583 s (99 improving so far).
+10944.359 INFO  Optimizer pass #3: 363 of 608 candidates after 2631 s (102 improving so far).
+10975.916 INFO  Optimizer pass #3: 367 of 608 candidates after 2663 s (103 improving so far).
+11010.371 INFO  Optimizer pass #3: 369 of 608 candidates after 2697 s (104 improving so far).
+11021.274 INFO  Optimizer pass #3: 371 of 608 candidates after 2708 s (106 improving so far).
+11054.243 INFO  Optimizer pass #3: 372 of 608 candidates after 2741 s (107 improving so far).
+11086.652 INFO  Optimizer pass #3: 373 of 608 candidates after 2774 s (108 improving so far).
+11120.278 INFO  Optimizer pass #3: 377 of 608 candidates after 2807 s (109 improving so far).
+11151.898 INFO  Optimizer pass #3: 378 of 608 candidates after 2839 s (110 improving so far).
+11163.392 INFO  Optimizer pass #3: 385 of 608 candidates after 2850 s (114 improving so far).
+11209.516 INFO  Optimizer pass #3: 392 of 608 candidates after 2896 s (119 improving so far).
+11244.850 INFO  Optimizer pass #3: 394 of 608 candidates after 2932 s (121 improving so far).
+11283.013 INFO  Optimizer pass #3: 402 of 608 candidates after 2970 s (125 improving so far).
+11285.636 INFO  Optimizer pass #3: 403 of 608 candidates after 2973 s (126 improving so far).
+11317.618 INFO  Optimizer pass #3: 406 of 608 candidates after 3005 s (128 improving so far).
+11355.760 INFO  Optimizer pass #3: 412 of 608 candidates after 3043 s (130 improving so far).
+11386.480 INFO  Optimizer pass #3: 413 of 608 candidates after 3073 s (130 improving so far).
+11422.908 INFO  Optimizer pass #3: 416 of 608 candidates after 3110 s (131 improving so far).
+11462.414 INFO  Optimizer pass #3: 419 of 608 candidates after 3149 s (133 improving so far).
+11493.428 INFO  Optimizer pass #3: 420 of 608 candidates after 3180 s (134 improving so far).
+11494.300 INFO  Optimizer pass #3: 421 of 608 candidates after 3181 s (135 improving so far).
+11531.962 INFO  Optimizer pass #3: 425 of 608 candidates after 3219 s (135 improving so far).
+11562.648 INFO  Optimizer pass #3: 429 of 608 candidates after 3250 s (136 improving so far).
+11587.680 INFO  Optimizer pass #3: 433 of 608 candidates after 3275 s (138 improving so far).
+11614.710 INFO  Optimizer pass #3: 437 of 608 candidates after 3302 s (140 improving so far).
+11656.039 INFO  Optimizer pass #3: 445 of 608 candidates after 3343 s (143 improving so far).
+11688.037 INFO  Optimizer pass #3: 447 of 608 candidates after 3375 s (145 improving so far).
+11703.377 INFO  Optimizer pass #3: 460 of 608 candidates after 3390 s (153 improving so far).
+11733.122 INFO  Optimizer pass #3: 497 of 608 candidates after 3420 s (165 improving so far).
+11772.811 INFO  Optimizer pass #3: 523 of 608 candidates after 3460 s (178 improving so far).
+11793.421 INFO  Optimizer pass #3: 530 of 608 candidates after 3480 s (180 improving so far).
+11823.386 INFO  Optimizer pass #3: 550 of 608 candidates after 3510 s (187 improving so far).
+11857.839 INFO  Optimizer pass #3: 580 of 608 candidates after 3545 s (198 improving so far).
+11883.895 INFO  Optimizer pass #3: 599 of 608 candidates after 3571 s (210 improving so far).
+11945.288 INFO  Optimizer greedy phase stopped after 15 of 214 candidates (50.2 s, no further improvements).
+11945.291 INFO  Optimizer pass #3: applied 2 more improving candidate(s).
+11945.296 INFO  Optimizer pass #3 was completed in 3632.21 seconds (608 of 608 candidates) with the score of 152.01 (16 unrouted and 0 violations).
+11945.588 INFO  checkpoint: best board so far (16 unrouted, 0 violations) written to 'board.ses'
+11945.594 INFO  Optimizer pass #3: optimizer score 144.63 -> 152.01 (IMPROVED, 5.1020%), router score: 964.68, incomplete connections: 16, clearance violations: 0.
+11975.987 INFO  Optimizer pass #4: 30 of 607 candidates after 30 s (21 improving so far).
+12050.510 INFO  Optimizer pass #4: 62 of 607 candidates after 105 s (38 improving so far).
+12050.848 INFO  Optimizer pass #4: 63 of 607 candidates after 105 s (38 improving so far).
+12066.234 INFO  Optimizer pass #4: 77 of 607 candidates after 121 s (46 improving so far).
+12095.792 INFO  Optimizer pass #4: 86 of 607 candidates after 150 s (47 improving so far).
+12126.055 INFO  Optimizer pass #4: 97 of 607 candidates after 180 s (52 improving so far).
+12157.430 INFO  Optimizer pass #4: 112 of 607 candidates after 212 s (55 improving so far).
+12186.073 INFO  Optimizer pass #4: 123 of 607 candidates after 240 s (59 improving so far).
+12223.707 INFO  Optimizer pass #4: 133 of 607 candidates after 278 s (62 improving so far).
+12247.712 INFO  Optimizer pass #4: 142 of 607 candidates after 302 s (68 improving so far).
+12277.214 INFO  Optimizer pass #4: 154 of 607 candidates after 332 s (70 improving so far).
+12499.794 INFO  Optimizer pass #4: 164 of 607 candidates after 554 s (72 improving so far).
+12504.640 INFO  Optimizer pass #4: 165 of 607 candidates after 559 s (72 improving so far).
+12505.125 INFO  Optimizer pass #4: 166 of 607 candidates after 560 s (72 improving so far).
+12506.351 INFO  Optimizer pass #4: 167 of 607 candidates after 561 s (72 improving so far).
+12507.896 INFO  Optimizer pass #4: 168 of 607 candidates after 562 s (73 improving so far).
+12519.452 INFO  Optimizer pass #4: 169 of 607 candidates after 574 s (73 improving so far).
+12519.951 INFO  Optimizer pass #4: 170 of 607 candidates after 574 s (73 improving so far).
+12521.113 INFO  Optimizer pass #4: 171 of 607 candidates after 576 s (74 improving so far).
+12546.897 INFO  Optimizer pass #4: 176 of 607 candidates after 601 s (75 improving so far).
+12606.671 INFO  Optimizer pass #4: 185 of 607 candidates after 661 s (78 improving so far).
+12607.727 INFO  Optimizer pass #4: 186 of 607 candidates after 662 s (78 improving so far).
+12638.881 INFO  Optimizer pass #4: 196 of 607 candidates after 693 s (83 improving so far).
+12725.336 INFO  Optimizer pass #4: 202 of 607 candidates after 780 s (86 improving so far).
+12761.309 INFO  Optimizer pass #4: 203 of 607 candidates after 816 s (86 improving so far).
+12763.019 INFO  Optimizer pass #4: 204 of 607 candidates after 817 s (86 improving so far).
+12764.452 INFO  Optimizer pass #4: 205 of 607 candidates after 819 s (87 improving so far).
+12789.742 INFO  Optimizer pass #4: 209 of 607 candidates after 844 s (89 improving so far).
+12830.519 INFO  Optimizer pass #4: 216 of 607 candidates after 885 s (93 improving so far).
+12850.947 INFO  Optimizer pass #4: 226 of 607 candidates after 905 s (95 improving so far).
+12926.944 INFO  Optimizer pass #4: 229 of 607 candidates after 981 s (96 improving so far).
+12929.736 INFO  Optimizer pass #4: 230 of 607 candidates after 984 s (96 improving so far).
+12938.668 INFO  Optimizer pass #4: 231 of 607 candidates after 993 s (97 improving so far).
+12993.828 INFO  Optimizer pass #4: 242 of 607 candidates after 1048 s (99 improving so far).
+13187.844 INFO  Optimizer pass #4: 245 of 607 candidates after 1242 s (100 improving so far).
+13189.481 INFO  Optimizer pass #4: 246 of 607 candidates after 1244 s (100 improving so far).
+13191.239 INFO  Optimizer pass #4: 247 of 607 candidates after 1246 s (101 improving so far).
+13191.930 INFO  Optimizer pass #4: 248 of 607 candidates after 1246 s (102 improving so far).
+13193.357 INFO  Optimizer pass #4: 249 of 607 candidates after 1248 s (103 improving so far).
+13194.171 INFO  Optimizer pass #4: 250 of 607 candidates after 1249 s (103 improving so far).
+13196.191 INFO  Optimizer pass #4: 251 of 607 candidates after 1251 s (104 improving so far).
+13207.525 INFO  Optimizer pass #4: 259 of 607 candidates after 1262 s (107 improving so far).
+13237.759 INFO  Optimizer pass #4: 279 of 607 candidates after 1292 s (114 improving so far).
+13292.166 INFO  Optimizer pass #4: 297 of 607 candidates after 1347 s (123 improving so far).
+13328.194 INFO  Optimizer pass #4: 299 of 607 candidates after 1383 s (125 improving so far).
+13330.185 INFO  Optimizer pass #4: 300 of 607 candidates after 1385 s (126 improving so far).
+13370.235 INFO  Optimizer pass #4: 302 of 607 candidates after 1425 s (127 improving so far).
+13406.759 INFO  Optimizer pass #4: 303 of 607 candidates after 1461 s (128 improving so far).
+13421.027 INFO  Optimizer pass #4: 307 of 607 candidates after 1475 s (132 improving so far).
+13470.040 INFO  Optimizer pass #4: 313 of 607 candidates after 1524 s (135 improving so far).
+13478.403 INFO  Optimizer pass #4: 316 of 607 candidates after 1533 s (137 improving so far).
+13508.613 INFO  Optimizer pass #4: 328 of 607 candidates after 1563 s (140 improving so far).
+13541.745 INFO  Optimizer pass #4: 331 of 607 candidates after 1596 s (142 improving so far).
+13569.131 INFO  Optimizer pass #4: 339 of 607 candidates after 1624 s (145 improving so far).
+13622.182 INFO  Optimizer pass #4: 345 of 607 candidates after 1677 s (147 improving so far).
+13654.226 INFO  Optimizer pass #4: 347 of 607 candidates after 1709 s (149 improving so far).
+13663.700 INFO  Optimizer pass #4: 348 of 607 candidates after 1718 s (150 improving so far).
+13688.578 INFO  Optimizer pass #4: 355 of 607 candidates after 1743 s (153 improving so far).
+13730.439 INFO  Optimizer pass #4: 363 of 607 candidates after 1785 s (154 improving so far).
+13763.786 INFO  Optimizer pass #4: 365 of 607 candidates after 1818 s (154 improving so far).
+13782.247 INFO  Optimizer pass #4: 366 of 607 candidates after 1837 s (154 improving so far).
+13805.621 INFO  Optimizer pass #4: 385 of 607 candidates after 1860 s (163 improving so far).
+13854.130 INFO  Optimizer pass #4: 394 of 607 candidates after 1909 s (171 improving so far).
+13892.450 INFO  Optimizer pass #4: 398 of 607 candidates after 1947 s (173 improving so far).
+13924.964 INFO  Optimizer pass #4: 401 of 607 candidates after 1979 s (174 improving so far).
+13927.299 INFO  Optimizer pass #4: 402 of 607 candidates after 1982 s (175 improving so far).
+13958.531 INFO  Optimizer pass #4: 405 of 607 candidates after 2013 s (178 improving so far).
+14002.271 INFO  Optimizer pass #4: 411 of 607 candidates after 2057 s (181 improving so far).
+14033.666 INFO  Optimizer pass #4: 412 of 607 candidates after 2088 s (182 improving so far).
+14067.454 INFO  Optimizer pass #4: 414 of 607 candidates after 2122 s (182 improving so far).
+14075.889 INFO  Optimizer pass #4: 417 of 607 candidates after 2130 s (184 improving so far).
+14107.167 INFO  Optimizer pass #4: 418 of 607 candidates after 2162 s (185 improving so far).
+14149.451 INFO  Optimizer pass #4: 423 of 607 candidates after 2204 s (187 improving so far).
+14180.067 INFO  Optimizer pass #4: 427 of 607 candidates after 2234 s (188 improving so far).
+14206.698 INFO  Optimizer pass #4: 428 of 607 candidates after 2261 s (188 improving so far).
+14233.201 INFO  Optimizer pass #4: 431 of 607 candidates after 2288 s (188 improving so far).
+14273.400 INFO  Optimizer pass #4: 443 of 607 candidates after 2328 s (192 improving so far).
+14317.290 INFO  Optimizer pass #4: 454 of 607 candidates after 2372 s (197 improving so far).
+14318.391 INFO  Optimizer pass #4: 455 of 607 candidates after 2373 s (198 improving so far).
+14346.511 INFO  Optimizer pass #4: 481 of 607 candidates after 2401 s (211 improving so far).
+14375.740 INFO  Optimizer pass #4: 507 of 607 candidates after 2430 s (226 improving so far).
+14406.486 INFO  Optimizer pass #4: 530 of 607 candidates after 2461 s (241 improving so far).
+14435.764 INFO  Optimizer pass #4: 549 of 607 candidates after 2490 s (251 improving so far).
+14466.059 INFO  Optimizer pass #4: 577 of 607 candidates after 2520 s (268 improving so far).
+14497.578 INFO  Optimizer pass #4: 601 of 607 candidates after 2552 s (283 improving so far).
+14540.317 INFO  Optimizer greedy phase stopped after 32 of 286 candidates (37.8 s, no further improvements).
+14540.323 INFO  Optimizer pass #4: applied 5 more improving candidate(s).
+14540.801 INFO  Optimizer pass #4 was completed in 2595.20 seconds (607 of 607 candidates) with the score of 157.62 (16 unrouted and 0 violations).
+14540.998 INFO  checkpoint: best board so far (16 unrouted, 0 violations) written to 'board.ses'
+14541.000 INFO  Optimizer pass #4: optimizer score 152.01 -> 157.62 (IMPROVED, 3.6893%), router score: 964.68, incomplete connections: 16, clearance violations: 0.
+14572.835 INFO  Optimizer pass #5: 39 of 600 candidates after 32 s (10 improving so far).
+14602.032 INFO  Optimizer pass #5: 62 of 600 candidates after 61 s (20 improving so far).
+14635.397 INFO  Optimizer pass #5: 82 of 600 candidates after 94 s (23 improving so far).
+14661.098 INFO  Optimizer pass #5: 95 of 600 candidates after 120 s (28 improving so far).
+14694.610 INFO  Optimizer pass #5: 110 of 600 candidates after 154 s (29 improving so far).
+14721.552 INFO  Optimizer pass #5: 122 of 600 candidates after 181 s (34 improving so far).
+14791.966 INFO  Optimizer pass #5: 135 of 600 candidates after 251 s (37 improving so far).
+14792.931 INFO  Optimizer pass #5: 136 of 600 candidates after 252 s (37 improving so far).
+14815.178 INFO  Optimizer pass #5: 140 of 600 candidates after 274 s (37 improving so far).
+14877.578 INFO  Optimizer pass #5: 150 of 600 candidates after 337 s (42 improving so far).
+14879.309 INFO  Optimizer pass #5: 151 of 600 candidates after 338 s (42 improving so far).
+14921.584 INFO  Optimizer pass #5: 157 of 600 candidates after 381 s (45 improving so far).
+14934.877 INFO  Optimizer pass #5: 159 of 600 candidates after 394 s (45 improving so far).
+15132.151 INFO  Optimizer pass #5: 164 of 600 candidates after 591 s (45 improving so far).
+15134.048 INFO  Optimizer pass #5: 165 of 600 candidates after 593 s (45 improving so far).
+15134.527 INFO  Optimizer pass #5: 166 of 600 candidates after 594 s (45 improving so far).
+15136.486 INFO  Optimizer pass #5: 167 of 600 candidates after 595 s (45 improving so far).
+15138.258 INFO  Optimizer pass #5: 168 of 600 candidates after 597 s (45 improving so far).
+15142.196 INFO  Optimizer pass #5: 169 of 600 candidates after 601 s (45 improving so far).
+15142.937 INFO  Optimizer pass #5: 170 of 600 candidates after 602 s (45 improving so far).
+15171.427 INFO  Optimizer pass #5: 179 of 600 candidates after 630 s (47 improving so far).
+15204.917 INFO  Optimizer pass #5: 192 of 600 candidates after 664 s (56 improving so far).
+15289.304 INFO  Optimizer pass #5: 200 of 600 candidates after 748 s (60 improving so far).
+15291.796 INFO  Optimizer pass #5: 201 of 600 candidates after 751 s (60 improving so far).
+15293.316 INFO  Optimizer pass #5: 202 of 600 candidates after 752 s (60 improving so far).
+15334.381 INFO  Optimizer pass #5: 206 of 600 candidates after 793 s (61 improving so far).
+15354.471 INFO  Optimizer pass #5: 213 of 600 candidates after 813 s (63 improving so far).
+15388.759 INFO  Optimizer pass #5: 215 of 600 candidates after 848 s (64 improving so far).
+15480.032 INFO  Optimizer pass #5: 228 of 600 candidates after 939 s (70 improving so far).
+15530.730 INFO  Optimizer pass #5: 229 of 600 candidates after 990 s (70 improving so far).
+15548.948 INFO  Optimizer pass #5: 230 of 600 candidates after 1008 s (70 improving so far).
+15554.565 INFO  Optimizer pass #5: 231 of 600 candidates after 1014 s (70 improving so far).
+15557.785 INFO  Optimizer pass #5: 232 of 600 candidates after 1017 s (70 improving so far).
+15561.846 INFO  Optimizer pass #5: 233 of 600 candidates after 1021 s (70 improving so far).
+15767.155 INFO  Optimizer pass #5: 243 of 600 candidates after 1226 s (73 improving so far).
+15769.072 INFO  Optimizer pass #5: 244 of 600 candidates after 1228 s (73 improving so far).
+15771.378 INFO  Optimizer pass #5: 245 of 600 candidates after 1230 s (74 improving so far).
+15771.887 INFO  Optimizer pass #5: 246 of 600 candidates after 1231 s (75 improving so far).
+15773.224 INFO  Optimizer pass #5: 247 of 600 candidates after 1232 s (75 improving so far).
+15781.108 INFO  Optimizer pass #5: 248 of 600 candidates after 1240 s (75 improving so far).
+15783.268 INFO  Optimizer pass #5: 249 of 600 candidates after 1242 s (75 improving so far).
+15802.623 INFO  Optimizer pass #5: 258 of 600 candidates after 1262 s (77 improving so far).
+15836.257 INFO  Optimizer pass #5: 273 of 600 candidates after 1295 s (86 improving so far).
+15862.790 INFO  Optimizer pass #5: 290 of 600 candidates after 1322 s (89 improving so far).
+15892.396 INFO  Optimizer pass #5: 300 of 600 candidates after 1351 s (93 improving so far).
+15921.602 INFO  Optimizer pass #5: 309 of 600 candidates after 1381 s (100 improving so far).
+15951.530 INFO  Optimizer pass #5: 318 of 600 candidates after 1411 s (104 improving so far).
+15987.241 INFO  Optimizer pass #5: 327 of 600 candidates after 1446 s (106 improving so far).
+16024.168 INFO  Optimizer pass #5: 330 of 600 candidates after 1483 s (107 improving so far).
+16043.519 INFO  Optimizer pass #5: 337 of 600 candidates after 1503 s (109 improving so far).
+16110.974 INFO  Optimizer pass #5: 340 of 600 candidates after 1570 s (109 improving so far).
+16144.161 INFO  Optimizer pass #5: 341 of 600 candidates after 1603 s (109 improving so far).
+16148.458 INFO  Optimizer pass #5: 342 of 600 candidates after 1607 s (110 improving so far).
+16180.409 INFO  Optimizer pass #5: 344 of 600 candidates after 1639 s (111 improving so far).
+16212.816 INFO  Optimizer pass #5: 346 of 600 candidates after 1672 s (112 improving so far).
+16234.893 INFO  Optimizer pass #5: 349 of 600 candidates after 1694 s (113 improving so far).
+16252.414 INFO  Optimizer pass #5: 357 of 600 candidates after 1711 s (113 improving so far).
+16291.523 INFO  Optimizer pass #5: 361 of 600 candidates after 1751 s (113 improving so far).
+16324.236 INFO  Optimizer pass #5: 362 of 600 candidates after 1783 s (114 improving so far).
+16357.783 INFO  Optimizer pass #5: 364 of 600 candidates after 1817 s (114 improving so far).
+16396.217 INFO  Optimizer pass #5: 367 of 600 candidates after 1855 s (114 improving so far).
+16430.987 INFO  Optimizer pass #5: 369 of 600 candidates after 1890 s (115 improving so far).
+16463.920 INFO  Optimizer pass #5: 370 of 600 candidates after 1923 s (116 improving so far).
+16464.530 INFO  Optimizer pass #5: 371 of 600 candidates after 1924 s (117 improving so far).
+16500.062 INFO  Optimizer pass #5: 374 of 600 candidates after 1959 s (117 improving so far).
+16533.399 INFO  Optimizer pass #5: 375 of 600 candidates after 1992 s (118 improving so far).
+16583.084 INFO  Optimizer pass #5: 386 of 600 candidates after 2042 s (126 improving so far).
+16585.488 INFO  Optimizer pass #5: 387 of 600 candidates after 2044 s (127 improving so far).
+16618.461 INFO  Optimizer pass #5: 388 of 600 candidates after 2077 s (128 improving so far).
+16668.091 INFO  Optimizer pass #5: 397 of 600 candidates after 2127 s (132 improving so far).
+16671.555 INFO  Optimizer pass #5: 399 of 600 candidates after 2131 s (133 improving so far).
+16704.978 INFO  Optimizer pass #5: 401 of 600 candidates after 2164 s (135 improving so far).
+16748.454 INFO  Optimizer pass #5: 407 of 600 candidates after 2207 s (136 improving so far).
+16779.868 INFO  Optimizer pass #5: 408 of 600 candidates after 2239 s (136 improving so far).
+16816.029 INFO  Optimizer pass #5: 410 of 600 candidates after 2275 s (136 improving so far).
+16851.486 INFO  Optimizer pass #5: 413 of 600 candidates after 2310 s (137 improving so far).
+16881.967 INFO  Optimizer pass #5: 414 of 600 candidates after 2341 s (138 improving so far).
+16882.521 INFO  Optimizer pass #5: 415 of 600 candidates after 2342 s (138 improving so far).
+16921.436 INFO  Optimizer pass #5: 419 of 600 candidates after 2380 s (139 improving so far).
+16943.272 INFO  Optimizer pass #5: 427 of 600 candidates after 2402 s (139 improving so far).
+16983.926 INFO  Optimizer pass #5: 439 of 600 candidates after 2443 s (142 improving so far).
+17003.334 INFO  Optimizer pass #5: 453 of 600 candidates after 2462 s (148 improving so far).
+17031.172 INFO  Optimizer pass #5: 483 of 600 candidates after 2490 s (156 improving so far).
+17061.206 INFO  Optimizer pass #5: 509 of 600 candidates after 2520 s (166 improving so far).
+17092.957 INFO  Optimizer pass #5: 529 of 600 candidates after 2552 s (170 improving so far).
+17121.241 INFO  Optimizer pass #5: 558 of 600 candidates after 2580 s (180 improving so far).
+17151.485 INFO  Optimizer pass #5: 578 of 600 candidates after 2610 s (189 improving so far).
+17222.366 INFO  Optimizer greedy phase stopped after 38 of 197 candidates (44.4 s, no further improvements).
+17222.367 INFO  Optimizer pass #5: applied 7 more improving candidate(s).
+17222.794 INFO  Optimizer pass #5 was completed in 2681.78 seconds (600 of 600 candidates) with the score of 158.80 (16 unrouted and 0 violations).
+17222.924 INFO  checkpoint: best board so far (16 unrouted, 0 violations) written to 'board.ses'
+17222.925 INFO  Optimizer pass #5: optimizer score 157.62 -> 158.80 (IMPROVED, 0.7491%), router score: 964.68, incomplete connections: 16, clearance violations: 0.
+17222.925 INFO  Stopping optimizer because the improvement in this pass (0.7491%) is below the threshold (2.50%).
+17222.935 INFO  Optimization stage completed: Baseline router score: 964.68, baseline optimizer score: 118.36, final router score: 964.68, final optimizer score: 158.80, completed in 12394.60 seconds.
+17222.945 INFO  diff pairs released: 16 connections unrouted with the pairs fixed, routing again
+17222.950 INFO  Pipeline thread limits: autorouter.max_threads=1, optimizer.max_threads=1.
+17227.164 INFO  Fanout pass #1 completed in 4.10 seconds with 7 SMD pins fanouted, 17 not routed, 0 insert errors, +3 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+17229.706 INFO  Fanout pass #2 completed in 2.54 seconds with 2 SMD pins fanouted, 17 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+17231.610 INFO  Fanout pass #3 completed in 1.90 seconds with 0 SMD pins fanouted, 17 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+17231.610 INFO  Fanout stage completed: 3 passes, completed in 8.66 seconds.
+17232.077 INFO  Auto-routing stage started with baseline score 958.06 for 19 unrouted items.
+17268.111 INFO  Auto-routing pass #1: 8 of 34 items after 36 s (routed 6, failed 2, ripped 10).
+17311.083 INFO  Auto-routing pass #1: 11 of 34 items after 79 s (routed 9, failed 2, ripped 24).
+17342.298 INFO  Auto-routing pass #1: 12 of 34 items after 110 s (routed 9, failed 3, ripped 24).
+17367.176 INFO  Auto-routing pass #1: 20 of 34 items after 135 s (routed 16, failed 3, ripped 39).
+17393.361 INFO  Auto-routing pass #1: 30 of 34 items after 161 s (routed 23, failed 3, ripped 53).
+17421.171 INFO  Auto-routing pass #1: 32 of 34 items after 189 s (routed 23, failed 4, ripped 53).
+17421.730 INFO  Auto-routing pass #1 was completed in 189.65 seconds with score 909.49 (41 unrouted and 0 violations) (routed 24, failed 4, ripped 53).
+17456.352 INFO  Auto-routing pass #2: 8 of 67 items after 35 s (routed 3, failed 2, ripped 1).
+17482.475 INFO  Auto-routing pass #2: 28 of 67 items after 61 s (routed 15, failed 3, ripped 19).
+17523.090 INFO  Auto-routing pass #2: 32 of 67 items after 101 s (routed 19, failed 3, ripped 27).
+17545.415 INFO  Auto-routing pass #2: 38 of 67 items after 124 s (routed 22, failed 5, ripped 33).
+17599.337 INFO  Auto-routing pass #2: 54 of 67 items after 178 s (routed 31, failed 6, ripped 43).
+17631.847 INFO  Auto-routing pass #2: 60 of 67 items after 210 s (routed 33, failed 7, ripped 47).
+17634.190 INFO  Auto-routing pass #2: 61 of 67 items after 212 s (routed 34, failed 7, ripped 48).
+17639.192 INFO  Auto-routing pass #2 was completed in 217.46 seconds with score 907.28 (42 unrouted and 0 violations) (routed 39, failed 7, ripped 49).
+17717.627 INFO  Auto-routing pass #3: 15 of 74 items after 78 s (routed 8, failed 2, ripped 6).
+17719.449 INFO  Auto-routing pass #3: 16 of 74 items after 80 s (routed 9, failed 2, ripped 7).
+17730.526 INFO  Auto-routing pass #3: 33 of 74 items after 91 s (routed 20, failed 3, ripped 23).
+17760.573 INFO  Auto-routing pass #3: 44 of 74 items after 121 s (routed 27, failed 3, ripped 38).
+17794.691 INFO  Auto-routing pass #3: 64 of 74 items after 155 s (routed 36, failed 6, ripped 53).
+17805.515 INFO  Auto-routing pass #3 was completed in 166.24 seconds with score 909.49 (41 unrouted and 0 violations) (routed 42, failed 6, ripped 59).
+17837.029 INFO  Auto-routing pass #4: 24 of 73 items after 31 s (routed 13, failed 1, ripped 8).
+17871.167 INFO  Auto-routing pass #4: 43 of 73 items after 66 s (routed 25, failed 2, ripped 23).
+17900.946 INFO  Auto-routing pass #4: 49 of 73 items after 95 s (routed 27, failed 4, ripped 26).
+17927.387 INFO  Auto-routing pass #4: 69 of 73 items after 122 s (routed 37, failed 4, ripped 42).
+17934.471 INFO  Auto-routing pass #4 was completed in 128.95 seconds with score 918.32 (37 unrouted and 0 violations) (routed 39, failed 4, ripped 42).
+17965.705 INFO  Auto-routing pass #5: 17 of 62 items after 31 s (routed 8, failed 3, ripped 12).
+17995.281 INFO  Auto-routing pass #5: 33 of 62 items after 61 s (routed 19, failed 5, ripped 28).
+18040.350 INFO  Auto-routing pass #5: 38 of 62 items after 106 s (routed 20, failed 7, ripped 31).
+18055.196 INFO  Auto-routing pass #5: 42 of 62 items after 121 s (routed 24, failed 7, ripped 37).
+18084.957 INFO  Auto-routing pass #5: 55 of 62 items after 150 s (routed 30, failed 10, ripped 41).
+18102.899 INFO  Auto-routing pass #5 was completed in 168.43 seconds with score 898.45 (46 unrouted and 0 violations) (routed 34, failed 10, ripped 47).
+18134.928 INFO  Auto-routing pass #6: 14 of 73 items after 32 s (routed 10, failed 0, ripped 12).
+18169.505 INFO  Auto-routing pass #6: 25 of 73 items after 67 s (routed 17, failed 1, ripped 19).
+18199.656 INFO  Auto-routing pass #6: 34 of 73 items after 97 s (routed 21, failed 3, ripped 23).
+18244.405 INFO  Auto-routing pass #6: 66 of 73 items after 141 s (routed 41, failed 6, ripped 30).
+18255.755 INFO  Auto-routing pass #6: 68 of 73 items after 153 s (routed 43, failed 6, ripped 31).
+18259.328 INFO  Auto-routing pass #6 was completed in 156.43 seconds with score 927.15 (33 unrouted and 0 violations) (routed 45, failed 6, ripped 34).
+18291.691 INFO  Auto-routing pass #7: 5 of 58 items after 32 s (routed 2, failed 1, ripped 4).
+18337.197 INFO  Auto-routing pass #7: 9 of 58 items after 78 s (routed 4, failed 2, ripped 5).
+18353.409 INFO  Auto-routing pass #7: 16 of 58 items after 94 s (routed 9, failed 2, ripped 12).
+18381.851 INFO  Auto-routing pass #7: 26 of 58 items after 122 s (routed 14, failed 4, ripped 16).
+18411.438 INFO  Auto-routing pass #7: 33 of 58 items after 152 s (routed 19, failed 5, ripped 21).
+18452.262 INFO  Auto-routing pass #7: 51 of 58 items after 193 s (routed 26, failed 12, ripped 35).
+18474.037 INFO  Auto-routing pass #7: 55 of 58 items after 215 s (routed 29, failed 12, ripped 37).
+18481.950 INFO  Auto-routing pass #7 was completed in 222.62 seconds with score 942.60 (26 unrouted and 0 violations) (routed 30, failed 12, ripped 37).
+18527.196 INFO  Auto-routing pass #8: 4 of 44 items after 45 s (routed 0, failed 4, ripped 1).
+18546.997 INFO  Auto-routing pass #8: 9 of 44 items after 65 s (routed 4, failed 5, ripped 4).
+18572.508 INFO  Auto-routing pass #8: 16 of 44 items after 90 s (routed 8, failed 6, ripped 13).
+18612.158 INFO  Auto-routing pass #8: 21 of 44 items after 130 s (routed 10, failed 7, ripped 15).
+18639.043 INFO  Auto-routing pass #8: 26 of 44 items after 157 s (routed 14, failed 7, ripped 22).
+18662.550 INFO  Auto-routing pass #8: 33 of 44 items after 181 s (routed 17, failed 11, ripped 23).
+18688.379 INFO  Auto-routing pass #8 was completed in 206.43 seconds with score 942.60 (26 unrouted and 0 violations) (routed 22, failed 11, ripped 30).
+18724.351 INFO  Auto-routing pass #9: 12 of 41 items after 36 s (routed 6, failed 5, ripped 3).
+18762.479 INFO  Auto-routing pass #9: 19 of 41 items after 74 s (routed 10, failed 6, ripped 10).
+18787.822 INFO  Auto-routing pass #9: 22 of 41 items after 99 s (routed 12, failed 7, ripped 16).
+18826.325 INFO  Auto-routing pass #9: 25 of 41 items after 138 s (routed 13, failed 8, ripped 16).
+18847.980 INFO  Auto-routing pass #9: 26 of 41 items after 160 s (routed 14, failed 8, ripped 18).
+18868.753 INFO  Auto-routing pass #9: 30 of 41 items after 180 s (routed 15, failed 9, ripped 20).
+18892.924 INFO  Auto-routing pass #9 was completed in 204.54 seconds with score 953.64 (21 unrouted and 0 violations) (routed 20, failed 11, ripped 21).
+18932.188 INFO  Auto-routing pass #10: 7 of 31 items after 39 s (routed 3, failed 3, ripped 4).
+18953.947 INFO  Auto-routing pass #10: 8 of 31 items after 61 s (routed 3, failed 4, ripped 4).
+19005.322 INFO  Auto-routing pass #10: 16 of 31 items after 112 s (routed 7, failed 5, ripped 8).
+19014.669 INFO  Auto-routing pass #10: 18 of 31 items after 122 s (routed 8, failed 6, ripped 12).
+19048.131 INFO  Auto-routing pass #10: 30 of 31 items after 155 s (routed 14, failed 8, ripped 18).
+19048.925 INFO  Auto-routing pass #10 was completed in 156.00 seconds with score 958.06 (19 unrouted and 0 violations) (routed 14, failed 8, ripped 18).
+19083.129 INFO  Auto-routing pass #11: 9 of 26 items after 34 s (routed 7, failed 0, ripped 4).
+19119.190 INFO  Auto-routing pass #11: 15 of 26 items after 70 s (routed 10, failed 0, ripped 6).
+19139.680 INFO  Auto-routing pass #11: 17 of 26 items after 91 s (routed 11, failed 1, ripped 9).
+19182.210 INFO  Auto-routing pass #11: 21 of 26 items after 133 s (routed 13, failed 2, ripped 12).
+19202.739 INFO  Auto-routing pass #11: 24 of 26 items after 154 s (routed 14, failed 3, ripped 13).
+19211.580 INFO  Auto-routing pass #11 was completed in 162.65 seconds with score 960.26 (18 unrouted and 0 violations) (routed 14, failed 5, ripped 15).
+19253.552 INFO  Auto-routing pass #12: 8 of 26 items after 42 s (routed 5, failed 1, ripped 6).
+19275.225 INFO  Auto-routing pass #12: 17 of 26 items after 64 s (routed 10, failed 3, ripped 12).
+19314.400 INFO  Auto-routing pass #12: 19 of 26 items after 103 s (routed 12, failed 3, ripped 16).
+19327.894 INFO  Auto-routing pass #12 was completed in 116.31 seconds with score 958.06 (19 unrouted and 0 violations) (routed 14, failed 5, ripped 21).
+19382.352 INFO  Auto-routing pass #13: 10 of 25 items after 54 s (routed 5, failed 3, ripped 9).
+19397.230 INFO  Auto-routing pass #13: 13 of 25 items after 69 s (routed 6, failed 5, ripped 15).
+19424.510 INFO  Auto-routing pass #13: 17 of 25 items after 97 s (routed 8, failed 7, ripped 17).
+19449.554 INFO  Auto-routing pass #13: 23 of 25 items after 122 s (routed 11, failed 8, ripped 19).
+19451.425 INFO  Auto-routing pass #13 was completed in 123.48 seconds with score 966.89 (15 unrouted and 0 violations) (routed 12, failed 8, ripped 19).
+19451.497 INFO  checkpoint: best board so far (15 unrouted, 0 violations) written to 'board.ses'
+19517.340 INFO  Auto-routing pass #14: 7 of 19 items after 66 s (routed 2, failed 4, ripped 4).
+19519.177 INFO  Auto-routing pass #14: 8 of 19 items after 68 s (routed 3, failed 4, ripped 4).
+19542.507 INFO  Auto-routing pass #14: 13 of 19 items after 91 s (routed 6, failed 4, ripped 10).
+19572.821 INFO  Auto-routing pass #14: 18 of 19 items after 121 s (routed 9, failed 5, ripped 13).
+19573.316 INFO  Auto-routing pass #14 was completed in 121.82 seconds with score 969.09 (14 unrouted and 0 violations) (routed 9, failed 5, ripped 13).
+19573.370 INFO  checkpoint: best board so far (14 unrouted, 0 violations) written to 'board.ses'
+19605.486 INFO  Auto-routing pass #15: 4 of 15 items after 32 s (routed 3, failed 0, ripped 3).
+19646.580 INFO  Auto-routing pass #15: 6 of 15 items after 73 s (routed 3, failed 2, ripped 3).
+19683.912 INFO  Auto-routing pass #15: 13 of 15 items after 110 s (routed 7, failed 4, ripped 11).
+19689.107 INFO  Auto-routing pass #15 was completed in 115.74 seconds with score 962.47 (17 unrouted and 0 violations) (routed 7, failed 6, ripped 11).
+19741.906 INFO  Auto-routing pass #16: 6 of 18 items after 53 s (routed 2, failed 3, ripped 1).
+19750.385 INFO  Auto-routing pass #16: 8 of 18 items after 61 s (routed 4, failed 3, ripped 4).
+19782.303 INFO  Auto-routing pass #16: 11 of 18 items after 93 s (routed 6, failed 4, ripped 8).
+19798.444 INFO  Auto-routing pass #16 was completed in 109.33 seconds with score 975.72 (11 unrouted and 0 violations) (routed 11, failed 4, ripped 9).
+19798.488 INFO  checkpoint: best board so far (11 unrouted, 0 violations) written to 'board.ses'
+19829.392 INFO  Auto-routing pass #17: 4 of 10 items after 31 s (routed 3, failed 0, ripped 1).
+19843.137 INFO  Auto-routing pass #17 was completed in 44.65 seconds with score 980.13 (9 unrouted and 0 violations) (routed 6, failed 1, ripped 3).
+19843.208 INFO  checkpoint: best board so far (9 unrouted, 0 violations) written to 'board.ses'
+19888.927 INFO  Auto-routing pass #18: 3 of 7 items after 46 s (routed 2, failed 0, ripped 4).
+19891.732 INFO  Auto-routing pass #18 was completed in 48.52 seconds with score 980.13 (9 unrouted and 0 violations) (routed 4, failed 0, ripped 6).
+19929.014 INFO  Auto-routing pass #19: 6 of 7 items after 37 s (routed 4, failed 1, ripped 4).
+19929.532 INFO  Auto-routing pass #19 was completed in 37.80 seconds with score 977.92 (10 unrouted and 0 violations) (routed 4, failed 1, ripped 4).
+19946.902 INFO  Auto-routing pass #20 was completed in 17.37 seconds with score 982.34 (8 unrouted and 0 violations) (routed 5, failed 2, ripped 4).
+19947.119 INFO  checkpoint: best board so far (8 unrouted, 0 violations) written to 'board.ses'
+20002.178 INFO  Auto-routing pass #21: 5 of 6 items after 55 s (routed 2, failed 1, ripped 2).
+20003.984 INFO  Auto-routing pass #21 was completed in 56.86 seconds with score 984.55 (7 unrouted and 0 violations) (routed 3, failed 1, ripped 2).
+20004.075 INFO  checkpoint: best board so far (7 unrouted, 0 violations) written to 'board.ses'
+20033.766 INFO  Auto-routing pass #22 was completed in 29.69 seconds with score 986.75 (6 unrouted and 0 violations) (routed 2, failed 0, ripped 2).
+20033.813 INFO  checkpoint: best board so far (6 unrouted, 0 violations) written to 'board.ses'
+20042.339 INFO  Auto-routing pass #23 was completed in 8.53 seconds with score 986.75 (6 unrouted and 0 violations) (routed 1, failed 0, ripped 1).
+20061.702 INFO  Auto-routing pass #24 was completed in 19.36 seconds with score 986.75 (6 unrouted and 0 violations) (routed 1, failed 0, ripped 2).
+20071.723 INFO  Auto-routing pass #25 was completed in 10.01 seconds with score 986.75 (6 unrouted and 0 violations) (routed 1, failed 0, ripped 1).
+20105.157 INFO  Auto-routing pass #26: 1 of 2 items after 32 s (routed 0, failed 1, ripped 0).
+20106.672 INFO  Auto-routing pass #26 was completed in 33.60 seconds with score 986.75 (6 unrouted and 0 violations) (routed 1, failed 1, ripped 1).
+20106.672 INFO  Stopping the auto-router: the last 3 passes (about 34 s each) reduced the unrouted items only from 6 to 6.
+20106.697 INFO  Auto-routing stage completed: started with 16 unrouted nets, completed in 2874.70 seconds, final score: 986.75 (6 unrouted and 0 violations).
+20106.698 INFO  12 item(s) cannot be routed even on the board as loaded (blocked by pins, keepouts or fixed wiring); they were skipped after their second failure.
+20106.744 INFO  Multi-start skipped: the first routing run took 2884 s (variants run only if they are expected to take less than 600 s).
+20107.134 INFO  Optimization stage started. Baseline router score: 986.75, optimizer score: 21.55, incomplete connections: 6, clearance violations: 0.
+20137.284 INFO  Optimizer pass #1: 32 of 633 candidates after 30 s (14 improving so far).
+20167.419 INFO  Optimizer pass #1: 64 of 633 candidates after 60 s (30 improving so far).
+20202.055 INFO  Optimizer pass #1: 86 of 633 candidates after 95 s (33 improving so far).
+20239.217 INFO  Optimizer pass #1: 88 of 633 candidates after 132 s (33 improving so far).
+20257.284 INFO  Optimizer pass #1: 96 of 633 candidates after 150 s (39 improving so far).
+20277.889 INFO  Stopping optimization pass #1 early after 12 consecutive items could not be improved.
+20300.092 INFO  Optimizer greedy phase stopped after 18 of 39 candidates (22.2 s, no further improvements).
+20300.095 INFO  Optimizer pass #1: applied 3 more improving candidate(s).
+20300.512 INFO  Optimizer pass #1 was completed in 193.37 seconds (110 of 633 candidates) with the score of 32.17 (6 unrouted and 0 violations).
+20300.901 INFO  checkpoint: best board so far (6 unrouted, 0 violations) written to 'board.ses'
+20300.901 INFO  Optimizer pass #1: optimizer score 21.55 -> 32.17 (IMPROVED, 49.3151%), router score: 986.75, incomplete connections: 6, clearance violations: 0.
+20331.228 INFO  Optimizer pass #2: 36 of 626 candidates after 30 s (21 improving so far).
+20362.278 INFO  Optimizer pass #2: 73 of 626 candidates after 61 s (31 improving so far).
+20391.288 INFO  Optimizer pass #2: 91 of 626 candidates after 90 s (38 improving so far).
+20422.352 INFO  Optimizer pass #2: 110 of 626 candidates after 121 s (47 improving so far).
+20453.109 INFO  Optimizer pass #2: 115 of 626 candidates after 152 s (50 improving so far).
+20482.315 INFO  Optimizer pass #2: 128 of 626 candidates after 181 s (57 improving so far).
+20511.140 INFO  Optimizer pass #2: 143 of 626 candidates after 210 s (65 improving so far).
+20541.211 INFO  Optimizer pass #2: 151 of 626 candidates after 240 s (68 improving so far).
+20571.043 INFO  Optimizer pass #2: 161 of 626 candidates after 270 s (71 improving so far).
+20636.211 INFO  Optimizer pass #2: 175 of 626 candidates after 335 s (79 improving so far).
+20642.889 INFO  Optimizer pass #2: 176 of 626 candidates after 342 s (79 improving so far).
+20669.252 INFO  Optimizer pass #2: 181 of 626 candidates after 368 s (82 improving so far).
+20717.249 INFO  Optimizer pass #2: 189 of 626 candidates after 416 s (85 improving so far).
+20728.003 INFO  Optimizer pass #2: 192 of 626 candidates after 427 s (85 improving so far).
+20781.651 INFO  Optimizer pass #2: 201 of 626 candidates after 481 s (91 improving so far).
+20785.094 INFO  Optimizer pass #2: 202 of 626 candidates after 484 s (91 improving so far).
+20831.277 INFO  Optimizer pass #2: 211 of 626 candidates after 530 s (98 improving so far).
+20945.770 INFO  Optimizer pass #2: 217 of 626 candidates after 645 s (101 improving so far).
+20949.664 INFO  Optimizer pass #2: 218 of 626 candidates after 649 s (101 improving so far).
+20952.995 INFO  Optimizer pass #2: 219 of 626 candidates after 652 s (101 improving so far).
+20956.617 INFO  Optimizer pass #2: 220 of 626 candidates after 656 s (102 improving so far).
+20962.696 INFO  Optimizer pass #2: 222 of 626 candidates after 662 s (104 improving so far).
+20996.660 INFO  Optimizer pass #2: 229 of 626 candidates after 696 s (108 improving so far).
+21022.528 INFO  Optimizer pass #2: 238 of 626 candidates after 722 s (112 improving so far).
+21059.152 INFO  Optimizer pass #2: 239 of 626 candidates after 758 s (113 improving so far).
+21101.931 INFO  Optimizer pass #2: 245 of 626 candidates after 801 s (115 improving so far).
+21112.706 INFO  Optimizer pass #2: 248 of 626 candidates after 812 s (117 improving so far).
+21151.235 INFO  Optimizer pass #2: 249 of 626 candidates after 850 s (117 improving so far).
+21172.363 INFO  Optimizer pass #2: 256 of 626 candidates after 871 s (120 improving so far).
+21288.634 INFO  Optimizer pass #2: 263 of 626 candidates after 988 s (121 improving so far).
+21289.079 INFO  Optimizer pass #2: 264 of 626 candidates after 988 s (121 improving so far).
+21290.488 INFO  Optimizer pass #2: 265 of 626 candidates after 990 s (121 improving so far).
+21291.385 INFO  Optimizer pass #2: 266 of 626 candidates after 990 s (121 improving so far).
+21338.415 INFO  Optimizer pass #2: 276 of 626 candidates after 1038 s (127 improving so far).
+21353.588 INFO  Optimizer pass #2: 288 of 626 candidates after 1053 s (133 improving so far).
+21382.928 INFO  Optimizer pass #2: 297 of 626 candidates after 1082 s (139 improving so far).
+21412.822 INFO  Optimizer pass #2: 313 of 626 candidates after 1112 s (145 improving so far).
+21440.932 INFO  Optimizer pass #2: 321 of 626 candidates after 1140 s (151 improving so far).
+21484.629 INFO  Optimizer pass #2: 325 of 626 candidates after 1184 s (153 improving so far).
+21534.131 INFO  Optimizer pass #2: 331 of 626 candidates after 1233 s (154 improving so far).
+21536.116 INFO  Optimizer pass #2: 332 of 626 candidates after 1235 s (154 improving so far).
+21561.929 INFO  Optimizer pass #2: 344 of 626 candidates after 1261 s (160 improving so far).
+21601.215 INFO  Optimizer pass #2: 348 of 626 candidates after 1300 s (160 improving so far).
+21647.209 INFO  Optimizer pass #2: 360 of 626 candidates after 1346 s (166 improving so far).
+21653.151 INFO  Optimizer pass #2: 363 of 626 candidates after 1352 s (168 improving so far).
+21690.702 INFO  Optimizer pass #2: 373 of 626 candidates after 1390 s (170 improving so far).
+21711.551 INFO  Optimizer pass #2: 374 of 626 candidates after 1411 s (170 improving so far).
+21742.398 INFO  Optimizer pass #2: 383 of 626 candidates after 1441 s (171 improving so far).
+21775.524 INFO  Optimizer pass #2: 401 of 626 candidates after 1475 s (175 improving so far).
+21805.593 INFO  Optimizer pass #2: 414 of 626 candidates after 1505 s (179 improving so far).
+21835.759 INFO  Optimizer pass #2: 421 of 626 candidates after 1535 s (183 improving so far).
+21880.378 INFO  Optimizer pass #2: 430 of 626 candidates after 1579 s (185 improving so far).
+21892.407 INFO  Optimizer pass #2: 434 of 626 candidates after 1591 s (187 improving so far).
+21923.131 INFO  Optimizer pass #2: 443 of 626 candidates after 1622 s (192 improving so far).
+21954.291 INFO  Optimizer pass #2: 449 of 626 candidates after 1653 s (194 improving so far).
+21981.330 INFO  Optimizer pass #2: 463 of 626 candidates after 1680 s (199 improving so far).
+22018.313 INFO  Optimizer pass #2: 483 of 626 candidates after 1717 s (202 improving so far).
+22045.842 INFO  Optimizer pass #2: 512 of 626 candidates after 1745 s (212 improving so far).
+22072.570 INFO  Optimizer pass #2: 530 of 626 candidates after 1772 s (218 improving so far).
+22104.128 INFO  Optimizer pass #2: 547 of 626 candidates after 1803 s (226 improving so far).
+22131.082 INFO  Optimizer pass #2: 559 of 626 candidates after 1830 s (232 improving so far).
+22161.438 INFO  Optimizer pass #2: 589 of 626 candidates after 1861 s (241 improving so far).
+22191.267 INFO  Optimizer pass #2: 611 of 626 candidates after 1890 s (253 improving so far).
+22268.572 INFO  Optimizer greedy phase stopped after 42 of 255 candidates (60.4 s, time budget used).
+22268.575 INFO  Optimizer pass #2: applied 8 more improving candidate(s).
+22268.920 INFO  Optimizer pass #2 was completed in 1968.01 seconds (626 of 626 candidates) with the score of 55.49 (6 unrouted and 0 violations).
+22269.109 INFO  checkpoint: best board so far (6 unrouted, 0 violations) written to 'board.ses'
+22269.112 INFO  Optimizer pass #2: optimizer score 32.17 -> 55.49 (IMPROVED, 72.4771%), router score: 986.75, incomplete connections: 6, clearance violations: 0.
+22299.999 INFO  Optimizer pass #3: 40 of 615 candidates after 31 s (16 improving so far).
+22329.561 INFO  Optimizer pass #3: 74 of 615 candidates after 60 s (28 improving so far).
+22371.191 INFO  Optimizer pass #3: 86 of 615 candidates after 102 s (28 improving so far).
+22392.930 INFO  Optimizer pass #3: 88 of 615 candidates after 124 s (29 improving so far).
+22419.149 INFO  Optimizer pass #3: 102 of 615 candidates after 150 s (36 improving so far).
+22534.074 INFO  Optimizer pass #3: 109 of 615 candidates after 265 s (37 improving so far).
+22535.695 INFO  Optimizer pass #3: 110 of 615 candidates after 267 s (37 improving so far).
+22549.879 INFO  Optimizer pass #3: 111 of 615 candidates after 281 s (37 improving so far).
+22552.190 INFO  Optimizer pass #3: 112 of 615 candidates after 283 s (37 improving so far).
+22570.763 INFO  Optimizer pass #3: 121 of 615 candidates after 302 s (42 improving so far).
+22607.734 INFO  Optimizer pass #3: 133 of 615 candidates after 339 s (47 improving so far).
+22634.433 INFO  Optimizer pass #3: 147 of 615 candidates after 365 s (51 improving so far).
+22659.936 INFO  Optimizer pass #3: 154 of 615 candidates after 391 s (53 improving so far).
+22689.668 INFO  Optimizer pass #3: 165 of 615 candidates after 421 s (56 improving so far).
+22721.032 INFO  Optimizer pass #3: 174 of 615 candidates after 452 s (60 improving so far).
+22785.695 INFO  Optimizer pass #3: 181 of 615 candidates after 517 s (66 improving so far).
+22787.056 INFO  Optimizer pass #3: 182 of 615 candidates after 518 s (66 improving so far).
+22834.361 INFO  Optimizer pass #3: 188 of 615 candidates after 565 s (69 improving so far).
+22842.905 INFO  Optimizer pass #3: 191 of 615 candidates after 574 s (69 improving so far).
+22889.957 INFO  Optimizer pass #3: 196 of 615 candidates after 621 s (71 improving so far).
+22904.865 INFO  Optimizer pass #3: 200 of 615 candidates after 636 s (72 improving so far).
+23008.190 INFO  Optimizer pass #3: 206 of 615 candidates after 739 s (78 improving so far).
+23064.158 INFO  Optimizer pass #3: 207 of 615 candidates after 795 s (78 improving so far).
+23064.600 INFO  Optimizer pass #3: 208 of 615 candidates after 795 s (78 improving so far).
+23065.067 INFO  Optimizer pass #3: 209 of 615 candidates after 796 s (78 improving so far).
+23066.610 INFO  Optimizer pass #3: 210 of 615 candidates after 797 s (78 improving so far).
+23142.964 INFO  Optimizer pass #3: 213 of 615 candidates after 874 s (78 improving so far).
+23146.641 INFO  Optimizer pass #3: 214 of 615 candidates after 878 s (78 improving so far).
+23149.157 INFO  Optimizer pass #3: 215 of 615 candidates after 880 s (79 improving so far).
+23171.609 INFO  Optimizer pass #3: 220 of 615 candidates after 902 s (81 improving so far).
+23203.607 INFO  Optimizer pass #3: 224 of 615 candidates after 934 s (82 improving so far).
+23235.311 INFO  Optimizer pass #3: 231 of 615 candidates after 966 s (86 improving so far).
+23275.287 INFO  Optimizer pass #3: 233 of 615 candidates after 1006 s (87 improving so far).
+23294.779 INFO  Optimizer pass #3: 241 of 615 candidates after 1026 s (90 improving so far).
+23406.596 INFO  Optimizer pass #3: 247 of 615 candidates after 1137 s (91 improving so far).
+23408.618 INFO  Optimizer pass #3: 248 of 615 candidates after 1140 s (91 improving so far).
+23417.389 INFO  Optimizer pass #3: 249 of 615 candidates after 1148 s (92 improving so far).
+23418.667 INFO  Optimizer pass #3: 250 of 615 candidates after 1150 s (92 improving so far).
+23512.011 INFO  Optimizer pass #3: 256 of 615 candidates after 1243 s (95 improving so far).
+23512.436 INFO  Optimizer pass #3: 257 of 615 candidates after 1243 s (95 improving so far).
+23513.948 INFO  Optimizer pass #3: 258 of 615 candidates after 1245 s (95 improving so far).
+23530.582 INFO  Optimizer pass #3: 262 of 615 candidates after 1261 s (98 improving so far).
+23560.322 INFO  Optimizer pass #3: 273 of 615 candidates after 1291 s (104 improving so far).
+23590.365 INFO  Optimizer pass #3: 285 of 615 candidates after 1321 s (110 improving so far).
+23621.035 INFO  Optimizer pass #3: 299 of 615 candidates after 1352 s (113 improving so far).
+23652.202 INFO  Optimizer pass #3: 312 of 615 candidates after 1383 s (118 improving so far).
+23699.957 INFO  Optimizer pass #3: 316 of 615 candidates after 1431 s (120 improving so far).
+23710.835 INFO  Optimizer pass #3: 319 of 615 candidates after 1442 s (121 improving so far).
+23753.018 INFO  Optimizer pass #3: 322 of 615 candidates after 1484 s (121 improving so far).
+23780.187 INFO  Optimizer pass #3: 327 of 615 candidates after 1511 s (122 improving so far).
+23805.191 INFO  Optimizer pass #3: 331 of 615 candidates after 1536 s (122 improving so far).
+23876.950 INFO  Optimizer pass #3: 336 of 615 candidates after 1608 s (125 improving so far).
+23880.303 INFO  Optimizer pass #3: 337 of 615 candidates after 1611 s (125 improving so far).
+23912.140 INFO  Optimizer pass #3: 338 of 615 candidates after 1643 s (126 improving so far).
+23921.615 INFO  Optimizer pass #3: 341 of 615 candidates after 1652 s (127 improving so far).
+23953.171 INFO  Optimizer pass #3: 345 of 615 candidates after 1684 s (128 improving so far).
+24011.358 INFO  Optimizer pass #3: 348 of 615 candidates after 1742 s (130 improving so far).
+24011.796 INFO  Optimizer pass #3: 349 of 615 candidates after 1743 s (130 improving so far).
+24042.013 INFO  Optimizer pass #3: 350 of 615 candidates after 1773 s (131 improving so far).
+24070.862 INFO  Optimizer pass #3: 354 of 615 candidates after 1802 s (132 improving so far).
+24140.319 INFO  Optimizer pass #3: 364 of 615 candidates after 1871 s (140 improving so far).
+24149.403 INFO  Optimizer pass #3: 365 of 615 candidates after 1880 s (140 improving so far).
+24165.771 INFO  Optimizer pass #3: 368 of 615 candidates after 1897 s (140 improving so far).
+24195.584 INFO  Optimizer pass #3: 377 of 615 candidates after 1926 s (144 improving so far).
+24222.359 INFO  Optimizer pass #3: 389 of 615 candidates after 1953 s (146 improving so far).
+24262.599 INFO  Optimizer pass #3: 407 of 615 candidates after 1993 s (154 improving so far).
+24279.310 INFO  Optimizer pass #3: 412 of 615 candidates after 2010 s (156 improving so far).
+24310.156 INFO  Optimizer pass #3: 415 of 615 candidates after 2041 s (156 improving so far).
+24410.842 INFO  Optimizer pass #3: 423 of 615 candidates after 2142 s (156 improving so far).
+24412.169 INFO  Optimizer pass #3: 424 of 615 candidates after 2143 s (156 improving so far).
+24415.749 INFO  Optimizer pass #3: 425 of 615 candidates after 2147 s (157 improving so far).
+24440.145 INFO  Optimizer pass #3: 429 of 615 candidates after 2171 s (158 improving so far).
+24460.972 INFO  Optimizer pass #3: 437 of 615 candidates after 2192 s (159 improving so far).
+24490.662 INFO  Optimizer pass #3: 440 of 615 candidates after 2222 s (160 improving so far).
+24519.756 INFO  Optimizer pass #3: 459 of 615 candidates after 2251 s (166 improving so far).
+24555.730 INFO  Optimizer pass #3: 470 of 615 candidates after 2287 s (168 improving so far).
+24579.379 INFO  Optimizer pass #3: 480 of 615 candidates after 2310 s (170 improving so far).
+24609.397 INFO  Optimizer pass #3: 505 of 615 candidates after 2340 s (177 improving so far).
+24639.186 INFO  Optimizer pass #3: 523 of 615 candidates after 2370 s (183 improving so far).
+24672.120 INFO  Optimizer pass #3: 537 of 615 candidates after 2403 s (191 improving so far).
+24699.300 INFO  Optimizer pass #3: 551 of 615 candidates after 2430 s (194 improving so far).
+24730.115 INFO  Optimizer pass #3: 578 of 615 candidates after 2461 s (202 improving so far).
+24761.439 INFO  Optimizer pass #3: 589 of 615 candidates after 2492 s (208 improving so far).
+24789.352 INFO  Optimizer pass #3: 606 of 615 candidates after 2520 s (214 improving so far).
+24866.418 INFO  Optimizer greedy phase stopped after 25 of 215 candidates (69.8 s, time budget used).
+24866.419 INFO  Optimizer pass #3: applied 7 more improving candidate(s).
+24866.756 INFO  Optimizer pass #3 was completed in 2597.64 seconds (615 of 615 candidates) with the score of 81.76 (6 unrouted and 0 violations).
+24866.933 INFO  checkpoint: best board so far (6 unrouted, 0 violations) written to 'board.ses'
+24866.934 INFO  Optimizer pass #3: optimizer score 55.49 -> 81.76 (IMPROVED, 47.3404%), router score: 986.75, incomplete connections: 6, clearance violations: 0.
+24897.088 INFO  Optimizer pass #4: 36 of 616 candidates after 30 s (23 improving so far).
+24928.220 INFO  Optimizer pass #4: 74 of 616 candidates after 61 s (34 improving so far).
+24958.865 INFO  Optimizer pass #4: 93 of 616 candidates after 92 s (43 improving so far).
+24987.455 INFO  Optimizer pass #4: 110 of 616 candidates after 121 s (54 improving so far).
+25019.519 INFO  Optimizer pass #4: 125 of 616 candidates after 153 s (62 improving so far).
+25049.112 INFO  Optimizer pass #4: 142 of 616 candidates after 182 s (72 improving so far).
+25082.495 INFO  Optimizer pass #4: 144 of 616 candidates after 216 s (73 improving so far).
+25107.032 INFO  Optimizer pass #4: 148 of 616 candidates after 240 s (74 improving so far).
+25138.195 INFO  Optimizer pass #4: 160 of 616 candidates after 271 s (74 improving so far).
+25170.126 INFO  Optimizer pass #4: 164 of 616 candidates after 303 s (77 improving so far).
+25287.891 INFO  Optimizer pass #4: 165 of 616 candidates after 421 s (77 improving so far).
+25289.446 INFO  Optimizer pass #4: 166 of 616 candidates after 423 s (77 improving so far).
+25291.614 INFO  Optimizer pass #4: 167 of 616 candidates after 425 s (77 improving so far).
+25292.883 INFO  Optimizer pass #4: 168 of 616 candidates after 426 s (78 improving so far).
+25350.364 INFO  Optimizer pass #4: 179 of 616 candidates after 483 s (86 improving so far).
+25351.748 INFO  Optimizer pass #4: 180 of 616 candidates after 485 s (86 improving so far).
+25413.992 INFO  Optimizer pass #4: 186 of 616 candidates after 547 s (89 improving so far).
+25415.784 INFO  Optimizer pass #4: 187 of 616 candidates after 549 s (89 improving so far).
+25468.422 INFO  Optimizer pass #4: 193 of 616 candidates after 601 s (91 improving so far).
+25473.636 INFO  Optimizer pass #4: 194 of 616 candidates after 607 s (91 improving so far).
+25548.547 INFO  Optimizer pass #4: 201 of 616 candidates after 682 s (94 improving so far).
+25549.829 INFO  Optimizer pass #4: 202 of 616 candidates after 683 s (94 improving so far).
+25583.996 INFO  Optimizer pass #4: 203 of 616 candidates after 717 s (95 improving so far).
+25624.256 INFO  Optimizer pass #4: 204 of 616 candidates after 757 s (95 improving so far).
+25624.733 INFO  Optimizer pass #4: 205 of 616 candidates after 758 s (95 improving so far).
+25657.088 INFO  Optimizer pass #4: 211 of 616 candidates after 790 s (97 improving so far).
+25678.639 INFO  Optimizer pass #4: 221 of 616 candidates after 812 s (101 improving so far).
+25708.652 INFO  Optimizer pass #4: 224 of 616 candidates after 842 s (102 improving so far).
+25758.487 INFO  Optimizer pass #4: 230 of 616 candidates after 892 s (102 improving so far).
+25775.002 INFO  Optimizer pass #4: 234 of 616 candidates after 908 s (103 improving so far).
+25799.068 INFO  Optimizer pass #4: 235 of 616 candidates after 932 s (103 improving so far).
+25828.952 INFO  Optimizer pass #4: 238 of 616 candidates after 962 s (103 improving so far).
+25864.384 INFO  Optimizer pass #4: 247 of 616 candidates after 997 s (105 improving so far).
+25981.602 INFO  Optimizer pass #4: 251 of 616 candidates after 1115 s (106 improving so far).
+25987.530 INFO  Optimizer pass #4: 252 of 616 candidates after 1121 s (106 improving so far).
+25988.324 INFO  Optimizer pass #4: 253 of 616 candidates after 1121 s (106 improving so far).
+25990.487 INFO  Optimizer pass #4: 254 of 616 candidates after 1124 s (106 improving so far).
+26007.723 INFO  Optimizer pass #4: 263 of 616 candidates after 1141 s (111 improving so far).
+26041.552 INFO  Optimizer pass #4: 267 of 616 candidates after 1175 s (113 improving so far).
+26080.170 INFO  Optimizer pass #4: 281 of 616 candidates after 1213 s (119 improving so far).
+26097.710 INFO  Optimizer pass #4: 288 of 616 candidates after 1231 s (121 improving so far).
+26127.334 INFO  Optimizer pass #4: 308 of 616 candidates after 1260 s (131 improving so far).
+26167.683 INFO  Optimizer pass #4: 312 of 616 candidates after 1301 s (133 improving so far).
+26211.036 INFO  Optimizer pass #4: 314 of 616 candidates after 1344 s (134 improving so far).
+26242.197 INFO  Optimizer pass #4: 315 of 616 candidates after 1375 s (134 improving so far).
+26277.025 INFO  Optimizer pass #4: 316 of 616 candidates after 1410 s (134 improving so far).
+26277.691 INFO  Optimizer pass #4: 317 of 616 candidates after 1411 s (134 improving so far).
+26327.300 INFO  Optimizer pass #4: 321 of 616 candidates after 1460 s (135 improving so far).
+26361.396 INFO  Optimizer pass #4: 323 of 616 candidates after 1494 s (136 improving so far).
+26370.219 INFO  Optimizer pass #4: 326 of 616 candidates after 1503 s (137 improving so far).
+26398.484 INFO  Optimizer pass #4: 331 of 616 candidates after 1532 s (138 improving so far).
+26443.493 INFO  Optimizer pass #4: 336 of 616 candidates after 1577 s (138 improving so far).
+26484.546 INFO  Optimizer pass #4: 343 of 616 candidates after 1618 s (140 improving so far).
+26489.706 INFO  Optimizer pass #4: 345 of 616 candidates after 1623 s (141 improving so far).
+26526.405 INFO  Optimizer pass #4: 349 of 616 candidates after 1659 s (142 improving so far).
+26547.246 INFO  Optimizer pass #4: 360 of 616 candidates after 1680 s (146 improving so far).
+26598.813 INFO  Optimizer pass #4: 364 of 616 candidates after 1732 s (147 improving so far).
+26608.828 INFO  Optimizer pass #4: 365 of 616 candidates after 1742 s (147 improving so far).
+26637.608 INFO  Optimizer pass #4: 376 of 616 candidates after 1771 s (150 improving so far).
+26667.556 INFO  Optimizer pass #4: 390 of 616 candidates after 1801 s (156 improving so far).
+26698.784 INFO  Optimizer pass #4: 407 of 616 candidates after 1832 s (165 improving so far).
+26733.872 INFO  Optimizer pass #4: 414 of 616 candidates after 1867 s (167 improving so far).
+26761.190 INFO  Optimizer pass #4: 420 of 616 candidates after 1894 s (167 improving so far).
+26811.332 INFO  Optimizer pass #4: 423 of 616 candidates after 1944 s (168 improving so far).
+26817.114 INFO  Optimizer pass #4: 427 of 616 candidates after 1950 s (169 improving so far).
+26849.608 INFO  Optimizer pass #4: 433 of 616 candidates after 1983 s (171 improving so far).
+26878.599 INFO  Optimizer pass #4: 441 of 616 candidates after 2012 s (174 improving so far).
+26919.167 INFO  Optimizer pass #4: 467 of 616 candidates after 2052 s (184 improving so far).
+26938.542 INFO  Optimizer pass #4: 480 of 616 candidates after 2072 s (189 improving so far).
+26970.066 INFO  Optimizer pass #4: 504 of 616 candidates after 2103 s (201 improving so far).
+27000.327 INFO  Optimizer pass #4: 523 of 616 candidates after 2133 s (209 improving so far).
+27027.343 INFO  Optimizer pass #4: 538 of 616 candidates after 2160 s (217 improving so far).
+27059.164 INFO  Optimizer pass #4: 557 of 616 candidates after 2192 s (222 improving so far).
+27088.986 INFO  Optimizer pass #4: 583 of 616 candidates after 2222 s (232 improving so far).
+27118.883 INFO  Optimizer pass #4: 602 of 616 candidates after 2252 s (241 improving so far).
+27222.127 INFO  Optimizer greedy phase stopped after 18 of 243 candidates (84.0 s, time budget used).
+27222.129 INFO  Optimizer pass #4: applied 2 more improving candidate(s).
+27222.587 INFO  Optimizer pass #4 was completed in 2355.65 seconds (616 of 616 candidates) with the score of 80.87 (6 unrouted and 0 violations).
+27222.645 INFO  Optimizer pass #4 candidate rejected: OPTIMIZER_SCORE_NOT_IMPROVED. Restoring incumbent (optimizer score 81.76, incomplete connections: 6, clearance violations: 0).
+27222.903 INFO  Optimizer pass #4: optimizer score 81.76 -> 80.87 (REGRESSED, -1.0830%), router score: 986.75, incomplete connections: 6, clearance violations: 0.
+27253.710 INFO  Optimizer pass #5: 34 of 616 candidates after 30 s (11 improving so far).
+27284.627 INFO  Optimizer pass #5: 74 of 616 candidates after 61 s (24 improving so far).
+27320.961 INFO  Optimizer pass #5: 78 of 616 candidates after 97 s (25 improving so far).
+27345.635 INFO  Optimizer pass #5: 95 of 616 candidates after 122 s (27 improving so far).
+27376.890 INFO  Optimizer pass #5: 110 of 616 candidates after 153 s (31 improving so far).
+27410.712 INFO  Optimizer pass #5: 124 of 616 candidates after 187 s (36 improving so far).
+27438.954 INFO  Optimizer pass #5: 132 of 616 candidates after 215 s (39 improving so far).
+27468.336 INFO  Optimizer pass #5: 147 of 616 candidates after 245 s (43 improving so far).
+27499.959 INFO  Optimizer pass #5: 155 of 616 candidates after 276 s (43 improving so far).
+27530.600 INFO  Optimizer pass #5: 164 of 616 candidates after 307 s (44 improving so far).
+27557.976 INFO  Optimizer pass #5: 179 of 616 candidates after 334 s (50 improving so far).
+27610.953 INFO  Optimizer pass #5: 186 of 616 candidates after 387 s (53 improving so far).
+27619.294 INFO  Optimizer pass #5: 190 of 616 candidates after 396 s (53 improving so far).
+27647.947 INFO  Optimizer pass #5: 197 of 616 candidates after 424 s (53 improving so far).
+27680.949 INFO  Optimizer pass #5: 204 of 616 candidates after 457 s (54 improving so far).
+27704.084 INFO  Optimizer pass #5: 214 of 616 candidates after 480 s (55 improving so far).
+27738.118 INFO  Optimizer pass #5: 224 of 616 candidates after 514 s (57 improving so far).
+27764.082 INFO  Optimizer pass #5: 234 of 616 candidates after 540 s (59 improving so far).
+27796.583 INFO  Optimizer pass #5: 243 of 616 candidates after 573 s (59 improving so far).
+27974.907 INFO  Optimizer pass #5: 251 of 616 candidates after 751 s (63 improving so far).
+27979.773 INFO  Optimizer pass #5: 252 of 616 candidates after 756 s (63 improving so far).
+27985.034 INFO  Optimizer pass #5: 253 of 616 candidates after 761 s (63 improving so far).
+27986.613 INFO  Optimizer pass #5: 254 of 616 candidates after 763 s (63 improving so far).
+27987.013 INFO  Optimizer pass #5: 255 of 616 candidates after 763 s (63 improving so far).
+27988.858 INFO  Optimizer pass #5: 256 of 616 candidates after 765 s (63 improving so far).
+28006.371 INFO  Optimizer pass #5: 260 of 616 candidates after 783 s (65 improving so far).
+28034.977 INFO  Optimizer pass #5: 275 of 616 candidates after 811 s (71 improving so far).
+28065.599 INFO  Optimizer pass #5: 287 of 616 candidates after 842 s (74 improving so far).
+28094.316 INFO  Optimizer pass #5: 301 of 616 candidates after 871 s (77 improving so far).
+28152.207 INFO  Optimizer pass #5: 312 of 616 candidates after 929 s (80 improving so far).
+28160.416 INFO  Optimizer pass #5: 313 of 616 candidates after 937 s (80 improving so far).
+28195.213 INFO  Optimizer pass #5: 315 of 616 candidates after 972 s (80 improving so far).
+28215.112 INFO  Optimizer pass #5: 319 of 616 candidates after 991 s (81 improving so far).
+28244.367 INFO  Optimizer pass #5: 329 of 616 candidates after 1021 s (82 improving so far).
+28277.960 INFO  Optimizer pass #5: 335 of 616 candidates after 1054 s (82 improving so far).
+28310.479 INFO  Optimizer pass #5: 336 of 616 candidates after 1087 s (83 improving so far).
+28337.804 INFO  Optimizer pass #5: 341 of 616 candidates after 1114 s (84 improving so far).
+28384.018 INFO  Optimizer pass #5: 349 of 616 candidates after 1160 s (85 improving so far).
+28403.694 INFO  Optimizer pass #5: 353 of 616 candidates after 1180 s (86 improving so far).
+28453.444 INFO  Optimizer pass #5: 362 of 616 candidates after 1230 s (87 improving so far).
+28453.951 INFO  Optimizer pass #5: 363 of 616 candidates after 1230 s (87 improving so far).
+28501.315 INFO  Optimizer pass #5: 366 of 616 candidates after 1278 s (88 improving so far).
+28522.249 INFO  Optimizer pass #5: 371 of 616 candidates after 1299 s (89 improving so far).
+28556.639 INFO  Optimizer pass #5: 373 of 616 candidates after 1333 s (90 improving so far).
+28590.339 INFO  Optimizer pass #5: 375 of 616 candidates after 1367 s (90 improving so far).
+28623.315 INFO  Optimizer pass #5: 376 of 616 candidates after 1400 s (90 improving so far).
+28667.321 INFO  Optimizer pass #5: 381 of 616 candidates after 1444 s (90 improving so far).
+28668.026 INFO  Optimizer pass #5: 382 of 616 candidates after 1444 s (90 improving so far).
+28701.746 INFO  Optimizer pass #5: 383 of 616 candidates after 1478 s (91 improving so far).
+28750.757 INFO  Optimizer pass #5: 396 of 616 candidates after 1527 s (94 improving so far).
+28756.474 INFO  Optimizer pass #5: 400 of 616 candidates after 1533 s (94 improving so far).
+28787.462 INFO  Optimizer pass #5: 414 of 616 candidates after 1564 s (98 improving so far).
+28817.333 INFO  Optimizer pass #5: 423 of 616 candidates after 1594 s (99 improving so far).
+28851.317 INFO  Optimizer pass #5: 429 of 616 candidates after 1628 s (100 improving so far).
+28881.124 INFO  Optimizer pass #5: 438 of 616 candidates after 1657 s (102 improving so far).
+28906.365 INFO  Optimizer pass #5: 452 of 616 candidates after 1683 s (104 improving so far).
+28935.235 INFO  Optimizer pass #5: 467 of 616 candidates after 1712 s (107 improving so far).
+28964.578 INFO  Optimizer pass #5: 480 of 616 candidates after 1741 s (109 improving so far).
+28994.532 INFO  Optimizer pass #5: 508 of 616 candidates after 1771 s (113 improving so far).
+29023.872 INFO  Optimizer pass #5: 526 of 616 candidates after 1800 s (119 improving so far).
+29058.403 INFO  Optimizer pass #5: 538 of 616 candidates after 1835 s (122 improving so far).
+29083.927 INFO  Optimizer pass #5: 544 of 616 candidates after 1860 s (123 improving so far).
+29114.528 INFO  Optimizer pass #5: 572 of 616 candidates after 1891 s (127 improving so far).
+29143.954 INFO  Optimizer pass #5: 591 of 616 candidates after 1920 s (132 improving so far).
+29173.902 INFO  Optimizer pass #5: 605 of 616 candidates after 1950 s (136 improving so far).
+29252.721 INFO  Optimizer greedy phase stopped after 46 of 136 candidates (60.8 s, time budget used).
+29252.722 INFO  Optimizer pass #5: applied 11 more improving candidate(s).
+29252.726 INFO  Optimizer pass #5 was completed in 2029.06 seconds (616 of 616 candidates) with the score of 100.65 (6 unrouted and 0 violations).
+29252.891 INFO  checkpoint: best board so far (6 unrouted, 0 violations) written to 'board.ses'
+29252.892 INFO  Optimizer pass #5: optimizer score 81.76 -> 100.65 (IMPROVED, 23.1047%), router score: 986.75, incomplete connections: 6, clearance violations: 0.
+29283.306 INFO  Optimizer pass #6: 37 of 614 candidates after 30 s (19 improving so far).
+29343.814 INFO  Optimizer pass #6: 78 of 614 candidates after 91 s (30 improving so far).
+29345.530 INFO  Optimizer pass #6: 79 of 614 candidates after 93 s (30 improving so far).
+29380.198 INFO  Optimizer pass #6: 82 of 614 candidates after 127 s (30 improving so far).
+29403.647 INFO  Optimizer pass #6: 93 of 614 candidates after 151 s (32 improving so far).
+29433.405 INFO  Optimizer pass #6: 111 of 614 candidates after 181 s (37 improving so far).
+29467.482 INFO  Optimizer pass #6: 122 of 614 candidates after 215 s (41 improving so far).
+29498.474 INFO  Optimizer pass #6: 129 of 614 candidates after 246 s (42 improving so far).
+29531.857 INFO  Optimizer pass #6: 145 of 614 candidates after 279 s (43 improving so far).
+29556.759 INFO  Optimizer pass #6: 151 of 614 candidates after 304 s (43 improving so far).
+29583.376 INFO  Optimizer pass #6: 160 of 614 candidates after 330 s (43 improving so far).
+29621.747 INFO  Optimizer pass #6: 182 of 614 candidates after 369 s (46 improving so far).
+29660.929 INFO  Optimizer pass #6: 183 of 614 candidates after 408 s (46 improving so far).
+29676.380 INFO  Optimizer pass #6: 187 of 614 candidates after 423 s (46 improving so far).
+29704.945 INFO  Optimizer pass #6: 200 of 614 candidates after 452 s (49 improving so far).
+29733.931 INFO  Optimizer pass #6: 210 of 614 candidates after 481 s (50 improving so far).
+29763.983 INFO  Optimizer pass #6: 221 of 614 candidates after 511 s (52 improving so far).
+29796.092 INFO  Optimizer pass #6: 233 of 614 candidates after 543 s (54 improving so far).
+29836.380 INFO  Optimizer pass #6: 235 of 614 candidates after 583 s (54 improving so far).
+29881.013 INFO  Optimizer pass #6: 238 of 614 candidates after 628 s (54 improving so far).
+29883.160 INFO  Optimizer pass #6: 240 of 614 candidates after 630 s (54 improving so far).
+29913.638 INFO  Optimizer pass #6: 252 of 614 candidates after 661 s (55 improving so far).
+29959.527 INFO  Optimizer pass #6: 260 of 614 candidates after 707 s (57 improving so far).
+29999.197 INFO  Optimizer pass #6: 266 of 614 candidates after 746 s (58 improving so far).
+30002.964 INFO  Optimizer pass #6: 270 of 614 candidates after 750 s (58 improving so far).
+30035.474 INFO  Optimizer pass #6: 285 of 614 candidates after 783 s (61 improving so far).
+30064.981 INFO  Optimizer pass #6: 304 of 614 candidates after 812 s (63 improving so far).
+30113.873 INFO  Optimizer pass #6: 312 of 614 candidates after 861 s (64 improving so far).
+30129.351 INFO  Optimizer pass #6: 314 of 614 candidates after 876 s (64 improving so far).
+30167.325 INFO  Optimizer pass #6: 323 of 614 candidates after 914 s (67 improving so far).
+30190.556 INFO  Optimizer pass #6: 328 of 614 candidates after 938 s (67 improving so far).
+30213.192 INFO  Optimizer pass #6: 339 of 614 candidates after 960 s (68 improving so far).
+30266.343 INFO  Optimizer pass #6: 356 of 614 candidates after 1013 s (76 improving so far).
+30299.567 INFO  Optimizer pass #6: 357 of 614 candidates after 1047 s (76 improving so far).
+30334.257 INFO  Optimizer pass #6: 360 of 614 candidates after 1081 s (76 improving so far).
+30335.926 INFO  Optimizer pass #6: 361 of 614 candidates after 1083 s (76 improving so far).
+30366.431 INFO  Optimizer pass #6: 371 of 614 candidates after 1114 s (77 improving so far).
+30392.910 INFO  Optimizer pass #6: 385 of 614 candidates after 1140 s (78 improving so far).
+30427.172 INFO  Optimizer pass #6: 411 of 614 candidates after 1174 s (83 improving so far).
+30455.289 INFO  Optimizer pass #6: 421 of 614 candidates after 1202 s (84 improving so far).
+30486.558 INFO  Optimizer pass #6: 422 of 614 candidates after 1234 s (84 improving so far).
+30522.673 INFO  Optimizer pass #6: 426 of 614 candidates after 1270 s (85 improving so far).
+30558.418 INFO  Optimizer pass #6: 428 of 614 candidates after 1306 s (85 improving so far).
+30574.101 INFO  Optimizer pass #6: 436 of 614 candidates after 1321 s (87 improving so far).
+30604.952 INFO  Optimizer pass #6: 452 of 614 candidates after 1352 s (94 improving so far).
+30636.993 INFO  Optimizer pass #6: 469 of 614 candidates after 1384 s (95 improving so far).
+30663.150 INFO  Optimizer pass #6: 493 of 614 candidates after 1410 s (101 improving so far).
+30693.093 INFO  Optimizer pass #6: 522 of 614 candidates after 1440 s (107 improving so far).
+30733.287 INFO  Optimizer pass #6: 535 of 614 candidates after 1480 s (109 improving so far).
+30756.084 INFO  Optimizer pass #6: 540 of 614 candidates after 1503 s (110 improving so far).
+30798.752 INFO  Optimizer pass #6: 557 of 614 candidates after 1546 s (113 improving so far).
+30814.992 INFO  Optimizer pass #6: 579 of 614 candidates after 1562 s (118 improving so far).
+30853.735 INFO  Optimizer pass #6: 603 of 614 candidates after 1601 s (125 improving so far).
+30889.532 INFO  Optimizer greedy phase stopped after 10 of 126 candidates (17.7 s, no further improvements).
+30889.880 INFO  Optimizer pass #6 was completed in 1636.98 seconds (614 of 614 candidates) with the score of 100.94 (6 unrouted and 0 violations).
+30889.978 INFO  checkpoint: best board so far (6 unrouted, 0 violations) written to 'board.ses'
+30889.978 INFO  Optimizer pass #6: optimizer score 100.65 -> 100.94 (IMPROVED, 0.2933%), router score: 986.75, incomplete connections: 6, clearance violations: 0.
+30889.978 INFO  Stopping optimizer because the improvement in this pass (0.2933%) is below the threshold (2.50%).
+30889.987 INFO  Optimization stage completed: Baseline router score: 986.75, baseline optimizer score: 21.55, final router score: 986.75, final optimizer score: 100.94, completed in 10782.86 seconds.
+30890.014 INFO  routing finished in 30858.43 s
+30898.621 INFO  diff pair /PowerSupply/D+//PowerSupply/D- (after routing): coupled 0.00 -> 13.24 mm of 39.77 mm, skew -2.75 mm
+30900.159 INFO  diff pair /PowerSupply/D+ / /PowerSupply/D-: length difference -2.748 -> -0.050 mm (tolerance 0.10)
+30900.162 INFO  diff pairs finished in 10.15 s
+30900.403 INFO  saved 'board.ses' (246359 bytes)
+30900.983 INFO  report written to 'report.json'

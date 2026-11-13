@@ -23,6 +23,8 @@ if [ -z "$FR" ] || [ ! -x "$FR" ]; then
 	echo "(git clone it, scripts/build-deb.sh, sudo apt install ./dist/fastroute_*.deb)" >&2
 	exit 1
 fi
+# absolute: the script changes directory below
+case $FR in /*) ;; *) FR=$(pwd)/$FR ;; esac
 echo "Using $FR ($("$FR" --version))"
 # the USB pair (net class 90R) keeps its full 0.200 mm width up to the pins
 COMMON="--router.min_trace_width_um=200 --router.plane_nets=GND,3V3 --no-neckdown-classes=90R --live"

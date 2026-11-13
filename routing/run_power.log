@@ -1,0 +1,170 @@
+    0.000 INFO  fastroute 0.1.14
+    0.000 INFO  live viewer: http://127.0.0.1:7878
+    0.016 INFO  parsed '/home/debian/Progetti/APPLE/Vera-Module-RBL-A2/VERA-MODULE-RBL.dsn' in 13.4 ms: 4 layers, 201 components, 239 nets, 231 wires
+    0.460 INFO  net class '90R': no neck-down
+    0.876 INFO  initial session 'stage2_np.ses': 940 wires and 287 vias imported (0 errors)
+    1.450 INFO  69 trace ends inside a pad but off its center joined to the center
+    1.452 INFO  built board in 1433.5 ms: 5307 items (847 pins, 518 vias, 1240 traces)
+    1.469 INFO  threads: autorouting passes run on router.autorouter.max_threads threads (1 = sequential); the optimizer uses router.optimizer.max_threads
+    1.469 INFO  optimizer mode: JavaCompat, board time limits: Count { factor: 10 }, stage wall clock limits: disabled
+    1.472 INFO  Pipeline thread limits: autorouter.max_threads=1, optimizer.max_threads=1.
+    2.781 INFO  checkpoint: best board so far (6 unrouted, 0 violations) written to 'power.ses'
+    2.824 INFO  Auto-routing stage started with baseline score 986.75 for 6 unrouted items.
+   46.912 INFO  Auto-routing pass #1: 6 of 11 items after 44 s (routed 4, failed 2, ripped 10).
+   51.121 INFO  Auto-routing pass #1 was completed in 48.30 seconds with score 973.51 (12 unrouted and 0 violations) (routed 5, failed 3, ripped 12).
+   93.868 INFO  Auto-routing pass #2: 4 of 23 items after 43 s (routed 2, failed 1, ripped 1).
+  145.428 INFO  Auto-routing pass #2: 12 of 23 items after 94 s (routed 5, failed 4, ripped 7).
+  145.479 INFO  Auto-routing pass #2: 13 of 23 items after 94 s (routed 6, failed 4, ripped 7).
+  161.778 INFO  Auto-routing pass #2 was completed in 110.66 seconds with score 969.09 (14 unrouted and 0 violations) (routed 11, failed 4, ripped 10).
+  204.541 INFO  Auto-routing pass #3: 3 of 25 items after 43 s (routed 1, failed 1, ripped 3).
+  256.371 INFO  Auto-routing pass #3: 15 of 25 items after 94 s (routed 7, failed 5, ripped 11).
+  302.822 INFO  Auto-routing pass #3: 16 of 25 items after 141 s (routed 7, failed 6, ripped 11).
+  303.577 INFO  Auto-routing pass #3: 17 of 25 items after 142 s (routed 7, failed 7, ripped 12).
+  307.445 INFO  Auto-routing pass #3 was completed in 145.57 seconds with score 944.81 (25 unrouted and 0 violations) (routed 11, failed 9, ripped 14).
+  346.227 INFO  Auto-routing pass #4: 1 of 43 items after 39 s (routed 0, failed 1, ripped 0).
+  368.018 INFO  Auto-routing pass #4: 17 of 43 items after 61 s (routed 14, failed 1, ripped 7).
+  430.170 INFO  Auto-routing pass #4: 26 of 43 items after 123 s (routed 19, failed 2, ripped 14).
+  430.188 INFO  Auto-routing pass #4: 27 of 43 items after 123 s (routed 20, failed 2, ripped 14).
+  477.292 INFO  Auto-routing pass #4: 39 of 43 items after 170 s (routed 25, failed 3, ripped 16).
+  478.076 INFO  Auto-routing pass #4 was completed in 170.63 seconds with score 971.30 (13 unrouted and 0 violations) (routed 25, failed 3, ripped 16).
+  478.080 INFO  Stopping the auto-router: the last 3 passes (about 171 s each) reduced the unrouted items only from 12 to 13.
+  478.913 INFO  Auto-routing stage completed: started with 6 unrouted nets, completed in 476.13 seconds, final score: 986.75 (6 unrouted and 0 violations).
+  478.914 INFO  3 item(s) cannot be routed even on the board as loaded (blocked by pins, keepouts or fixed wiring); they were skipped after their second failure.
+  479.467 INFO  Pipeline thread limits: autorouter.max_threads=1, optimizer.max_threads=1.
+  479.514 INFO  Pipeline thread limits: autorouter.max_threads=1, optimizer.max_threads=1.
+  480.084 INFO  Auto-routing stage started with baseline score 986.75 for 6 unrouted items.
+  480.262 INFO  Auto-routing stage started with baseline score 986.75 for 6 unrouted items.
+  526.154 INFO  Auto-routing pass #1: 5 of 11 items after 46 s (routed 3, failed 1, ripped 9).
+  537.255 INFO  Auto-routing pass #1 was completed in 57.17 seconds with score 962.47 (17 unrouted and 0 violations) (routed 6, failed 1, ripped 15).
+  547.174 INFO  Auto-routing pass #1: 5 of 11 items after 67 s (routed 3, failed 2, ripped 9).
+  547.176 INFO  Auto-routing pass #1: 6 of 11 items after 67 s (routed 3, failed 2, ripped 9).
+  551.770 INFO  Auto-routing pass #1 was completed in 71.49 seconds with score 964.68 (16 unrouted and 0 violations) (routed 5, failed 2, ripped 16).
+  576.519 INFO  Auto-routing pass #2: 12 of 33 items after 39 s (routed 7, failed 0, ripped 9).
+  608.282 INFO  Auto-routing pass #2: 16 of 33 items after 71 s (routed 9, failed 0, ripped 11).
+  628.256 INFO  Auto-routing pass #2 was completed in 91.00 seconds with score 960.26 (18 unrouted and 0 violations) (routed 19, failed 0, ripped 19).
+  650.808 INFO  Auto-routing pass #2: 12 of 31 items after 99 s (routed 6, failed 1, ripped 7).
+  650.843 INFO  Auto-routing pass #2: 13 of 31 items after 99 s (routed 7, failed 1, ripped 7).
+  667.433 INFO  Auto-routing pass #2: 14 of 31 items after 116 s (routed 8, failed 1, ripped 7).
+  685.094 INFO  Auto-routing pass #2: 16 of 31 items after 133 s (routed 9, failed 1, ripped 9).
+  698.879 INFO  Auto-routing pass #3: 5 of 35 items after 71 s (routed 2, failed 1, ripped 1).
+  699.068 INFO  Auto-routing pass #3: 6 of 35 items after 71 s (routed 3, failed 1, ripped 1).
+  702.253 INFO  Auto-routing pass #2: 27 of 31 items after 150 s (routed 15, failed 2, ripped 15).
+  705.916 INFO  Auto-routing pass #2 was completed in 154.15 seconds with score 955.85 (20 unrouted and 0 violations) (routed 17, failed 2, ripped 16).
+  750.605 INFO  Auto-routing pass #3: 7 of 35 items after 122 s (routed 3, failed 2, ripped 1).
+  751.641 INFO  Auto-routing pass #3: 8 of 35 items after 123 s (routed 4, failed 2, ripped 2).
+  761.906 INFO  Auto-routing pass #3: 7 of 36 items after 56 s (routed 2, failed 4, ripped 3).
+  786.308 INFO  Auto-routing pass #3: 17 of 35 items after 158 s (routed 9, failed 2, ripped 7).
+  815.722 INFO  Auto-routing pass #3: 25 of 35 items after 187 s (routed 13, failed 2, ripped 13).
+  820.684 INFO  Auto-routing pass #3: 9 of 36 items after 115 s (routed 3, failed 5, ripped 3).
+  821.884 INFO  Auto-routing pass #3: 10 of 36 items after 116 s (routed 4, failed 5, ripped 3).
+  830.233 INFO  Auto-routing pass #3 was completed in 201.96 seconds with score 958.06 (19 unrouted and 0 violations) (routed 18, failed 4, ripped 17).
+  834.776 INFO  Auto-routing pass #3: 13 of 36 items after 129 s (routed 6, failed 5, ripped 6).
+  866.797 INFO  Auto-routing pass #4: 7 of 36 items after 37 s (routed 6, failed 0, ripped 9).
+  912.704 INFO  Auto-routing pass #3: 19 of 36 items after 207 s (routed 9, failed 6, ripped 14).
+  923.813 INFO  Auto-routing pass #3: 20 of 36 items after 218 s (routed 10, failed 6, ripped 14).
+  923.823 INFO  Auto-routing pass #3: 21 of 36 items after 218 s (routed 10, failed 6, ripped 14).
+  947.915 INFO  Auto-routing pass #4: 10 of 36 items after 118 s (routed 8, failed 1, ripped 10).
+  947.920 INFO  Auto-routing pass #4: 11 of 36 items after 118 s (routed 8, failed 1, ripped 10).
+  967.836 INFO  Auto-routing pass #4: 17 of 36 items after 138 s (routed 11, failed 1, ripped 10).
+  986.400 INFO  Auto-routing pass #4: 24 of 36 items after 156 s (routed 15, failed 2, ripped 15).
+  987.492 INFO  Auto-routing pass #3: 28 of 36 items after 282 s (routed 12, failed 9, ripped 21).
+  989.875 INFO  Auto-routing pass #3: 29 of 36 items after 284 s (routed 13, failed 9, ripped 22).
+ 1001.875 INFO  Auto-routing pass #3 was completed in 295.96 seconds with score 927.15 (33 unrouted and 0 violations) (routed 17, failed 9, ripped 25).
+ 1016.799 INFO  Auto-routing pass #4: 29 of 36 items after 187 s (routed 18, failed 2, ripped 17).
+ 1029.496 INFO  Auto-routing pass #4 was completed in 199.25 seconds with score 955.85 (20 unrouted and 0 violations) (routed 21, failed 2, ripped 24).
+ 1029.496 INFO  Stopping the auto-router: the last 3 passes (about 199 s each) reduced the unrouted items only from 17 to 18.
+ 1030.481 INFO  Auto-routing stage completed: started with 6 unrouted nets, completed in 550.40 seconds, final score: 986.75 (6 unrouted and 0 violations).
+ 1030.963 INFO  Pipeline thread limits: autorouter.max_threads=1, optimizer.max_threads=1.
+ 1031.617 INFO  Auto-routing stage started with baseline score 986.75 for 6 unrouted items.
+ 1033.118 INFO  Auto-routing pass #4: 14 of 59 items after 31 s (routed 12, failed 1, ripped 4).
+ 1071.816 INFO  Auto-routing pass #4: 39 of 59 items after 70 s (routed 26, failed 4, ripped 13).
+ 1093.214 INFO  Auto-routing pass #4: 48 of 59 items after 91 s (routed 31, failed 4, ripped 20).
+ 1105.990 INFO  Auto-routing pass #1: 6 of 11 items after 74 s (routed 3, failed 2, ripped 7).
+ 1106.382 INFO  Auto-routing pass #1: 7 of 11 items after 75 s (routed 4, failed 2, ripped 12).
+ 1145.345 INFO  Auto-routing pass #4: 52 of 59 items after 143 s (routed 32, failed 5, ripped 20).
+ 1152.717 INFO  Auto-routing pass #4: 55 of 59 items after 151 s (routed 34, failed 5, ripped 20).
+ 1163.936 INFO  Auto-routing pass #4 was completed in 162.06 seconds with score 947.02 (24 unrouted and 0 violations) (routed 36, failed 5, ripped 22).
+ 1163.937 INFO  Stopping the auto-router: the last 3 passes (about 162 s each) reduced the unrouted items only from 16 to 20.
+ 1164.769 INFO  Auto-routing stage completed: started with 6 unrouted nets, completed in 684.50 seconds, final score: 986.75 (6 unrouted and 0 violations).
+ 1164.769 INFO  2 item(s) cannot be routed even on the board as loaded (blocked by pins, keepouts or fixed wiring); they were skipped after their second failure.
+ 1170.561 INFO  Auto-routing pass #1 was completed in 138.94 seconds with score 969.09 (14 unrouted and 0 violations) (routed 5, failed 4, ripped 15).
+ 1201.609 INFO  Auto-routing pass #2: 15 of 27 items after 31 s (routed 8, failed 3, ripped 13).
+ 1223.988 INFO  Auto-routing pass #2 was completed in 53.43 seconds with score 947.02 (24 unrouted and 0 violations) (routed 15, failed 3, ripped 19).
+ 1268.166 INFO  Auto-routing pass #3: 9 of 44 items after 44 s (routed 6, failed 1, ripped 6).
+ 1285.044 INFO  Auto-routing pass #3: 17 of 44 items after 61 s (routed 12, failed 2, ripped 16).
+ 1340.610 INFO  Auto-routing pass #3: 28 of 44 items after 117 s (routed 16, failed 5, ripped 20).
+ 1369.063 INFO  Auto-routing pass #3: 32 of 44 items after 145 s (routed 17, failed 7, ripped 20).
+ 1374.342 INFO  Auto-routing pass #3: 38 of 44 items after 150 s (routed 21, failed 7, ripped 22).
+ 1380.177 INFO  Auto-routing pass #3 was completed in 156.19 seconds with score 951.43 (22 unrouted and 0 violations) (routed 24, failed 7, ripped 23).
+ 1419.359 INFO  Auto-routing pass #4: 5 of 41 items after 39 s (routed 2, failed 1, ripped 1).
+ 1441.168 INFO  Auto-routing pass #4: 17 of 41 items after 61 s (routed 9, failed 3, ripped 11).
+ 1471.036 INFO  Auto-routing pass #4: 18 of 41 items after 91 s (routed 9, failed 4, ripped 11).
+ 1525.601 INFO  Auto-routing pass #4: 30 of 41 items after 145 s (routed 15, failed 6, ripped 18).
+ 1528.796 INFO  Auto-routing pass #4 was completed in 148.62 seconds with score 947.02 (24 unrouted and 0 violations) (routed 21, failed 7, ripped 24).
+ 1528.796 INFO  Stopping the auto-router: the last 3 passes (about 149 s each) reduced the unrouted items only from 14 to 22.
+ 1529.133 INFO  Auto-routing stage completed: started with 6 unrouted nets, completed in 497.52 seconds, final score: 986.75 (6 unrouted and 0 violations).
+ 1529.133 INFO  3 item(s) cannot be routed even on the board as loaded (blocked by pins, keepouts or fixed wiring); they were skipped after their second failure.
+ 1529.356 INFO  Multi-start variant 1: 6 unrouted, 0 violations, router score 986.75.
+ 1529.359 INFO  Multi-start variant 2: 6 unrouted, 0 violations, router score 986.75.
+ 1529.361 INFO  Multi-start variant 3: 6 unrouted, 0 violations, router score 986.75.
+ 1529.587 INFO  Optimization stage started. Baseline router score: 986.75, optimizer score: 394.14, incomplete connections: 6, clearance violations: 0.
+ 1560.088 INFO  Optimizer pass #1: 36 of 708 candidates after 30 s (31 improving so far).
+ 1590.356 INFO  Optimizer pass #1: 89 of 708 candidates after 61 s (70 improving so far).
+ 1620.236 INFO  Optimizer pass #1: 120 of 708 candidates after 91 s (89 improving so far).
+ 1650.547 INFO  Optimizer pass #1: 144 of 708 candidates after 121 s (105 improving so far).
+ 1679.965 INFO  Optimizer pass #1: 162 of 708 candidates after 150 s (117 improving so far).
+ 1710.028 INFO  Optimizer pass #1: 181 of 708 candidates after 180 s (126 improving so far).
+ 1742.922 INFO  Optimizer pass #1: 193 of 708 candidates after 213 s (132 improving so far).
+ 1770.409 INFO  Optimizer pass #1: 207 of 708 candidates after 241 s (137 improving so far).
+ 1801.975 INFO  Optimizer pass #1: 216 of 708 candidates after 272 s (140 improving so far).
+ 1859.400 INFO  Optimizer pass #1: 225 of 708 candidates after 330 s (144 improving so far).
+ 1860.368 INFO  Optimizer pass #1: 226 of 708 candidates after 331 s (144 improving so far).
+ 1931.921 INFO  Optimizer pass #1: 239 of 708 candidates after 402 s (147 improving so far).
+ 1932.282 INFO  Optimizer pass #1: 240 of 708 candidates after 403 s (147 improving so far).
+ 2003.548 INFO  Optimizer pass #1: 250 of 708 candidates after 474 s (153 improving so far).
+ 2014.141 INFO  Optimizer pass #1: 251 of 708 candidates after 485 s (153 improving so far).
+ 2014.407 INFO  Optimizer pass #1: 252 of 708 candidates after 485 s (153 improving so far).
+ 2141.907 INFO  Optimizer pass #1: 257 of 708 candidates after 612 s (156 improving so far).
+ 2145.454 INFO  Optimizer pass #1: 258 of 708 candidates after 616 s (156 improving so far).
+ 2148.283 INFO  Optimizer pass #1: 259 of 708 candidates after 619 s (156 improving so far).
+ 2150.308 INFO  Optimizer pass #1: 260 of 708 candidates after 621 s (156 improving so far).
+ 2160.412 INFO  Optimizer pass #1: 264 of 708 candidates after 631 s (158 improving so far).
+ 2202.415 INFO  Optimizer pass #1: 273 of 708 candidates after 673 s (162 improving so far).
+ 2270.135 INFO  Optimizer pass #1: 276 of 708 candidates after 741 s (164 improving so far).
+ 2310.853 INFO  Optimizer pass #1: 277 of 708 candidates after 781 s (164 improving so far).
+ 2311.746 INFO  Optimizer pass #1: 278 of 708 candidates after 782 s (164 improving so far).
+ 2312.222 INFO  Optimizer pass #1: 279 of 708 candidates after 783 s (164 improving so far).
+ 2370.929 INFO  Optimizer pass #1: 285 of 708 candidates after 841 s (166 improving so far).
+ 2371.705 INFO  Optimizer pass #1: 286 of 708 candidates after 842 s (166 improving so far).
+ 2403.710 INFO  Optimizer pass #1: 297 of 708 candidates after 874 s (170 improving so far).
+ 2438.645 INFO  Optimizer pass #1: 307 of 708 candidates after 909 s (172 improving so far).
+ 2538.808 INFO  Optimizer pass #1: 309 of 708 candidates after 1009 s (173 improving so far).
+ 2539.112 INFO  Optimizer pass #1: 310 of 708 candidates after 1010 s (173 improving so far).
+ 2540.419 INFO  Optimizer pass #1: 311 of 708 candidates after 1011 s (173 improving so far).
+ 2550.584 INFO  Optimizer pass #1: 317 of 708 candidates after 1021 s (175 improving so far).
+ 2584.652 INFO  Optimizer pass #1: 323 of 708 candidates after 1055 s (179 improving so far).
+ 2659.501 INFO  Optimizer pass #1: 335 of 708 candidates after 1130 s (183 improving so far).
+ 2663.515 INFO  Optimizer pass #1: 336 of 708 candidates after 1134 s (183 improving so far).
+ 2685.262 INFO  Optimizer pass #1: 338 of 708 candidates after 1156 s (184 improving so far).
+ 2700.521 INFO  Optimizer pass #1: 342 of 708 candidates after 1171 s (185 improving so far).
+ 2741.477 WARN  stop requested: finishing with the best result so far
+ 2741.870 INFO  Optimizer pass #1: 346 of 708 candidates after 1212 s (186 improving so far).
+ 2741.950 INFO  Optimizer pass #1: stopped early, applying the best candidate found so far.
+ 2742.887 INFO  Optimizer pass #1 was completed in 1213.30 seconds (352 of 708 candidates) with the score of 397.48 (6 unrouted and 0 violations).
+ 2743.162 INFO  checkpoint: best board so far (6 unrouted, 0 violations) written to 'power.ses'
+ 2743.170 INFO  Optimizer pass #1: optimizer score 394.14 -> 397.48 (IMPROVED, 0.8487%), router score: 986.75, incomplete connections: 6, clearance violations: 0.
+ 2743.170 INFO  Stopping optimizer because the improvement in this pass (0.8487%) is below the threshold (2.50%).
+ 2743.191 INFO  Optimization stage interrupted: Baseline router score: 986.75, baseline optimizer score: 394.14, final router score: 986.75, final optimizer score: 397.48, completed in 1213.60 seconds.
+ 2743.192 INFO  routing finished in 2741.72 s
+ 2743.577 INFO  saved 'power.ses' (253781 bytes)
+ 2771.484 WARN  still finishing the current step of the optimizer stage (30 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 2801.492 WARN  still finishing the current step of the optimizer stage (60 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 2831.493 WARN  still finishing the current step of the optimizer stage (90 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 2861.495 WARN  still finishing the current step of the optimizer stage (120 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 2891.495 WARN  still finishing the current step of the optimizer stage (150 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 2921.495 WARN  still finishing the current step of the optimizer stage (180 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 2951.496 WARN  still finishing the current step of the optimizer stage (210 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 2981.498 WARN  still finishing the current step of the optimizer stage (240 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 3011.503 WARN  still finishing the current step of the optimizer stage (270 s since the stop request); the session file is written when it ends (the checkpoint file holds the best board so far)
+ 3030.237 INFO  diagnosis of 6 unrouted connections in 286.66 s: 1 routable alone (congestion), 5 not routable on the loaded board (blocked), 0 in ignored net classes
+ 3030.237 INFO  report written to 'report_power.json'
