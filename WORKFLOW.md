@@ -148,6 +148,17 @@ fastroute e scrivono il miglior risultato trovato. Il risultato è
 `WORKDIR/final.ses`. Avanzamento dal vivo su http://127.0.0.1:7878: ogni
 stadio riavvia il viewer, quindi va ricaricata la pagina.
 
+**Niente curve a 90° sullo stesso layer.** fastroute traccia a 45°, ma una
+pista orizzontale che gira in verticale fa comunque una curva a 90°. Prima
+dell'import si passa la sessione a `tools/chamfer_ses.py DSN in.ses out.ses
+[MM]`. Lo script taglia ogni curva a 90° con un segmento a 45° (default
+0,5 mm per lato, ridotto se non c'è spazio), controllando la clearance verso
+piste, via e pad delle altre net. Le curve su un via o su un pad restano,
+perché il cambio di direzione attraverso un via è ammesso. Le curve senza
+spazio vengono elencate in mm, da sistemare a mano. Il DSN da passare è
+quello usato per lo sbroglio (`WORKDIR/board_pv.dsn`, oppure
+`board_power.dsn` se ha lavorato lo stadio 3).
+
 Dopo l'import di una sessione con piste su POWER (lo script le elenca in mm):
 
 - si riempiono di nuovo le aree (`B`): la zona 3V3 si adatta intorno alle piste;
