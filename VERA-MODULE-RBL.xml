@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <export version="D">
   <design>
-    <source>/home/gianluca/Progetti-CVS/ATARI/Vera-Module-RBL-XE/VERA-MODULE-RBL.sch</source>
+    <source>/home/debian/Progetti/APPLE/Vera-Module-RBL-A2/VERA-MODULE-RBL.sch</source>
     <tool>sch2bomxml.py</tool>
   </design>
   <components>
@@ -434,22 +434,6 @@
         <field name="LCSC">C840116</field>
       </fields>
     </comp>
-    <comp ref="C55">
-      <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C840116</field>
-      </fields>
-    </comp>
-    <comp ref="C56">
-      <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C840116</field>
-      </fields>
-    </comp>
     <comp ref="C57">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
@@ -522,14 +506,6 @@
         <field name="LCSC">C1808</field>
       </fields>
     </comp>
-    <comp ref="C66">
-      <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C2798196.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C2798196</field>
-      </fields>
-    </comp>
     <comp ref="C67">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
@@ -554,9 +530,13 @@
         <field name="LCSC">C840116</field>
       </fields>
     </comp>
-    <comp ref="CART1">
-      <value>ATARI-CARTRIDGE</value>
-      <footprint>RetroBitLab:ATARI-LEFT-CARTRIDGE</footprint>
+    <comp ref="C70">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C840116</field>
+      </fields>
     </comp>
     <comp ref="D3">
       <value>DIOSCH20V</value>
@@ -573,10 +553,6 @@
       <fields>
         <field name="LCSC">C236151</field>
       </fields>
-    </comp>
-    <comp ref="ECI1">
-      <value>ECIBUS</value>
-      <footprint>RetroBitLab:ATARI-XE-ECI-SLOT</footprint>
     </comp>
     <comp ref="FID1">
       <value>Fiducial</value>
@@ -701,6 +677,19 @@
         <field name="LCSC">C668608</field>
       </fields>
     </comp>
+    <comp ref="J8">
+      <value>Bus_Apple_II_Card_Side</value>
+      <footprint>RetroBitLab:APPLE2-PERIPHERAL-BUS-EDGE</footprint>
+      <datasheet>https://archive.org/details/Apple_II_Mini_Manual/page/n37/mode/2up</datasheet>
+    </comp>
+    <comp ref="J9">
+      <value>CONN_SMD_HEADER_BOX_02x08_HX-JN2.54</value>
+      <footprint>RetroBitLab:IDC-Header_2x08_P2.54mm_Vertical_SMD</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/C41376031.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C41376031</field>
+      </fields>
+    </comp>
     <comp ref="JP1">
       <value>SolderJumper_2_Open</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
@@ -777,17 +766,9 @@
       <value>VERA X16 LOGO</value>
       <footprint>RetroBitLab:x16logo</footprint>
     </comp>
-    <comp ref="LOGO2">
-      <value>ATARI READY</value>
-      <footprint>RetroBitLab:atari_ready_8mm_rev</footprint>
-    </comp>
     <comp ref="LOGO3">
       <value>KiCAD DESIGN</value>
       <footprint>Symbol:KiCad-Logo2_6mm_SilkScreen</footprint>
-    </comp>
-    <comp ref="LOGO4">
-      <value>ATARI DUO BUS</value>
-      <footprint>RetroBitLab:DUOCart_20x11_Rev</footprint>
     </comp>
     <comp ref="LOGO5">
       <value>ESP32_BOBOARD</value>
@@ -828,11 +809,11 @@
       </fields>
     </comp>
     <comp ref="R2">
-      <value>1K</value>
+      <value>CREZ08051%</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
-      <datasheet>https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0805W8F1001T5E_C17513.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/C328378.pdf?spm=wm.sxq.inf.ggs&amp;lcsc_vid=QAIPVVVVRlJXV1FQQABeBQAAQQNaVFMAR1IIXwYHFlgxVlNfRFFfVlJfTlRXVDsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D</datasheet>
       <fields>
-        <field name="LCSC">C17513</field>
+        <field name="LCSC">C328378</field>
       </fields>
     </comp>
     <comp ref="R3">
@@ -857,14 +838,6 @@
       <datasheet>https://lcsc.com/datasheet/lcsc_datasheet_2506161110_YAGEO-RC0805FR-0710KL_C84376.pdf</datasheet>
       <fields>
         <field name="LCSC">C84376</field>
-      </fields>
-    </comp>
-    <comp ref="R6">
-      <value>1K</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
-      <datasheet>https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0805W8F1001T5E_C17513.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C17513</field>
       </fields>
     </comp>
     <comp ref="R7">
@@ -1338,14 +1311,6 @@
         <field name="LCSC">C84376</field>
       </fields>
     </comp>
-    <comp ref="R66">
-      <value>CREZ08051%</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C328378.pdf?spm=wm.sxq.inf.ggs&amp;lcsc_vid=QAIPVVVVRlJXV1FQQABeBQAAQQNaVFMAR1IIXwYHFlgxVlNfRFFfVlJfTlRXVDsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D</datasheet>
-      <fields>
-        <field name="LCSC">C328378</field>
-      </fields>
-    </comp>
     <comp ref="R67">
       <value>560R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
@@ -1409,38 +1374,6 @@
       <fields>
         <field name="LCSC">C328378</field>
       </fields>
-    </comp>
-    <comp ref="R75">
-      <value>CREZ08051%</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C328378.pdf?spm=wm.sxq.inf.ggs&amp;lcsc_vid=QAIPVVVVRlJXV1FQQABeBQAAQQNaVFMAR1IIXwYHFlgxVlNfRFFfVlJfTlRXVDsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D</datasheet>
-      <fields>
-        <field name="LCSC">C328378</field>
-      </fields>
-    </comp>
-    <comp ref="R76">
-      <value>CREZ08051%</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C328378.pdf?spm=wm.sxq.inf.ggs&amp;lcsc_vid=QAIPVVVVRlJXV1FQQABeBQAAQQNaVFMAR1IIXwYHFlgxVlNfRFFfVlJfTlRXVDsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D</datasheet>
-      <fields>
-        <field name="LCSC">C328378</field>
-      </fields>
-    </comp>
-    <comp ref="R77">
-      <value>CREZ08051%</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C328378.pdf?spm=wm.sxq.inf.ggs&amp;lcsc_vid=QAIPVVVVRlJXV1FQQABeBQAAQQNaVFMAR1IIXwYHFlgxVlNfRFFfVlJfTlRXVDsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D</datasheet>
-      <fields>
-        <field name="LCSC">C328378</field>
-      </fields>
-    </comp>
-    <comp ref="RD4">
-      <value>TestPoint</value>
-      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
-    </comp>
-    <comp ref="RD5">
-      <value>TestPoint</value>
-      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
     </comp>
     <comp ref="SW1">
       <value>SPST2P</value>
@@ -1605,19 +1538,6 @@
         <field name="LCSC">C110908</field>
       </fields>
     </comp>
-    <comp ref="U16">
-      <value>74LVC4245APW_118</value>
-      <footprint>RetroBitLab:IC_74LVC4245_SOP65P640X110-24N</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C6091.pdf?spm=wm.sxq.inf.ggs___wm.fly.bg.0.xh&amp;lcsc_vid=EQINBVNfRwJZUQAETgVbVwBQQFZaU1ZQQQIKBlMDEQIxVlNeQFldV1VRQFFWVjsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D</datasheet>
-      <fields>
-        <field name="Manufacturer">NXP</field>
-        <field name="OC_FARNELL">1631648</field>
-        <field name="OC_NEWARK">03P2784</field>
-        <field name="Man_PN">74LVC4245APW,118</field>
-        <field name="PACKAGE">TSSOP-24</field>
-        <field name="LCSC">C6091</field>
-      </fields>
-    </comp>
     <comp ref="U17">
       <value>MAX40200AUK</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
@@ -1689,6 +1609,16 @@
         <field name="Man_PN">SN74LVC1G07DBVR</field>
       </fields>
     </comp>
+    <comp ref="U27">
+      <value>SN74LVC1G07DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/C7829.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C7829</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Man_PN">SN74LVC1G07DBVR</field>
+      </fields>
+    </comp>
     <comp ref="X1">
       <value>OT3EL89CJI-111YLC-25M</value>
       <footprint>RetroBitLab:OSC_ECS-2033-250-BN</footprint>
@@ -1714,23 +1644,7 @@
         <field name="LCSC">C284176</field>
       </fields>
     </comp>
-    <comp ref="mD1XX1">
-      <value>TestPoint</value>
-      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
-    </comp>
-    <comp ref="~HALT1">
-      <value>TestPoint</value>
-      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
-    </comp>
-    <comp ref="~mREF1">
-      <value>TestPoint</value>
-      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
-    </comp>
-    <comp ref="~mS4">
-      <value>TestPoint</value>
-      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
-    </comp>
-    <comp ref="~mS5">
+    <comp ref="mIOSEL1">
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
     </comp>

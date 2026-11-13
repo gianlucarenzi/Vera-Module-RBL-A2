@@ -1324,10 +1324,6 @@ Wire Wire Line
 	6070 5025 6070 4720
 Connection ~ 6070 4720
 Wire Wire Line
-	6070 5225 6065 5525
-Wire Wire Line
-	6065 5525 5855 5525
-Wire Wire Line
 	5855 5150 5975 5150
 Wire Wire Line
 	5975 5150 5975 5090
@@ -1351,10 +1347,7 @@ Wire Wire Line
 Wire Wire Line
 	5855 5150 5855 5525
 Wire Wire Line
-	6065 5525 6180 5525
-Wire Wire Line
 	6180 5360 6180 5525
-Connection ~ 6065 5525
 Connection ~ 5855 5525
 Wire Wire Line
 	6070 4720 7085 4720
@@ -1732,4 +1725,11 @@ Wire Wire Line
 Connection ~ 6105 2925
 Wire Wire Line
 	6105 2925 6365 2925
+Wire Wire Line
+	5855 5525 6070 5525
+Wire Wire Line
+	6070 5225 6070 5525
+Connection ~ 6070 5525
+Wire Wire Line
+	6070 5525 6180 5525
 $EndSCHEMATC
