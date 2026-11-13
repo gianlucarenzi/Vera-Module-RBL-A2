@@ -160,6 +160,29 @@ spazio vengono elencate in mm, da sistemare a mano. Il DSN da passare è
 quello usato per lo sbroglio (`WORKDIR/board_pv.dsn`, oppure
 `board_power.dsn` se ha lavorato lo stadio 3).
 
+**Correzione delle violazioni di clearance (ultima ottimizzazione).** Si usa
+`tools/repair_violations.sh DSN in.ses out.ses [ROUND]`, con lo stesso DSN dello
+sbroglio. Ripete in automatico questi passi:
+
+1. fastroute misura la sessione senza sbrogliare;
+2. `tools/ses_violations.py` ordina le violazioni e ricava la net dal rame
+   presente nel punto:
+   - quelle sulla **stessa net** si ignorano, perché per il DRC di KiCad non
+     sono errori;
+   - quelle entro 0,002 mm dalla clearance si ignorano: sono **arrotondamenti**,
+     perché fastroute vede pad e via come ottagoni;
+   - per quelle **vere con rame spostabile** toglie piste e via coinvolti;
+   - quelle **tra elementi fissi** (pad, via dei piani) le elenca da
+     correggere a mano;
+3. fastroute ritraccia ciò che è stato tolto, poi si fanno dedupe e smusso;
+4. il giro si tiene solo se le violazioni vere diminuiscono senza aumentare
+   i collegamenti mancanti.
+
+Con `FASTROUTE=tools/fastroute_nolimits.sh` il ritracciamento non ha limiti
+di tempo: con un limite il giro di prova ha tolto tutte le violazioni ma ha
+lasciato più collegamenti mancanti ed è stato scartato. Il riferimento resta
+il DRC di KiCad.
+
 Dopo l'import di una sessione con piste su POWER (lo script le elenca in mm):
 
 - si riempiono di nuovo le aree (`B`): la zona 3V3 si adatta intorno alle piste;
