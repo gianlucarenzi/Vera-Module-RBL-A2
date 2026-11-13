@@ -114,6 +114,50 @@ fastroute va installato nel sistema dal suo pacchetto Debian, da
 (`scripts/build-deb.sh`, poi `sudo apt install ./dist/fastroute_*.deb`):
 `tools/route.sh` si ferma se non lo trova.
 
+### Sbroglio da zero senza limiti di tempo (procedura standard)
+
+Prima: aree riempite (`B`) e salvate, File → Esporta → Specctra DSN su
+`VERA-MODULE-RBL.dsn`, KiCad chiuso. Poi:
+
+    tools/route_nolimits.sh WORKDIR
+
+Esegue tutto in automatico, senza limiti di tempo, e si può rilanciare uguale
+anche su un altro PC:
+
+1. **`tools/route.sh`.** Trasforma GND e POWER in piani, mette un via verso il
+   piano per ogni piazzola SMD di GND/3V3, sbroglia prima i bus indirizzi e
+   dati e poi il resto. Nello stadio 2 traccia per prima, come coppia
+   accoppiata, la coppia differenziale USB (`tools/diff_pairs.txt`). La
+   netclass 90R è a **0,200 mm** e non viene mai ristretta all'ingresso dei
+   pin (`--no-neckdown-classes=90R`).
+2. **`tools/route_power_fallback.sh`.** Parte solo se restano collegamenti non
+   sbrogliati: riprende dalla sessione dello stadio 2 e rende il layer
+   **POWER** di nuovo un layer di segnale, a costo alto (`POWER_COST`,
+   default 25 volte F.Cu/B.Cu). Così POWER si usa solo dove sui layer esterni
+   non c'è spazio. Il piano 3V3 resta dov'è: fastroute non tratta come
+   ostacolo i piani dei layer di segnale, quindi le piste lo attraversano e
+   il 3V3 resta collegato tramite i via. **GND non si tocca mai**, perché è il
+   riferimento di B.Cu. `POWER_FALLBACK=0` salta questo stadio.
+
+Il wrapper `tools/fastroute_nolimits.sh` (usato con `FASTROUTE=...`) toglie i
+limiti di tempo. Porta ogni `--max-time` a 10 anni e aggiunge
+`--no-time-limits`, che disattiva il job timeout: altrimenti è di 12 ore e
+fastroute lo limita comunque a 24 ore. Ctrl+C o SIGTERM fermano comunque
+fastroute e scrivono il miglior risultato trovato. Il risultato è
+`WORKDIR/final_power.ses` se lo stadio 3 è servito, altrimenti
+`WORKDIR/final.ses`. Avanzamento dal vivo su http://127.0.0.1:7878: ogni
+stadio riavvia il viewer, quindi va ricaricata la pagina.
+
+Dopo l'import di una sessione con piste su POWER (lo script le elenca in mm):
+
+- si riempiono di nuovo le aree (`B`): la zona 3V3 si adatta intorno alle piste;
+- nel DRC si controlla che nessuna piazzola o via di 3V3 sia rimasta isolata;
+- lo stackup è F.Cu, POWER, GND, B.Cu: POWER è il piano di riferimento di
+  F.Cu, quindi una pista su POWER sotto segnali veloci di F.Cu (bus, VGA) ne
+  interrompe il percorso di ritorno. Queste piste si spostano a mano.
+
+### Altri script
+
 `tools/route.sh` sbroglia **da zero** (cancella tutte le piste). Per completare
 solo i collegamenti mancanti di una scheda già sbrogliata si usa
 `tools/route_incremental.sh WORKDIR` (KiCad chiuso, DSN esportato dalla scheda

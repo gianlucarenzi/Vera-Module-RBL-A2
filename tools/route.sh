@@ -24,7 +24,8 @@ if [ -z "$FR" ] || [ ! -x "$FR" ]; then
 	exit 1
 fi
 echo "Using $FR ($("$FR" --version))"
-COMMON="--router.min_trace_width_um=200 --router.plane_nets=GND,3V3 --live"
+# the USB pair (net class 90R) keeps its full 0.200 mm width up to the pins
+COMMON="--router.min_trace_width_um=200 --router.plane_nets=GND,3V3 --no-neckdown-classes=90R --live"
 
 mkdir -p "$WORK"
 cd "$WORK"
@@ -35,11 +36,13 @@ python3 "$TOOLS/plane_vias.py" "$PROJ/VERA-MODULE-RBL.kicad_pcb" board.dsn board
 "$FR" -de board_pv.dsn -do bus.ses --report=bus.json --max-time=2400 \
     --router.autorouter.ignore_net_classes=kicad_default,90R,Power $COMMON > bus.log 2>&1
 
-# stage 2: the rest; the plane vias stay fixed in the DSN, so they are
+# stage 2: the USB differential pair first (tools/diff_pairs.txt), coupled
+# at 0.200 mm, then the rest; the plane vias stay fixed in the DSN, so they are
 # stripped from the bus session (a session is not fixed, and loading them
 # twice gives hundreds of via/via violations)
 python3 "$TOOLS/strip_protect_ses.py" bus.ses bus_np.ses
 "$FR" -de board_pv.dsn -do board.ses --initial-session=bus_np.ses --report=report.json \
+    --pairs="$TOOLS/diff_pairs.txt" \
     --max-time=7200 $COMMON > run.log 2>&1
 
 python3 "$TOOLS/dedupe_ses.py" board.ses final.ses

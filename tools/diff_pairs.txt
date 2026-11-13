@@ -1,0 +1,5 @@
+# fastroute differential pairs (--pairs): routed and coupled first, then
+# fixed while everything else is routed. Width 0.200 mm from the 90R net
+# class (90 ohm, USB); gap = their clearance (0.15 mm). The shorter net gets
+# meanders until the lengths differ by at most skew (default 0.1 mm).
+pair /PowerSupply/D+ /PowerSupply/D-

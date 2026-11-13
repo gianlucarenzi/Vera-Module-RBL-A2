@@ -21,6 +21,11 @@ import sys
 
 src, dst = sys.argv[1:3]
 t = open(src).read()
+if '(wire ' not in t:
+    # a board with no tracks yet: nothing to split
+    open(dst, 'w').write(t)
+    print('no wires: copied unchanged')
+    sys.exit(0)
 
 WIRE = re.compile(r'\(wire \(path (\S+) (\S+)\s+([-\d.\s]+?)\)(\(net ("[^"]*"|[^)\s]+)\)\s*\(type \w+\)\))')
 VIA = re.compile(r'\(via "([^"]*)"\s+([-\d.]+) ([-\d.]+) \(net ("[^"]*"|[^)\s]+)\)')

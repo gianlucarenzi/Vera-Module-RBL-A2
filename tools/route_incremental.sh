@@ -60,7 +60,8 @@ fi
 mkdir -p "$WORK"
 WORK=$(cd "$WORK" && pwd)
 
-NETS=$(python3 "$TOOLS/unrouted_nets.py" "$PCB" 2>"$WORK/unrouted.txt")
+# unrouted_nets.py needs the KiCad 5 pcbnew module (run_pcbnew.sh finds it)
+NETS=$("$PROJ/run_pcbnew.sh" "$TOOLS/unrouted_nets.py" "$PCB" 2>"$WORK/unrouted.txt")
 cat "$WORK/unrouted.txt"
 [ -n "$NETS" ] || { echo "nothing to route"; exit 0; }
 
