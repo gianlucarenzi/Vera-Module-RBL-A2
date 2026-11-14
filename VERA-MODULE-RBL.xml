@@ -418,22 +418,6 @@
         <field name="LCSC">C840116</field>
       </fields>
     </comp>
-    <comp ref="C53">
-      <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C840116</field>
-      </fields>
-    </comp>
-    <comp ref="C54">
-      <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C840116</field>
-      </fields>
-    </comp>
     <comp ref="C57">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
@@ -595,11 +579,11 @@
       </fields>
     </comp>
     <comp ref="J2">
-      <value>DS1038-15FBNSiA74-0CC</value>
-      <footprint>RetroBitLab:CONNFLY_DS1038-15FBNSIA74-0CC</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C7498158.pdf</datasheet>
+      <value>CONN_SMD_HEADER_BOX_02x08_HX-JN2.54</value>
+      <footprint>RetroBitLab:IDC-Header_2x08_P2.54mm_Vertical_SMD</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/C41376031.pdf</datasheet>
       <fields>
-        <field name="LCSC">C75754</field>
+        <field name="LCSC">C41376031</field>
       </fields>
     </comp>
     <comp ref="J3">
@@ -682,14 +666,6 @@
       <footprint>RetroBitLab:APPLE2-PERIPHERAL-BUS-EDGE</footprint>
       <datasheet>https://archive.org/details/Apple_II_Mini_Manual/page/n37/mode/2up</datasheet>
     </comp>
-    <comp ref="J9">
-      <value>CONN_SMD_HEADER_BOX_02x08_HX-JN2.54</value>
-      <footprint>RetroBitLab:IDC-Header_2x08_P2.54mm_Vertical_SMD</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C41376031.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C41376031</field>
-      </fields>
-    </comp>
     <comp ref="JP1">
       <value>SolderJumper_2_Open</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
@@ -765,6 +741,10 @@
     <comp ref="LOGO1">
       <value>VERA X16 LOGO</value>
       <footprint>RetroBitLab:x16logo</footprint>
+    </comp>
+    <comp ref="LOGO2">
+      <value>RETROCAMPUS</value>
+      <footprint>RetroBitLab:retrocampus_silkscreen_16.9mm_8.3mm</footprint>
     </comp>
     <comp ref="LOGO3">
       <value>KiCAD DESIGN</value>
