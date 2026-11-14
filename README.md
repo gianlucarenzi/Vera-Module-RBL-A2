@@ -5,7 +5,7 @@
 **Commander X16 graphics and sound, 256 KB of RAM disk, one Apple II slot.**
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Status: Work in progress](https://img.shields.io/badge/status-WORK_IN_PROGRESS_%E2%80%94_NOT_TESTED-red.svg)](#)
+[![Version](https://img.shields.io/badge/version-1.0_pre--production-orange.svg)](#)
 [![Apple II](https://img.shields.io/badge/Apple-II%20%2F%20IIe-green.svg)](#)
 [![KiCad](https://img.shields.io/badge/KiCad-5.1-blue.svg)](https://www.kicad.org/)
 [![ESP32](https://img.shields.io/badge/ESP32--S3-FN8-yellow.svg)](https://www.espressif.com/)
@@ -18,8 +18,9 @@
 </div>
 
 > [!WARNING]
-> **WORK IN PROGRESS — NOT TESTED.** The PCB (v0.2) is routed and passes KiCad's DRC, but no
-> board has been built yet. The firmware has been checked on the host and in an emulator only.
+> **v1.0 — PRE-PRODUCTION.** The PCB is routed and passes KiCad's DRC; the first boards are
+> being made and are not tested yet. The firmware has been checked on the host and in an
+> emulator only.
 
 ## ✨ Highlights
 
@@ -83,7 +84,7 @@ After a reset the slot ROM is visible, so ProDOS finds the RAM disk. Programs sh
 
 ```bash
 ./check_jlcpcb_stock.sh -n 5   # every BOM part in the JLCPCB library, with stock for 5 boards
-./output_job.sh 0.2            # BOM, CPL, Gerbers, drill, iBOM, PDF, STEP/VRML, JLCPCB zip
+./output_job.sh 1.0            # BOM, CPL, Gerbers, drill, iBOM, PDF, STEP/VRML, JLCPCB zip
 ```
 
 - The BOM XML comes straight from the KiCad 5 schematic (`utilities/kicadcli`): it stops on a part
@@ -161,9 +162,6 @@ Vera-Module-RBL-A2/
 └── patches/, utilities/    # eeplot patches, kicadcli, STEP → WRL
 ```
 
-Sister projects: [VERA Module RBL-XE](https://github.com/gianlucarenzi/Vera-Module-RBL-XE) (Atari
-XL/XE) and [VERA Module RBL-C64](https://github.com/gianlucarenzi/Vera-Module-RBL-C64) (Commodore 64).
-
 ## 📄 License
 
 GNU General Public License v3.0, see [LICENSE](LICENSE). VERA comes from the
@@ -180,8 +178,8 @@ GNU General Public License v3.0, see [LICENSE](LICENSE). VERA comes from the
 </div>
 
 > [!WARNING]
-> **LAVORO IN CORSO — NON COLLAUDATO.** Il PCB (v0.2) è sbrogliato e passa il DRC di KiCad, ma
-> nessuna scheda è stata ancora costruita. Il firmware è stato verificato solo sull'host e in
+> **v1.0 — PRE-PRODUZIONE.** Il PCB è sbrogliato e passa il DRC di KiCad; le prime schede sono in
+> produzione e non sono ancora collaudate. Il firmware è stato verificato solo sull'host e in
 > emulatore.
 
 ## ✨ In breve
@@ -240,7 +238,7 @@ Dopo un reset è visibile la ROM, così ProDOS trova il RAM disk. I programmi mo
 
 ```bash
 ./check_jlcpcb_stock.sh -n 5   # ogni parte della BOM nella libreria JLCPCB, stock per 5 schede
-./output_job.sh 0.2            # BOM, CPL, Gerber, forature, iBOM, PDF, STEP/VRML, zip JLCPCB
+./output_job.sh 1.0            # BOM, CPL, Gerber, forature, iBOM, PDF, STEP/VRML, zip JLCPCB
 ```
 
 - L'XML della BOM viene direttamente dallo schema KiCad 5 (`utilities/kicadcli`): si ferma su un
@@ -300,9 +298,6 @@ pio run --target upload      # dalla porta USB-C (CH340C)
 
 Test host: `firmware/MCU/test/host/test_a2_slinky.c`. Emulatore: **a2emu-vera** con
 `A2_VERA_CARD=rbl`. Vedi [firmware/MCU/README.md](firmware/MCU/README.md).
-
-Progetti gemelli: [VERA Module RBL-XE](https://github.com/gianlucarenzi/Vera-Module-RBL-XE) (Atari
-XL/XE) e [VERA Module RBL-C64](https://github.com/gianlucarenzi/Vera-Module-RBL-C64) (Commodore 64).
 
 ## 📄 Licenza
 

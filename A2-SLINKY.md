@@ -92,9 +92,8 @@ verificati su hardware.**
 
 ## Hardware (schema: foglio `a2slotInterface.sch`)
 
-Lo schema è quello della scheda VERA Module RBL-XE con l'interfaccia Atari sostituita dallo slot
-Apple (connettore a pettine 2×25, **J8**, `RetroBitLab:Bus_Apple_II_Card_Side`, footprint
-`RetroBitLab:APPLE2-PERIPHERAL-BUS-EDGE`). Pinout ESP32 completo in `PIN-MAPPING.md`.
+La scheda si inserisce nello slot Apple con il connettore a pettine 2×25 **J8**
+(`RetroBitLab:Bus_Apple_II_Card_Side`, footprint `RetroBitLab:APPLE2-PERIPHERAL-BUS-EDGE`). Pinout ESP32 completo in `PIN-MAPPING.md`.
 
 | Segnale Apple (J8) | Verso | Percorso | ESP32 |
 |---|---|---|---|
@@ -115,14 +114,12 @@ Apple (connettore a pettine 2×25, **J8**, `RetroBitLab:Bus_Apple_II_Card_Side`,
   RESET dell'Apple porta la linea a massa.
 - **`~OE` di `U19`** = `NAND(PHI0, NAND4(R/W, DEV_SEL_N, CARD_RD_N, 3V3))` (`U24`, `U25`): acceso nelle
   scritture e nelle letture a cui la scheda risponde (VERA o ESP32), spento in PHI1. Il quarto
-  ingresso (prima MPD) è a 3V3.
+  ingresso è a 3V3.
 - `U6`: gli ingressi non usati (A1, A2, A6) sono a GND, le uscite B1, B2, B6 non connesse.
-- Tolti rispetto alla scheda Atari: CART1, ECI1, `U16` (traslatore MCU → 6502 per EXTSEL, MPD,
-  RESET, non più necessario), il mixer audio verso il connettore (R2, R6, C66: l'Apple non ha
-  audio sullo slot, si usa il jack 3,5 mm `J7`), i test point dei segnali Atari.
+- Audio: l'Apple non ha audio sullo slot, si usa il jack 3,5 mm `J7`.
 - Alimentazione dallo slot (+5 V, pin 25).
-- **PCB:** `VERA-MODULE-RBL.kicad_pcb` è ancora quello Atari: va aggiornato dallo schema (J8, U27, C70
-  da aggiungere; CART1, ECI1, U16 e le parti tolte da eliminare) e va ridisegnato il bordo (Edge.Cuts).
+- **PCB:** `VERA-MODULE-RBL.kicad_pcb`, scheda a tutta lunghezza secondo l'Apple IIgs Tech Note #28
+  (slot 1-3, adatta anche all'Apple IIe), 4 layer, sbrogliata (vedi `routing/`).
 
 ## Software VERA (aggiornato il 2026-11-12: VERA_COMMON 549539f, a2emu-vera a749511)
 
