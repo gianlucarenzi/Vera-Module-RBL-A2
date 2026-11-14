@@ -109,7 +109,8 @@ pio run --target upload                  # UART0: GPIO43 = TX, GPIO44 = RX
 pio device monitor -b 115200
 ```
 
-USB CDC è disabilitato: GPIO 19/20 (USB D−/D+) sono A7/A8. Usare un adattatore UART.
+USB CDC è disabilitato: GPIO 19/20 (USB D−/D+) sono A7/A8. Si usa il CH340C sulla scheda (porta
+USB-C), collegato a UART0: con DTR/RTS porta da solo l'ESP32 nel bootloader.
 
 Solo la ROM: `make -C 6502` (rigenera `include/slinky_rom.h`).
 
