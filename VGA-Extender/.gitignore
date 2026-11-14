@@ -1,0 +1,17 @@
+# KiCad and production leftovers (as in the main project)
+*-bak
+*.kicad_pcb-bak
+*-cache.lib
+/fp-info-cache
+_autosave-*
+*.kicad_prl
+/*.dsn
+/*.ses
+# made by output_job.sh at every run
+/*_cpl_top.csv
+/*_cpl_bot.csv
+/*-v*-JLCPCB-BOM.csv
+/*-v*-JLCPCB-CPL.csv
+/bom/
+# Python caches
+__pycache__/

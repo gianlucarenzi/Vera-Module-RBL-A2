@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/debian/Progetti/APPLE/Vera-Module-RBL-A2/VGA-Extender/VGA-Extender.sch</source>
+    <date>Sat 14 Nov 2026 06:41:22 PM CET</date>
+    <tool>kicadcli 1.2 (KiCad 5 legacy schematic, pcbnew 5)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>AppleVGA-Extender</title>
+        <company>RetroBitLab</company>
+        <rev>1.0</rev>
+        <date>2026-11-14</date>
+        <source>VGA-Extender.sch</source>
+        <comment number="1" value="Gianluca Renzi"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>DS1038-15FBNSiA74-0CC</value>
+      <footprint>RetroBitLab:CONNFLY_DS1038-15FBNSIA74-0CC</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/C7498158.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C75754</field>
+      </fields>
+      <libsource lib="RetroBitLab" part="DS1038-15FBNSiA74-0CC" description="15P Female High Density D-Sub Right Angle 3 3A -25℃~+70℃ Through Hole D-Sub / VGA Connectors ROHS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6AF66324</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>CONN_SMD_HEADER_BOX_02x08_HX-JN2.54</value>
+      <footprint>RetroBitLab:IDC-Header_2x08_P2.54mm_Vertical_SMD</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/C41376031.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C41376031</field>
+      </fields>
+      <libsource lib="RetroBitLab" part="CONN_SMD_HEADER_BOX_02x08_HX-JN2.54" description="2.54mm -40℃~+105℃ 3A 2x8P IDC Box Header Surface Mount,Vertical SMD,P=2.54mm Gold, HanXia HX JN2.54-2x8P TP H8.9"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6AF67208</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C840116</field>
+      </fields>
+      <libsource lib="CCAP0805" part="100nF" description="100V 100nF X7R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6AF77593</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C840116</field>
+      </fields>
+      <libsource lib="CCAP0805" part="100nF" description="100V 100nF X7R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6AF7AAF0</tstamp>
+    </comp>
+    <comp ref="LOGO1">
+      <value>RETROCAMPUS</value>
+      <footprint>RetroBitLab:retrocampus_silkscreen_16.9mm_8.3mm</footprint>
+      <libsource lib="RetroBitLab" part="LOGO" description="Any valid LOGO Images can be placed here"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6AF8A483</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CCAP0805" part="100nF">
+      <description>100V 100nF X7R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</description>
+      <docs>https://www.lcsc.com/datasheet/C840116.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="LCSC">C840116</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RetroBitLab" part="CONN_SMD_HEADER_BOX_02x08_HX-JN2.54">
+      <description>2.54mm -40℃~+105℃ 3A 2x8P IDC Box Header Surface Mount,Vertical SMD,P=2.54mm Gold, HanXia HX JN2.54-2x8P TP H8.9</description>
+      <docs>https://www.lcsc.com/datasheet/C41376031.pdf</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_SMD_HEADER_BOX_02x08_HX-JN2.54</field>
+        <field name="Footprint">RetroBitLab:IDC-Header_2x08_P2.54mm_Vertical_SMD</field>
+        <field name="LCSC">C41376031</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RetroBitLab" part="DS1038-15FBNSiA74-0CC">
+      <description>15P Female High Density D-Sub Right Angle 3 3A -25℃~+70℃ Through Hole D-Sub / VGA Connectors ROHS</description>
+      <docs>https://www.lcsc.com/datasheet/C7498158.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DS1038-15FBNSiA74-0CC</field>
+        <field name="Footprint">RetroBitLab:CONNFLY_DS1038-15FBNSIA74-0CC</field>
+        <field name="LCSC">C75754</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+        <pin num="9" name="~" type="passive"/>
+        <pin num="10" name="~" type="passive"/>
+        <pin num="11" name="~" type="passive"/>
+        <pin num="12" name="~" type="passive"/>
+        <pin num="13" name="~" type="passive"/>
+        <pin num="14" name="~" type="passive"/>
+        <pin num="15" name="~" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+        <pin num="S2" name="SHIELD__1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RetroBitLab" part="LOGO">
+      <description>Any valid LOGO Images can be placed here</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">LOGO</field>
+      </fields>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CCAP0805">
+      <uri>/home/debian/Progetti/RetroBitLab-Library/CCAP0805.lib</uri>
+    </library>
+    <library logical="RetroBitLab">
+      <uri>/home/debian/Progetti/RetroBitLab-Library/RetroBitLab.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="J1" pin="9"/>
+      <node ref="J2" pin="9"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J1" pin="6"/>
+      <node ref="J1" pin="7"/>
+      <node ref="J1" pin="8"/>
+      <node ref="J1" pin="10"/>
+      <node ref="J2" pin="5"/>
+      <node ref="J2" pin="6"/>
+      <node ref="J2" pin="7"/>
+      <node ref="J2" pin="8"/>
+      <node ref="J2" pin="10"/>
+    </net>
+    <net code="3" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+      <node ref="J2" pin="S1"/>
+    </net>
+    <net code="4" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2"/>
+      <node ref="J2" pin="S2"/>
+    </net>
+    <net code="5" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="6" name="Net-(J1-Pad11)">
+      <node ref="J1" pin="11"/>
+    </net>
+    <net code="7" name="Net-(J1-Pad12)">
+      <node ref="J1" pin="12"/>
+    </net>
+    <net code="8" name="Net-(J1-Pad15)">
+      <node ref="J1" pin="15"/>
+    </net>
+    <net code="9" name="Net-(J1-Pad16)">
+      <node ref="J1" pin="16"/>
+    </net>
+    <net code="10" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="11" name="Net-(J2-Pad11)">
+      <node ref="J2" pin="11"/>
+    </net>
+    <net code="12" name="Net-(J2-Pad12)">
+      <node ref="J2" pin="12"/>
+    </net>
+    <net code="13" name="Net-(J2-Pad15)">
+      <node ref="J2" pin="15"/>
+    </net>
+    <net code="14" name="VGABLUE">
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="15" name="VGAGREEN">
+      <node ref="J1" pin="2"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="16" name="VGAHSYNC">
+      <node ref="J1" pin="13"/>
+      <node ref="J2" pin="13"/>
+    </net>
+    <net code="17" name="VGARED">
+      <node ref="J1" pin="1"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="18" name="VGAVSYNC">
+      <node ref="J1" pin="14"/>
+      <node ref="J2" pin="14"/>
+    </net>
+  </nets>
+</export>

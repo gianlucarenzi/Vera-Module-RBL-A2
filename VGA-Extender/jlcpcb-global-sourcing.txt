@@ -1,0 +1,3 @@
+# LCSC codes that JLCPCB buys through Global Sourcing (from DigiKey, Mouser...)
+# when its own stock is not enough. jlcpcb-stock-check.py reports them as
+# GLOBAL instead of failing. One code per line, '#' starts a comment.

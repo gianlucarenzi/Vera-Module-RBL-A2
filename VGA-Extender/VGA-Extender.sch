@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "AppleVGA-Extender"
-Date "2026-11-12"
-Rev "0.1"
+Date "2026-11-14"
+Rev "1.0"
 Comp "RetroBitLab"
 Comment1 "Gianluca Renzi"
 Comment2 ""
@@ -285,5 +285,16 @@ F 2 "" H 3375 3600 50  0001 C CNN
 F 3 "~" H 3375 3600 50  0001 C CNN
 	1    3375 3600
 	-1   0    0    1   
+$EndComp
+$Comp
+L RetroBitLab:LOGO LOGO1
+U 1 1 6AF8A483
+P 5250 4250
+F 0 "LOGO1" H 5275 4303 59  0000 L CNN
+F 1 "RETROCAMPUS" H 5275 4198 59  0000 L CNN
+F 2 "RetroBitLab:retrocampus_silkscreen_16.9mm_8.3mm" H 5250 4250 59  0001 C CNN
+F 3 "" H 5250 4250 59  0001 C CNN
+	1    5250 4250
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
