@@ -213,8 +213,8 @@ AR Path="/68F956C0/68F9D8CB" Ref="R23"  Part="1"
 F 0 "R23" V 2525 2585 50  0000 C CNN
 F 1 "510R" V 2670 2590 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2595 2590 50  0001 C CNN
-F 3 "https://lcsc.com/datasheet/lcsc_datasheet_2506161110_YAGEO-RC0805FR-07510RL_C114563.pdf" H 2595 2590 50  0001 C CNN
-F 4 "C114563" H 2595 2590 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/C17734.pdf" H 2595 2590 50  0001 C CNN
+F 4 "C17734" H 2595 2590 50  0001 C CNN "LCSC"
 	1    2595 2590
 	0    1    1    0   
 $EndComp
@@ -227,8 +227,8 @@ AR Path="/68F956C0/68F9D8D2" Ref="R27"  Part="1"
 F 0 "R27" V 5280 2585 50  0000 C CNN
 F 1 "510R" V 5420 2590 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5345 2590 50  0001 C CNN
-F 3 "https://lcsc.com/datasheet/lcsc_datasheet_2506161110_YAGEO-RC0805FR-07510RL_C114563.pdf" H 5345 2590 50  0001 C CNN
-F 4 "C114563" H 5345 2590 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/C17734.pdf" H 5345 2590 50  0001 C CNN
+F 4 "C17734" H 5345 2590 50  0001 C CNN "LCSC"
 	1    5345 2590
 	0    1    1    0   
 $EndComp
@@ -241,8 +241,8 @@ AR Path="/68F956C0/68F9D8D9" Ref="R25"  Part="1"
 F 0 "R25" V 3830 2585 50  0000 C CNN
 F 1 "510R" V 3970 2590 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3895 2590 50  0001 C CNN
-F 3 "https://lcsc.com/datasheet/lcsc_datasheet_2506161110_YAGEO-RC0805FR-07510RL_C114563.pdf" H 3895 2590 50  0001 C CNN
-F 4 "C114563" H 3895 2590 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/C17734.pdf" H 3895 2590 50  0001 C CNN
+F 4 "C17734" H 3895 2590 50  0001 C CNN "LCSC"
 	1    3895 2590
 	0    1    1    0   
 $EndComp
@@ -425,8 +425,8 @@ AR Path="/68F956C0/68F9D935" Ref="R15"  Part="1"
 F 0 "R15" V 5275 2110 50  0000 C CNN
 F 1 "2K" V 5415 2110 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5345 2115 50  0001 C CNN
-F 3 "https://lcsc.com/datasheet/lcsc_datasheet_2506161110_YAGEO-RC0805FR-072KL_C114572.pdf" H 5345 2115 50  0001 C CNN
-F 4 "C114572" H 5345 2115 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/C17604.pdf" H 5345 2115 50  0001 C CNN
+F 4 "C17604" H 5345 2115 50  0001 C CNN "LCSC"
 	1    5345 2115
 	0    1    1    0   
 $EndComp
@@ -439,8 +439,8 @@ AR Path="/68F956C0/68F9D93C" Ref="R13"  Part="1"
 F 0 "R13" V 3825 2110 50  0000 C CNN
 F 1 "2K" V 3965 2110 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3895 2115 50  0001 C CNN
-F 3 "https://lcsc.com/datasheet/lcsc_datasheet_2506161110_YAGEO-RC0805FR-072KL_C114572.pdf" H 3895 2115 50  0001 C CNN
-F 4 "C114572" H 3895 2115 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/C17604.pdf" H 3895 2115 50  0001 C CNN
+F 4 "C17604" H 3895 2115 50  0001 C CNN "LCSC"
 	1    3895 2115
 	0    1    1    0   
 $EndComp
@@ -453,8 +453,8 @@ AR Path="/68F956C0/68F9D943" Ref="R11"  Part="1"
 F 0 "R11" V 2525 2110 50  0000 C CNN
 F 1 "2K" V 2665 2110 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2595 2115 50  0001 C CNN
-F 3 "https://lcsc.com/datasheet/lcsc_datasheet_2506161110_YAGEO-RC0805FR-072KL_C114572.pdf" H 2595 2115 50  0001 C CNN
-F 4 "C114572" H 2595 2115 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/C17604.pdf" H 2595 2115 50  0001 C CNN
+F 4 "C17604" H 2595 2115 50  0001 C CNN "LCSC"
 	1    2595 2115
 	0    1    1    0   
 $EndComp

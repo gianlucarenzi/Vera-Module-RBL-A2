@@ -183,8 +183,8 @@ P 7300 4525
 F 0 "C1" V 7071 4525 50  0000 C CNN
 F 1 "100nF" V 7162 4525 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7300 4525 50  0001 C CNN
-F 3 "https://www.lcsc.com/datasheet/C840116.pdf" H 7300 4525 50  0001 C CNN
-F 4 "C840116" H 7300 4525 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/C28233.pdf" H 7300 4525 50  0001 C CNN
+F 4 "C28233" H 7300 4525 50  0001 C CNN "LCSC"
 	1    7300 4525
 	0    1    1    0   
 $EndComp
@@ -225,8 +225,8 @@ P 7375 2575
 F 0 "C2" V 7146 2575 50  0000 C CNN
 F 1 "100nF" V 7237 2575 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7375 2575 50  0001 C CNN
-F 3 "https://www.lcsc.com/datasheet/C840116.pdf" H 7375 2575 50  0001 C CNN
-F 4 "C840116" H 7375 2575 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/C28233.pdf" H 7375 2575 50  0001 C CNN
+F 4 "C28233" H 7375 2575 50  0001 C CNN "LCSC"
 	1    7375 2575
 	0    1    1    0   
 $EndComp

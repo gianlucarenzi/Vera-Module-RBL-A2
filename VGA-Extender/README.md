@@ -24,7 +24,7 @@ RBL-A2 with a **16-way IDC ribbon cable**: the card itself has no VGA connector,
 |---|---|
 | J1 | 2×8 SMD box header (HX JN2.54-2x8P, LCSC C41376031), to the card |
 | J2 | VGA HD15 female, right angle (Connfly DS1038-15FBNSiA74-0CC, LCSC C75754, through-hole) |
-| C1, C2 | 100 nF from each shield lug to GND (LCSC C840116) |
+| C1, C2 | 100 nF from each shield lug to GND (LCSC C28233) |
 | cable | 16-way 1.27 mm grey ribbon with two IDC 2×8 sockets (e.g. Connfly DS1016-16MANBG, LCSC C7500469), crimped by hand |
 
 ## 🔌 Pinout
@@ -90,7 +90,7 @@ connettore box.
 |---|---|
 | J1 | connettore box 2×8 SMD (HX JN2.54-2x8P, LCSC C41376031), verso la scheda |
 | J2 | VGA HD15 femmina ad angolo retto (Connfly DS1038-15FBNSiA74-0CC, LCSC C75754, THT) |
-| C1, C2 | 100 nF da ogni linguetta dello schermo a GND (LCSC C840116) |
+| C1, C2 | 100 nF da ogni linguetta dello schermo a GND (LCSC C28233) |
 | cavo | piattina grigia a 16 poli, passo 1,27 mm, con due connettori IDC 2×8 (per esempio Connfly DS1016-16MANBG, LCSC C7500469), crimpati a mano |
 
 ## 🔌 Piedinatura
