@@ -1,5 +1,5 @@
 Comment,Designator,Footprint,LCSC
-"100nF","C1,C2","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","C840116"
+"100nF","C1,C2","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","C28233"
 "CONN_SMD_HEADER_BOX_02x08_HX-JN2.54","J1","RetroBitLab:IDC-Header_2x08_P2.54mm_Vertical_SMD","C41376031"
 "DS1038-15FBNSiA74-0CC","J2","RetroBitLab:CONNFLY_DS1038-15FBNSIA74-0CC","C75754"
 "RETROCAMPUS","LOGO1","RetroBitLab:retrocampus_silkscreen_16.9mm_8.3mm",""

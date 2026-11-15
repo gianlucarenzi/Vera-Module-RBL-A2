@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/debian/Progetti/APPLE/Vera-Module-RBL-A2/VGA-Extender/VGA-Extender.sch</source>
-    <date>Sat 14 Nov 2026 06:41:22 PM CET</date>
+    <date>Sun 15 Nov 2026 12:10:14 PM CET</date>
     <tool>kicadcli 1.2 (KiCad 5 legacy schematic, pcbnew 5)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -44,22 +44,22 @@
     <comp ref="C1">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/C28233.pdf</datasheet>
       <fields>
-        <field name="LCSC">C840116</field>
+        <field name="LCSC">C28233</field>
       </fields>
-      <libsource lib="CCAP0805" part="100nF" description="100V 100nF X7R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <libsource lib="CCAP0805" part="100nF" description="100V 100nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6AF77593</tstamp>
     </comp>
     <comp ref="C2">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/C840116.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/C28233.pdf</datasheet>
       <fields>
-        <field name="LCSC">C840116</field>
+        <field name="LCSC">C28233</field>
       </fields>
-      <libsource lib="CCAP0805" part="100nF" description="100V 100nF X7R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <libsource lib="CCAP0805" part="100nF" description="100V 100nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6AF7AAF0</tstamp>
     </comp>
@@ -73,13 +73,13 @@
   </components>
   <libparts>
     <libpart lib="CCAP0805" part="100nF">
-      <description>100V 100nF X7R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</description>
-      <docs>https://www.lcsc.com/datasheet/C840116.pdf</docs>
+      <description>100V 100nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</description>
+      <docs>https://www.lcsc.com/datasheet/C28233.pdf</docs>
       <fields>
         <field name="Reference">C</field>
         <field name="Value">100nF</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="LCSC">C840116</field>
+        <field name="LCSC">C28233</field>
       </fields>
       <pins>
         <pin num="1" name="~" type="passive"/>
